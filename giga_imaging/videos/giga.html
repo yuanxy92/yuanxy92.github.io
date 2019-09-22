@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gigavideos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<!-- Scripts for template -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../../assets/js/skel.min.js"></script>
+		<script src="../../assets/js/skel-viewport.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+		<script>
+			var camera_src;
+			
+			$( document ).ready(function() {
+				// init video src and image src
+				camera_src = new Array();
+				// 2503
+				camera_src["0901_29"] = "camera_pose_0901_29.jpg";
+				camera_src["2503_02"] = "camera_pose_2503_02.jpg";
+				camera_src["2503_03"] = "camera_pose_2503_02.jpg";
+				camera_src["2503_04"] = "camera_pose_2503_04.jpg";
+				camera_src["2503_05"] = "camera_pose_2503_04.jpg";
+				camera_src["2503_06"] = "camera_pose_2503_04.jpg";
+				camera_src["2503_07"] = "camera_pose_2503_04.jpg";
+				camera_src["2503_08"] = "camera_pose_2503_04.jpg";
+				camera_src["2503_09"] = "camera_pose_2503_09.jpg";
+				camera_src["2503_11"] = "camera_pose_2503_09.jpg";
+				camera_src["2503_12"] = "camera_pose_2503_09.jpg";
+				// 2603
+				camera_src["2603_12"] = "camera_pose_2603_12.jpg";
+				camera_src["2603_13"] = "camera_pose_2603_12.jpg";
+				camera_src["2603_14"] = "camera_pose_2603_14.jpg";
+				camera_src["2603_15"] = "camera_pose_2603_14.jpg";
+				camera_src["2603_16"] = "camera_pose_2603_14.jpg";
+				camera_src["2603_17"] = "camera_pose_2603_14.jpg";
+				camera_src["2603_19"] = "camera_pose_2603_14.jpg";
+				// 2703
+				camera_src["2703_08"] = "camera_pose_2703_05.jpg";
+				camera_src["2703_09"] = "camera_pose_2703_05.jpg";
+				
+				// bind function on nav
+				$("#navFootball").click(showHideFunc);
+				$("#navTsinghuaMainGate").click(showHideFunc);
+				$("#navTsinghuaSquare").click(showHideFunc);
+				window.onhashchange = hashChangeFunc;	
+				hashChangeFunc();
+				$('#FootballDivSelect').change(hashChangeFunc);
+			});		
+			
+			function hashChangeFunc() {
+				// get video src
+				var server = 'http://media.au.tsinghua.edu.cn/xiaoyun/giga_videos/'; 
+				//var server = 'D:/Project/videos/';
+				var suffixname = window.location.hash.substr(1);
+				var videosuffix;
+				var videosuffixShowname;
+				
+				var foldername = $('#video').attr('curfolder');
+				var curvideo = $('#video').attr('curvideo');
+				var selectname = $('#video').attr('curselect');
+				var videoname = $('#' + selectname).find("option:selected").val();
+				var videourl = server + foldername + '/'+ videoname + videosuffix;
+				var videonum = $('#' + selectname).find("option:selected").attr('optnum');
+				
+				if ((videonum < 3) && (suffixname == 'OpenCV')) {
+					suffixname = 'Our';
+				}
+				if ((videonum < 2) && (suffixname == 'OurRelighting')) {
+					suffixname = 'Our';
+				}
+				
+				if (suffixname == 'Our') {
+					videosuffix = '.mp4';
+					videosuffixShowname = " Our Result";
+				} else if (suffixname == 'OurRelighting') {
+					videosuffix = '_relighting.mp4';
+					videosuffixShowname = ' (Our Result After relighting)';
+				} else if (suffixname == 'OpenCV') {
+					videosuffix = '_opencv.mp4';
+					videosuffixShowname = ' (OpenCV Stitcher Result)';
+				} else if (suffixname == 'CameraPose') {
+					videosuffix = '.mp4';
+					videosuffixShowname = ' (Camera Poses)';
+				}
+				else {
+					return;
+				}
+				
+				if (videonum == '3') {
+					$('#' + curvideo + 'OpenCV').show();
+					$('#' + curvideo + 'OurRelighting').show();
+				} else if (videonum == '2') {
+					$('#' + curvideo + 'OpenCV').hide();
+					$('#' + curvideo + 'OurRelighting').show();
+				} else if (videonum == '1') {
+					$('#' + curvideo + 'OpenCV').hide();
+					$('#' + curvideo + 'OurRelighting').hide();
+				}
+				//alert(videourl);
+				if (suffixname != 'CameraPose') {
+					$('#image').hide();
+					$('#video').show();
+					$('#video').attr('src', videourl);
+					$("#video")[0].load();
+					$('#videoname').text($('#' + selectname).find("option:selected").text() + videosuffixShowname);
+				} else if (suffixname == 'CameraPose') {
+					var imageurl = './images/' + camera_src[videoname];
+					$('#image').show();
+					$('#video').hide();
+					$('#image').attr('src', imageurl);
+					$('#videoname').text($('#' + selectname).find("option:selected").text() + videosuffixShowname);
+				}
+			}
+			
+			function showHideFunc() {
+				var showVideoname = $(this).attr('id');
+				//alert(showVideoname);
+				// show/hide video blocks
+				var navVideos = ['navFootball', 'navTsinghuaMainGate', 'navTsinghuaSquare'];
+				var videos = ['Football', 'TsinghuaMainGate', 'TsinghuaSquare'];
+				var foldername = ['football', 'tsinghua', 'square'];
+				var selectname;
+				for (i = 0; i < videos.length; i++) { 
+					if (navVideos[i] == showVideoname) {
+						$('#' + videos[i]).show();
+						//alert(foldername[i]);
+						//alert($('#video').attr('curfolder'));
+						//alert($('#video').attr('curselect'));
+						$('#video').attr('curvideo', videos[i]);
+						$('#video').attr('curfolder', foldername[i]);
+						selectname = videos[i] + 'DivSelect';
+						$('#video').attr('curselect', selectname);
+					}
+					else {
+						$('#' + videos[i]).hide();
+					}
+				}
+				$('#' + selectname).change(hashChangeFunc);
+				hashChangeFunc();
+			}
+			
+			function test() {
+				alert('test in');
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a>Scenes:</a><li>
+					<li><a style="cursor: pointer" id="navFootball">Football</a></li>
+					<li><a style="cursor: pointer" id="navTsinghuaMainGate">Tsinghua Main Gate</a></li>
+					<li><a style="cursor: pointer" id="navTsinghuaSquare">Tsinghua Square</a></li>
+				</ul>
+			</nav>
+
+		<!-- Football -->
+			<div class="wrapper style2" id = "FootballDiv">
+				<article id="Football">
+					<header>
+						<h2>Football</h2>
+					</header>
+						<p><b>Videos:</b>
+							<select name="Videos" width = "200" id = "FootballDivSelect">
+							<option value="2603_12" optnum = "2" selected="true">Video1 Captured at 16:00</option>
+							<option value="2603_13" optnum = "2">Video2 Captured at 16:00</option>
+							<option value="2603_14" optnum = "3">Video3 Captured at 18:00</option>
+							<option value="2603_15" optnum = "3">Video4 Captured at 18:00</option>
+							<option value="2603_16" optnum = "3">Video5 Captured at 18:00</option>
+							<option value="2603_17" optnum = "3">Video6 Captured at 18:00</option>
+							<option value="2603_19" optnum = "3">Video7 Captured at 18:00</option>
+						</select>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Result:</b>&nbsp&nbsp
+						<a href = "#CameraPose">CameraPose</a>&nbsp&nbsp&nbsp&nbsp
+						<a href = "#Our">Our result</a>&nbsp&nbsp&nbsp&nbsp
+						<a id = "FootballOurRelighting" href = "#OurRelighting">Our result (after relighting)</a>&nbsp&nbsp&nbsp&nbsp
+						<a id = "FootballOpenCV" href = "#OpenCV">OpenCV Stitcher</a>
+						</p>
+				</article>
+				
+				<article id="TsinghuaMainGate" style="display:none">
+					<header>
+						<h2>Tsinghua Main Gate</h2>
+					</header>
+						<p><b>Videos:</b>
+							<select name="Videos" width = "200" id = "TsinghuaMainGateDivSelect">
+							<option value="2503_02" optnum = "3" selected="true">Video1 Captured at 11:30</option>
+							<option value="2503_03" optnum = "3">Video2 Captured at 11:30</option>
+							<option value="2503_04" optnum = "3">Video3 Captured at 15:00</option>
+							<option value="2503_05" optnum = "2">Video4 Captured at 15:00</option>
+							<option value="2503_06" optnum = "2">Video5 Captured at 15:00</option>
+							<option value="2503_07" optnum = "3">Video6 Captured at 15:00</option>
+							<option value="2503_08" optnum = "3">Video7 Captured at 15:00</option>
+							<option value="2503_09" optnum = "3">Video8 Captured at 15:00</option>
+							<option value="2503_11" optnum = "3">Video9 Captured at 15:30</option>
+							<option value="2503_12" optnum = "3">Video10 Captured at 15:30</option>
+							<option value="0901_29" optnum = "2">Video11 Captured at 15:00</option>
+						</select>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Result:</b>&nbsp&nbsp
+						<a href = "#CameraPose">CameraPose</a>&nbsp&nbsp&nbsp&nbsp
+						<a href = "#Our">Our result</a>&nbsp&nbsp&nbsp&nbsp
+						<a id = "TsinghuaMainGateOurRelighting" href = "#OurRelighting">Our result (after relighting)</a>&nbsp&nbsp&nbsp&nbsp
+						<a id = "TsinghuaMainGateOpenCV" href = "#OpenCV">OpenCV Stitcher</a>
+						</p>
+				</article>
+				
+				<article id="TsinghuaSquare" style="display:none">
+					<header>
+						<h2>Tsinghua Square</h2>
+					</header>
+						<p><b>Videos:</b>
+							<select name="Videos" width = "200" id = "TsinghuaSquareDivSelect">
+							<option value="2703_09" optnum = "1" selected="true">Video1</option>
+		<!--					<option value="2703_08" optnum = "1">Video2</option> -->
+						</select>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<b>Result:</b>&nbsp&nbsp
+						<a href = "#CameraPose">CameraPose</a>&nbsp&nbsp&nbsp&nbsp
+						<a href = "#Our">Our result</a>&nbsp&nbsp&nbsp&nbsp
+						<a id = "TsinghuaSquareOurRelighting" href = "#OurRelighting">Our result (after relighting)</a>&nbsp&nbsp&nbsp&nbsp
+						<a id = "TsinghuaSquareOpenCV" href = "#OpenCV">OpenCV Stitcher</a>
+						</p>
+				</article>
+				
+				<article>
+					<div class="container">
+						<p id = "videoname" style="font-weight: bold" ></p>
+						<video width="960" height="540" id = "video" curvideo = "Football" curfolder = "football" curselect = "FootballDivSelect" controls>
+						<source src="" type="video/mp4">
+						Your browser does not support the video tag. Please use Chrome or Firefox Browser.
+						</video>
+						<img id = "image" width = "960" src = ""/>
+					</div>
+				</article>
+			</div>
+
+	</body>
+</html>
