@@ -10,7 +10,7 @@ For my complete publication list, please visit the [Google scholar page](https:/
 
 ## Selected Journal Publications
 
-- [Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning](https://www.nature.com/articles/s41467-023-42984-y)<br>**Xiaoyun Yuan**, Yong Wang, Zhihao Xu, Tiankuang Zhou, Lu Fang~<br> **Nature Communications** 2023.<br>[\<Code\>](https://github.com/yuanxy92/DANTE)
+- [Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning (Editors' Hightlight)](https://www.nature.com/articles/s41467-023-42984-y)<br>**Xiaoyun Yuan**, Yong Wang, Zhihao Xu, Tiankuang Zhou, Lu Fang~<br> **Nature Communications** 2023.<br>[\<Code\>](https://github.com/yuanxy92/DANTE)
    
 - [Massively parallel functional photoacoustic computed tomography of the human brain](https://www.nature.com/articles/s41551-021-00735-8)<br>Shuai Na†, Jonathan J. Russin†, Li Lin†, **Xiaoyun Yuan†**, Peng Hu, Kay B. Jann, Lirong Yan, Konstantin Maslov, Junhui Shi, Danny J. Wang, Charles Y. Liu~, Lihong V. Wang~<br> **Nature Biomedical Engineering** 2022.
    
