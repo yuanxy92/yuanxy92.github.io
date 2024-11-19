@@ -7,8 +7,9 @@ layout: page
 <img src="./images/imgs/xiaoyun_ba.jpg" class="floatpic">
 
 <br>
-Associate Professor <br>
-[Artificial Intelligence Institute](https://ai.sjtu.edu.cn/), Shanghai Jiao Tong University (SJTU)<br> 
+Tenure-track Associate Professor <br>
+[Artificial Intelligence Institute](https://ai.sjtu.edu.cn/)<br>
+Shanghai Jiao Tong University (SJTU)<br> 
 yuanxiaoyun AT sjtu.edu.cn<br>
 
 <br>
