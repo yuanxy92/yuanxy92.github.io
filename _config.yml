@@ -8,7 +8,7 @@ url: https://xiaoyunyuan.net
 owner:
   name: Xiaoyun Yuan
   avatar: imgs/xiaoyun_yuan.png
-  # bio: Two roads diverged in woods, I took the one less traveled by.
+  bio: Dr. Xiaoyun Yuan<br>Associate Professor<br>
   email: yuanxiaoyun@sjtu.edu.cn
   # cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
@@ -40,8 +40,8 @@ links:
     url: /
   - title: Publications
     url: /publications/
-  # - title: Awards
-  #   url: /awards/
+  - title: Research 
+    url: /research/
   - title: Hobbies
     url: /hobbies/
   # - title: Startups
