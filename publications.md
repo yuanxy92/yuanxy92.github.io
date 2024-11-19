@@ -16,7 +16,7 @@ For my complete publication list, please visit my [scholar page](https://scholar
    
 - [A multichannel optical computing architecture for advanced machine vision (Editors' Hightlight)](https://www.nature.com/articles/s41377-022-00945-y)<br>Zhihao Xu†, **Xiaoyun Yuan†**, Tiankuang Zhou, Lu Fang~<br> **Light: Science & Applications** 2022.
    
-- [A modular hierarchical array camera (cover article)](https://www.nature.com/articles/s41377-021-00485-x)<br>**Xiaoyun Yuan**, Mengqi Ji†, Jiamin Wu, David J. Brady, Qionghai Dai, Lu Fang~<br> **Light: Science & Applications** 2021.
+- [A modular hierarchical array camera (cover article)](https://www.nature.com/articles/s41377-021-00485-x)<br>**Xiaoyun Yuan†**, Mengqi Ji†, Jiamin Wu, David J. Brady, Qionghai Dai, Lu Fang~<br> **Light: Science & Applications** 2021.
 
 - [GigaMVS: a benchmark for ultra-large-scale gigapixel-level 3D reconstruction](https://ieeexplore.ieee.org/abstract/document/9547729)<br>Jianing Zhang†, Jinzhi Zhang†, Shi Mao†, Mengqi Ji, Guangyu Wang, Zequn Chen, Tian Zhang, **Xiaoyun Yuan**, Qionghai Dai, Lu Fang~<br> **IEEE Transactions on Pattern Analysis and Machine Intelligence** 2021.<br>[\<Dataset page\>](https://gigavision.cn/data/news?nav=GigaMVS%20RAWDATA&type=nav&t=1731982252980)
 
