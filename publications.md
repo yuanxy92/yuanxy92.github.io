@@ -4,7 +4,7 @@ permalink: /publications/index.html
 title: Publications
 ---
 
-For my complete publication list, please visit my [scholar page](https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en)
+For my complete publication list, please visit the [Google scholar page](https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en)
 
 > (†: equal contribution, ~: corresponding author)
 
