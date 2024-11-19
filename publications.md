@@ -8,7 +8,7 @@ For my complete publication list, please visit my [scholar page](https://scholar
 
 > (†: equal contribution, ~: corresponding author)
 
-## Selected Publications
+## Selected Journal Publications
 
 - [Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning](https://www.nature.com/articles/s41467-023-42984-y)<br>**Xiaoyun Yuan**, Yong Wang, Zhihao Xu, Tiankuang Zhou, Lu Fang~<br> **Nature Communications** 2023.<br>[\<Code\>](https://github.com/yuanxy92/DANTE)
    
@@ -18,6 +18,24 @@ For my complete publication list, please visit my [scholar page](https://scholar
    
 - [A modular hierarchical array camera (cover article)](https://www.nature.com/articles/s41377-021-00485-x)<br>**Xiaoyun Yuan**, Mengqi Ji†, Jiamin Wu, David J. Brady, Qionghai Dai, Lu Fang~<br> **Light: Science & Applications** 2021.
 
+- [GigaMVS: a benchmark for ultra-large-scale gigapixel-level 3D reconstruction](https://ieeexplore.ieee.org/abstract/document/9547729)<br>Jianing Zhang†, Jinzhi Zhang†, Shi Mao†, Mengqi Ji, Guangyu Wang, Zequn Chen, Tian Zhang, **Xiaoyun Yuan**, Qionghai Dai, Lu Fang~<br> **IEEE Transactions on Pattern Analysis and Machine Intelligence** 2021.<br>[\<Dataset page\>](https://gigavision.cn/data/news?nav=GigaMVS%20RAWDATA&type=nav&t=1731982252980)
+
+---
+
+## Selected Conference Publications
+
+- [SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction](https://openaccess.thecvf.com/content/CVPR2024/html/Yao_SPECAT_SPatial-spEctral_Cumulative-Attention_Transformer_for_High-Resolution_Hyperspectral_Image_Reconstruction_CVPR_2024_paper.html)<br>Zhiyang Yao, Shuyang Liu, **Xiaoyun Yuan**, Lu Fang~
+<br> **IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)** 2024.
+
+- [Panda: A gigapixel-level human-centric video dataset](https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_PANDA_A_Gigapixel-Level_Human-Centric_Video_Dataset_CVPR_2020_paper.html)<br>Xueyang Wang†, Xiya Zhang†, Yinheng Zhu†, Yuchen Guo†, **Xiaoyun Yuan**, Liuyu Xiang, Zerun Wang, Guiguang Ding, David Brady, Qionghai Dai, Lu Fang~
+<br> **IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)** 2020.
+[\<Dataset page\>](https://gigavision.cn/data/news?nav=DataSet%20Panda&type=nav&t=1731982080864)
+
+- [Multiscale-vr: Multiscale gigapixel 3d panoramic videography for virtual reality](https://ieeexplore.ieee.org/abstract/document/9105244)<br>Jianing Zhang†, Tianyi Zhu†, Anke Zhang†, **Xiaoyun Yuan†**, Zihan Wang, Sebastian Beetschen, Lan Xu, Xing Lin, Qionghai Dai, Lu Fang~
+<br> **IEEE International Conference on Computational Photography (ICCP)** 2020.
+
+- [Multiscale gigapixel video: A cross resolution image matching and warping approach](https://ieeexplore.ieee.org/abstract/document/7951481)<br>**Xiaoyun Yuan**, Lu Fang~, Qionghai Dai, David J Brady, Yebin Liu~
+<br> **IEEE International Conference on Computational Photography (ICCP)** 2017.
 
 ---
 
