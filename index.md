@@ -14,19 +14,14 @@ yuanxiaoyun AT sjtu.edu.cn<br>
 
 <br>
 **Short Bio:**
-Xiaoyun Yuan is an associate professor at the Artificial Intelligence Institute, Shanghai Jiao Tong University. He was an postdoctoral researcher at the Department of Electronic Engineeering, Tsinghua University. He received his B.S. degree from University of Science and Technology of China in 2014, and Ph.D. degree from the Hong Kong University of Science and Technology in 2020, respectively. He has published around 20 academic papers in Nature Biomedical Engineering, Nature Communications, Light: Science & Applications, IEEE TPAMI, CVPR, etc. His research interests focus in the fields of computer vision, computational imaging, photoacoustic tomography and optical computing. The achievement on human brain functional photoacoustic tomography won the Best Paper Award of SPIE Photonics West 2021.
-
+Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute, Shanghai Jiao Tong University. He was previously a postdoctoral researcher in the Department of Electronic Engineering at Tsinghua University. He received his B.S. from the University of Science and Technology of China in 2014 and his Ph.D. from the Hong Kong University of Science and Technology in 2020. Dr. Yuan has published approximately 20 academic papers in leading journals and conferences, including Nature Biomedical Engineering, Nature Communications, Light: Science & Applications, IEEE TPAMI, and CVPR. His research interests lie in computer vision, computational imaging, photoacoustic tomography, and optical computing. Notably, his work on human brain functional photoacoustic tomography earned the Best Paper Award at SPIE Photonics West 2021.
 ---
 
 ## Research Interests
 
 **<font color="#990000">I'm looking for self-motivated students, please send me an email with your CV!</font>**
 
-My current research focuses on computational imaging and visual intelligence. More detailly, we focus on hardware-software co-designed imaging and opto-electronic co-optimized computing. Our projects relate to gigapixel Videography, large-scale Reconstruction, optoelectronic Computing, etc., towards both the intelligent sensing systems and algorithmic solutions.
-
-- AI-powered computational imaging
-- Optoelectronic computing
-- Gigapixel videography
+My research focuses on computational imaging and visual intelligence, with an emphasis on hardware-software co-designed imaging and opto-electronic co-optimized computing. Current projects include novel computational imaging systems, AI-powered reconstruction methods, and optoelectronic computing architecture, aiming to advance both the sensing systems and algorithmic solutions.
 
 ---
 
