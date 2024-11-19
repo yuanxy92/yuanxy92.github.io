@@ -2,7 +2,7 @@
 layout: page
 ---
 
-## Xiaoyun Yuan (袁肖赟)
+## Xiaoyun Yuan (袁肖赟), Ph.D.
 
 <img src="./images/imgs/xiaoyun_ba.jpg" class="floatpic">
 
