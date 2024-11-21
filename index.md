@@ -14,7 +14,7 @@ yuanxiaoyun AT sjtu.edu.cn<br>
 
 <br>
 **Short Bio:**
-Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute, Shanghai Jiao Tong University. He was previously a postdoctoral researcher in the Department of Electronic Engineering at Tsinghua University. He received his B.S. from the University of Science and Technology of China in 2014 and his Ph.D. from the Hong Kong University of Science and Technology in 2020. Dr. Yuan has published approximately 20 academic papers in leading journals and conferences, including Nature Biomedical Engineering, Nature Communications, Light: Science & Applications, IEEE TPAMI, and CVPR. His research interests lie in computer vision, computational imaging, photoacoustic tomography, and optical computing. Notably, his work on human brain functional photoacoustic tomography earned the Best Paper Award at SPIE Photonics West 2021.
+Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute, Shanghai Jiao Tong University. He was previously a postdoctoral researcher in the [Sigma lab](https://www.luvision.net/), Department of Electronic Engineering, Tsinghua University. He received his B.S. from the University of Science and Technology of China in 2014 and his Ph.D. from the Hong Kong University of Science and Technology in 2020. Dr. Yuan has published approximately 20 academic papers in leading journals and conferences, including Nature Biomedical Engineering, Nature Communications, Light: Science & Applications, IEEE TPAMI, and CVPR. His research interests lie in computer vision, computational imaging, photoacoustic tomography, and optical computing. Notably, his work on human brain functional photoacoustic tomography earned the Best Paper Award at SPIE Photonics West 2021.
 
 ---
 
@@ -22,13 +22,13 @@ Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute,
 
 **<font color="#990000">I'm looking for self-motivated students, please send me an email with your CV!</font>**
 
-My research focuses on computational imaging and visual intelligence, with an emphasis on hardware-software co-designed imaging and opto-electronic co-optimized computing. Current projects include novel computational imaging systems, AI-powered reconstruction methods, and optoelectronic computing architecture, aiming to advance both the sensing systems and algorithmic solutions.
+My research focuses on computational imaging and visual intelligence, with an emphasis on hardware-software co-designed imaging and opto-electronic co-optimized computing. Our projects relate to novel computational imaging systems, AI-powered reconstruction methods, and optoelectronic computing architecture, aiming to advance both the sensing systems and algorithmic solutions. 
 
 ---
 
 ## News and Updates
 
-- **Nov 2024**：I joined [Artificial Intelligence Institute, Shanghai Jiao Tong Univeristy](https://ai.sjtu.edu.cn/) as an associate professor.
+- **Nov 11, 2024**：I joined [Artificial Intelligence Institute, Shanghai Jiao Tong Univeristy](https://ai.sjtu.edu.cn/) as an associate professor.
 
 
 <br>
