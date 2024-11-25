@@ -8,12 +8,13 @@ title: Hobbies
 ## Fitness & Running
 
 <div class="four">
-<img width="25%" src="/images/gifs/fitness1.gif">
-<img width="25%" src="/images/gifs/fitness2.gif">
-<img width="25%" src="/images/gifs/fitness3.gif">
-<img width="25%" src="/images/imgs/xiaoyun_ziqi_ba.jpeg">
+<img width="24%" src="/images/gifs/fitness1.gif">
+<img width="24%" src="/images/gifs/fitness2.gif">
+<img width="24%" src="/images/gifs/fitness3.gif">
+<img width="24%" src="/images/imgs/xiaoyun_ziqi_ba.jpg">
 </div>
-<br> Exercise helps me clear my mind, refresh my body, and build the courage to tackle any challenges. I truly enjoy the sense of pushing my limits and surpassing them.
+<br> Exercise helps me clear my mind, refresh my body, and build the courage to tackle any challenges. I truly enjoy the sense of pushing my limits and surpassing them. I used to work out at the BA(Break-all) CrossFit gym at Tsinghua University in Beijing, which had a great vibe. The environment was very welcoming, with friendly people, and the overall energy during workouts was really motivating.
+<br>
 
 <!-- ## Workshop
 
