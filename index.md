@@ -4,7 +4,8 @@ layout: page
 
 ## Xiaoyun Yuan (袁肖赟), Ph.D.
 
-<img src="./images/imgs/xiaoyun_ba.jpg" class="floatpic">
+<!-- <img src="./images/imgs/xiaoyun_ba.jpg" class="floatpic"> -->
+<img src="./images/imgs/Xiaoyun2.jpg" class="floatpic">
 
 <br>
 Tenure-track Associate Professor <br>
@@ -24,11 +25,16 @@ Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute,
 
 My research focuses on computational imaging and visual intelligence, with an emphasis on hardware-software co-designed imaging and opto-electronic co-optimized computing. Our projects relate to novel computational imaging systems, AI-powered reconstruction methods, and optoelectronic computing architecture, aiming to advance both the sensing systems and algorithmic solutions. 
 
+<!-- [Gigapixel imaging.](/research/gigapixel/)  -->
+
 ---
 
 ## News and Updates
 
 - **Nov 11, 2024**：I joined [Artificial Intelligence Institute, Shanghai Jiao Tong Univeristy](https://ai.sjtu.edu.cn/) as an associate professor.
+- **Mar 9, 2024**：Paper "SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction" accepted by **CVPR 2024**.
+- **Jan 24, 2024**：Paper "Photonic neuromorphic architecture for tens-of-task lifelong learning" accepted by **Light: Science & Applications**.
+- **Oct 25, 2023**：Paper "Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning" accepted by **Nature Communications**.
 
 
 <br>
