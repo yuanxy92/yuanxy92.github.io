@@ -21,20 +21,21 @@ Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute,
 
 ## Research Interests
 
-**<font color="#990000">I'm looking for self-motivated students, please send me an email with your CV!</font>**
+**<font color="#990000">I'm looking for self-motivated students. If you are interested in my research, please send me an email with your CV!</font>**
 
-My research focuses on computational imaging and visual intelligence, with an emphasis on hardware-software co-designed imaging and opto-electronic co-optimized computing. Our projects relate to novel computational imaging systems, AI-powered reconstruction methods, and optoelectronic computing architecture, aiming to advance both the sensing systems and algorithmic solutions. 
+My research focuses on computational imaging and visual intelligence, with a strong emphasis on hardware-software co-design and opto-electronic co-optimization. Key areas of my work include computational imaging with camera arrays, photoacoustic tomography for brain imaging, and optical computing. Currently, I am exploring the intersection of AI and optics, computational imaging with large vision models, and the integration of computational imaging with embodied AI. For more details, please visit my [**<font color="#990000">Reseach Page</font>](/research/).
 
-<!-- [Gigapixel imaging.](/research/gigapixel/)  -->
+-- [Computational imaging with camera arrays](/research/gigapixel/)
+-- [Photoacoustic tomography for human brain](/research/PACT/)
+-- [Optical computing](/research/optical_computing/)
 
----
 
 ## News and Updates
 
 - **Nov 11, 2024**：I joined [Artificial Intelligence Institute, Shanghai Jiao Tong Univeristy](https://ai.sjtu.edu.cn/) as an associate professor.
-- **Mar 9, 2024**：Paper "SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction" accepted by **CVPR 2024**.
-- **Jan 24, 2024**：Paper "Photonic neuromorphic architecture for tens-of-task lifelong learning" accepted by **Light: Science & Applications**.
-- **Oct 25, 2023**：Paper "Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning" accepted by **Nature Communications**.
+- **Mar 9, 2024**：Paper "[SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction](https://openaccess.thecvf.com/content/CVPR2024/html/Yao_SPECAT_SPatial-spEctral_Cumulative-Attention_Transformer_for_High-Resolution_Hyperspectral_Image_Reconstruction_CVPR_2024_paper.html)" accepted by **CVPR 2024**.
+- **Jan 24, 2024**：Paper "[Photonic neuromorphic architecture for tens-of-task lifelong learning](https://www.nature.com/articles/s41377-024-01395-4)" accepted by **Light: Science & Applications**.
+- **Oct 25, 2023**：Paper "[Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning](https://www.nature.com/articles/s41467-023-42984-y)" accepted by **Nature Communications**.
 
 
 <br>
