@@ -7,10 +7,11 @@ title: Hobbies
 
 ## Fitness & Running
 
-<div class="third">
+<div class="four">
 <img src="/images/gifs/fitness1.gif">
 <img src="/images/gifs/fitness2.gif">
 <img src="/images/gifs/fitness3.gif">
+<img src="/images/imgs/xiaoyun_ziqi_ba.jpeg">
 </div>
 <br> Exercise helps me clear my mind, refresh my body, and build the courage to tackle any challenges. I truly enjoy the sense of pushing my limits and surpassing them.
 
