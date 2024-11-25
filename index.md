@@ -20,18 +20,22 @@ Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute,
 ---
 
 ## Research Interests
+My research focuses on computational imaging and visual intelligence, with a strong emphasis on hardware-software co-design and opto-electronic co-optimization. Key areas of my work include <font color="#000099">computational imaging with camera arrays, photoacoustic tomography for brain imaging, and optical computing</font>. Currently, I am exploring the intersection of <font color="#000099">AI + optics, computational imaging + large vision models, and computational imaging + embodied AI</font>. For more details, please visit my [<font color="#990000">Reseach Page</font>](/research/).
 
-**<font color="#990000">I'm looking for self-motivated students. If you are interested in my research, please send me an email with your CV!</font>**
+<br>
 
-My research focuses on computational imaging and visual intelligence, with a strong emphasis on hardware-software co-design and opto-electronic co-optimization. Key areas of my work include computational imaging with camera arrays, photoacoustic tomography for brain imaging, and optical computing. Currently, I am exploring the intersection of AI and optics, computational imaging with large vision models, and the integration of computational imaging with embodied AI. For more details, please visit my [**<font color="#990000">Reseach Page</font>](/research/).
+**<font color="#990000">I'm looking for self-motivated students. Welcome to join us! Send me your CV!</font>**
 
--- [Computational imaging with camera arrays](/research/gigapixel/)
--- [Photoacoustic tomography for human brain](/research/PACT/)
--- [Optical computing](/research/optical_computing/)
+**<font color="#990000">诚挚欢迎充满激情和自我驱动力的学生加入我们的团队！如果你对计算成像、视觉智能、AI+光学等前沿领域充满兴趣，并渴望在创新研究中挑战自我、拓展边界，这里就是你的舞台！加入我们，把你的简历砸过来, 一起探索未知、创造未来！</font>**
 
+
+<!-- - [Computational imaging with camera arrays](/research/gigapixel/)
+- [Photoacoustic tomography for human brain](/research/PACT/)
+- [Optical computing](/research/optical_computing/) -->
+
+---
 
 ## News and Updates
-
 - **Nov 11, 2024**：I joined [Artificial Intelligence Institute, Shanghai Jiao Tong Univeristy](https://ai.sjtu.edu.cn/) as an associate professor.
 - **Mar 9, 2024**：Paper "[SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction](https://openaccess.thecvf.com/content/CVPR2024/html/Yao_SPECAT_SPatial-spEctral_Cumulative-Attention_Transformer_for_High-Resolution_Hyperspectral_Image_Reconstruction_CVPR_2024_paper.html)" accepted by **CVPR 2024**.
 - **Jan 24, 2024**：Paper "[Photonic neuromorphic architecture for tens-of-task lifelong learning](https://www.nature.com/articles/s41377-024-01395-4)" accepted by **Light: Science & Applications**.
