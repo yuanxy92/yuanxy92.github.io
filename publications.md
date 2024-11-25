@@ -17,6 +17,8 @@ For my complete publication list, please visit the [Google scholar page](https:/
 - [Photonic neuromorphic architecture for tens-of-task lifelong learning](https://www.nature.com/articles/s41377-024-01395-4)Yuan Cheng†, Jianing Zhang†, Tiankuang Zhou, Yuyan Wang, Zhihao Xu, **Xiaoyun Yuan**, Lu Fang~<br> **Light: Science & Applications** 2024.
 - [High-speed three-dimensional photoacoustic computed tomography for preclinical research and clinical translation](https://www.nature.com/articles/s41467-021-21232-1)<br>Li Lin†, Peng Hu†, Xin Tong†, Shuai Na†, Rui Cao, **Xiaoyun Yuan**, David C Garrett, Junhui Shi, Konstantin Maslov, Lihong V Wang~<br> **Nature communications** 2021
 - [GigaMVS: a benchmark for ultra-large-scale gigapixel-level 3D reconstruction](https://ieeexplore.ieee.org/abstract/document/9547729)<br>Jianing Zhang†, Jinzhi Zhang†, Shi Mao†, Mengqi Ji, Guangyu Wang, Zequn Chen, Tian Zhang, **Xiaoyun Yuan**, Qionghai Dai, Lu Fang~<br> **IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)** 2021.<br>[**<font color="#990000">Dataset page</font>**](https://gigavision.cn/data/news?nav=GigaMVS%20RAWDATA&type=nav&t=1731982252980)
+- [Magic glasses: from 2D to 3D](https://ieeexplore.ieee.org/abstract/document/7457667/)<br>**Xiaoyun Yuan†**, Difei Tang†, Yebin Liu, Qing Ling, Lu Fang~<br> **IEEE Transactions on Circuits and Systems for Video Technology (CSVT)** 2017.
+- [Crossnet++: Cross-scale large-parallax warping for reference-based super-resolution](https://ieeexplore.ieee.org/abstract/document/9099445/)<br>Yang Tan†, Haitian Zheng†, Yinheng Zhu†, **Xiaoyun Yuan**, Xing Lin, David Brady, Lu Fang~<br> **IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)** 2020.
 
 ---
 
