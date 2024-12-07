@@ -38,6 +38,7 @@ My research focuses on computational imaging and visual intelligence, with a str
 ---
 
 ## News and Updates
+- **Dec 7, 2024**：We publish <font color="#990000">GBR (Generative Bundle Refinement)</font>, a method for high-fidelity Gaussian splatting and meshing using only 4–6 input views. Visit our [**project page**](https://gbrnvs.github.io/) for more details.
 - **Nov 11, 2024**：I joined [Artificial Intelligence Institute, Shanghai Jiao Tong Univeristy](https://ai.sjtu.edu.cn/) as an associate professor.
 - **Mar 9, 2024**：Paper "[SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction](https://openaccess.thecvf.com/content/CVPR2024/html/Yao_SPECAT_SPatial-spEctral_Cumulative-Attention_Transformer_for_High-Resolution_Hyperspectral_Image_Reconstruction_CVPR_2024_paper.html)" accepted by **CVPR 2024**.
 - **Jan 24, 2024**：Paper "[Photonic neuromorphic architecture for tens-of-task lifelong learning](https://www.nature.com/articles/s41377-024-01395-4)" accepted by **Light: Science & Applications**.
