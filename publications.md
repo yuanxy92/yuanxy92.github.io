@@ -15,9 +15,9 @@ title: Publications
 }
 </style>
 
-For my complete publication list, please visit the [Google scholar page](https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en)
 
-> (†: equal contribution, ~: corresponding author)
+> (†: equal contribution, ~: corresponding author) For my complete publication list, please visit the [Google scholar page](https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en)
+
 
 ## Recent Publications
 <div class="pub_wrapper">
