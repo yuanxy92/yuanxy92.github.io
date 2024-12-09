@@ -5,7 +5,20 @@ title: Hobbies
 ---
 
 
-## Fitness & Running
+## Running
+
+<div class="two">
+<img width="61%" src="/images/imgs/fitness_running/2024_winter_1208_1.jpg">
+<img width="32%" src="/images/imgs/fitness_running/2024_winter_1208_2.jpg">
+</div>
+<br> 
+2024年12月8日，经过几个月三天打鱼，两天晒网的训练，怒拿男子教工10 km组最后一名。
+大家水平都太高了，10公里保持4分多的配速。我已经尽力跑了个人PR了，第二圈5 km开足马力，配速比第一圈都快了。
+后面继续努力，争取下一届有进步。
+<br>
+
+
+## Fitness 
 
 <div class="four">
 <img width="24%" src="/images/gifs/fitness1.gif">
@@ -13,8 +26,13 @@ title: Hobbies
 <img width="24%" src="/images/gifs/fitness3.gif">
 <img width="24%" src="/images/imgs/xiaoyun_ziqi_ba.jpg">
 </div>
-<br> Exercise helps me clear my mind, refresh my body, and build the courage to tackle any challenges. I truly enjoy the sense of pushing my limits and surpassing them. I used to work out at the BA(Break-all) CrossFit gym at Tsinghua University in Beijing, which had a great vibe. The environment was very welcoming, with friendly people, and the overall energy during workouts was really motivating.
+<br> 
+Exercise helps me clear my mind, refresh my body, and build the courage to tackle any challenges. 
+I truly enjoy the sense of pushing my limits and surpassing them. 
+I used to work out at the BA(Break-all) CrossFit gym at Tsinghua University in Beijing, which had a great vibe. 
+The environment was very welcoming, with friendly people, and the overall energy during workouts was really motivating.
 <br>
+
 
 <!-- ## Workshop
 
