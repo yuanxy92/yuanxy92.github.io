@@ -25,7 +25,7 @@ title: Publications
         <img src="/mypaper/paper_icon/Arxiv_GBR.jpg" alt="Xiaoyun Yuan">
     </div>
     <div style="text-align: left">
-        <a href="">
+        <a href="https://arxiv.org/abs/2412.05908">
         GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting and Meshing</a><br>
         Jianing Zhang, Yuchao Zheng, Ziwei Li, Qionghai Dai, <b>Xiaoyun Yuan~</b><br>
         <b><em><font color="#990000">Arxiv 2024</font></em></b><br>
