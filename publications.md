@@ -28,7 +28,7 @@ title: Publications
         <a href="https://arxiv.org/abs/2412.05908">
         GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting and Meshing</a><br>
         Jianing Zhang, Yuchao Zheng, Ziwei Li, Qionghai Dai, <b>Xiaoyun Yuan~</b><br>
-        <b><em><font color="#990000">Arxiv 2024</font></em></b><br>
+        <a href="https://arxiv.org/abs/2412.05908"><b><em><font color="#990000">arXiv:2412.05908</font></em></b><br></a>
         <b><a href="https://gbrnvs.github.io/">
         <font color="#000099">Project page</font></a></b>
     </div>
