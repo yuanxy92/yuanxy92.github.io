@@ -31,20 +31,21 @@ title: Team
 <div class="team_wrapper">
     <div style="text-align: center">
         <a href="">
+        <img src="/images/imgs/team/feiyu_ji.jpg" alt="I want you">
+        </a><br>
+        <a href="">
+        <strong>Feiyu Ji</strong></a><br>
+        Co-supervised with Prof. Xiaokang Yang<br>
+        <br>
+    </div>
+    <!-- <div style="text-align: center">
+        <a href="">
         <img src="/images/imgs/team/I_want_you.jpg" alt="I want you">
         </a><br>
         <a href="">
         <strong>Rising star</strong></a><br>
         <br>
-    </div>
-    <div style="text-align: center">
-        <a href="">
-        <img src="/images/imgs/team/I_want_you.jpg" alt="I want you">
-        </a><br>
-        <a href="">
-        <strong>Rising star</strong></a><br>
-        <br>
-    </div>
+    </div> -->
 </div>
 
 ## Master Students
@@ -57,20 +58,62 @@ title: Team
         <strong>Rising star</strong></a><br>
         <br>
     </div>
-    <div style="text-align: center">
+    <!-- <div style="text-align: center">
         <a href="">
         <img src="/images/imgs/team/I_want_you.jpg" alt="I want you">
         </a><br>
         <a href="">
         <strong>Rising star</strong></a><br>
         <br>
-    </div>
-</div>
+    </div> -->
+</div> 
 
 ## Undergraduate Students
 <div class="team_wrapper">
     <div style="text-align: center">
         <a href="">
+        <strong>Jiayi Zhu</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Hao Ma</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Yuting Cao</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Zhengyu Li</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Tingyu Yang</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Honghe Ren</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Junzhe Wan</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Jiarui Ge</strong></a><br>
+        <br>
+    </div>
+</div>
+<!-- <div class="team_wrapper">
+    <div style="text-align: center">
+        <a href="">
         <img src="/images/imgs/team/I_want_you.jpg" alt="I want you">
         </a><br>
         <a href="">
@@ -85,7 +128,7 @@ title: Team
         <strong>Rising star</strong></a><br>
         <br>
     </div>
-</div>
+</div> -->
 
 <!-- ## Workshop
 

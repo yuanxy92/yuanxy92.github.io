@@ -4,6 +4,8 @@ title: Xiaoyun Yuan
 #Comment out url when working locally to resolve base urls correctly
 url: https://xiaoyunyuan.net
 
+# command: bundle exec jekyll serve
+
 # Owner/author information
 owner:
   name: Xiaoyun Yuan
@@ -42,8 +44,8 @@ links:
     url: /publications/
   - title: Research 
     url: /research/
-  # - title: Team
-  #   url: /team/
+  - title: Team
+    url: /team/
   - title: Hobbies
     url: /hobbies/
   # - title: Startups
