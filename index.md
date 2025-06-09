@@ -10,12 +10,13 @@ layout: page
 <br>
 Tenure-track Associate Professor <br>
 [Artificial Intelligence Institute](https://ai.sjtu.edu.cn/)<br>
+School of Computer Science<br>
 Shanghai Jiao Tong University (SJTU)<br> 
 yuanxiaoyun AT sjtu.edu.cn<br>
 
 <br>
 **Short Bio:**
-Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute, Shanghai Jiao Tong University. He was previously a postdoctoral researcher in the [Sigma lab](https://www.luvision.net/), Department of Electronic Engineering, Tsinghua University. He received his B.S. from the University of Science and Technology of China in 2014 and his Ph.D. from the Hong Kong University of Science and Technology in 2020. Dr. Yuan has published approximately 20 academic papers in leading journals and conferences, including Nature Biomedical Engineering, Nature Communications, Light: Science & Applications, IEEE TPAMI, and CVPR. His research interests lie in computer vision, computational imaging, photoacoustic tomography, and optical computing. Notably, his work on human brain functional photoacoustic tomography earned the Best Paper Award at SPIE Photonics West 2021.
+Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute, School of Computer Science, Shanghai Jiao Tong University. He was previously a postdoctoral researcher in the [Sigma lab](https://www.luvision.net/), Department of Electronic Engineering, Tsinghua University. He received his B.S. from the University of Science and Technology of China in 2014 and his Ph.D. from the Hong Kong University of Science and Technology in 2020. Dr. Yuan has published approximately 20 academic papers in leading journals and conferences, including Nature Biomedical Engineering, Nature Communications, Light: Science & Applications, IEEE TPAMI, and CVPR. His research interests lie in computer vision, computational imaging, photoacoustic tomography, and optical computing. Notably, his work on human brain functional photoacoustic tomography earned the Best Paper Award at SPIE Photonics West 2021.
 
 ---
 
