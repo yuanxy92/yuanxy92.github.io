@@ -129,7 +129,7 @@ title: Publications
     </div>
     <div style="text-align: left">
         <a href="https://ieeexplore.ieee.org/abstract/document/9547729">
-        Crossnet++: Cross-scale large-parallax warping for reference-based super-resolution</a><br>
+        Magic glasses: from 2D to 3D</a><br>
         <b>Xiaoyun Yuan†</b>, Difei Tang†, Yebin Liu, Qing Ling, Lu Fang~<br>
         <b><em><font color="#990000">IEEE Transactions on Circuits and Systems for Video Technology (CSVT) 2017</font></em></b>
     </div>
