@@ -22,9 +22,11 @@ Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute,
 
 ## Research Interests
 My research focuses on computational imaging and visual intelligence, with a strong emphasis on hardware-software co-design and opto-electronic co-optimization. Key areas of my work include <font color="#000099">computational imaging with camera arrays, photoacoustic tomography for brain imaging, and optical computing</font>. Currently, I am exploring the intersection of <font color="#000099">AI + optics, computational imaging + large vision models, and computational imaging + embodied AI</font>. For more details, please visit my [<font color="#990000">Reseach Page</font>](/research/).
-<br>
 We also run an official WeChat public account (OpticAI lab 光影所) where we regularly share updates on our team's work and discuss cutting-edge research ideas. Welcome to follow us! 
+
+<div class="four">
 <img src="./images/imgs/wechat_opticAI.jpg" style="width: 30%; height: 30%;">
+</div>
 <br>
 
 **<font color="#990000">We are actively looking for self-driven students!</font>**
