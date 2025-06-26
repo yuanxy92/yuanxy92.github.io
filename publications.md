@@ -22,6 +22,21 @@ title: Publications
 ## Recent Publications
 <div class="pub_wrapper">
     <div style="text-align: right">
+        <img src="/mypaper/paper_icon/iccv_2025.jpg" alt="Xiaoyun Yuan">
+    </div>
+    <div style="text-align: left">
+        <a href="">
+        Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography</a><br>
+        Jianing Zhang, Jiayi Zhu, Feiyu Ji, Xiaokang Yang, <b>Xiaoyun Yuan</b><br>
+        <b><em><font color="#990000">ICCV 2025</font></em></b>
+        <!-- <a href=""><b><em><font color="#990000">arXiv:2412.05908</font></em></b><br></a> -->
+        <b><a href="https://dmdiff.github.io/">
+        <font color="#000099">Project page</font></a></b>
+    </div>
+</div>
+
+<div class="pub_wrapper">
+    <div style="text-align: right">
         <img src="/mypaper/paper_icon/Arxiv_GBR.jpg" alt="Xiaoyun Yuan">
     </div>
     <div style="text-align: left">
