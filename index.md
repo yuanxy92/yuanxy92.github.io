@@ -25,8 +25,8 @@ My research focuses on computational imaging and visual intelligence, with a str
 We also run an official WeChat public account (OpticAI lab 光影所) where we regularly share updates on our team's work and discuss cutting-edge research ideas. Welcome to follow us! 
 
 <div class="four">
-<img src="./images/imgs/wechat_opticAI.jpg" style="width: 20%; height: 20%;">
-<img src="./images/imgs/opticAI光影所.png" style="width: 20%; height: 20%;">
+<img width="15%"  src="./images/imgs/wechat_opticAI.jpg">
+<img width="15%"  src="./images/imgs/opticAI光影所.png">
 </div>
 <br>
 
