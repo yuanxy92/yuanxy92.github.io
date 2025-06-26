@@ -44,7 +44,7 @@ We also run an official WeChat public account (OpticAI lab 光影所) where we r
 ---
 
 ## News and Updates
-- **Jun 26, 2024**：One paper accepted by ICCV 2025. <font color="#990000">DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography</font>. Visit our [**project page**](https://dmdiff.github.io/) for more details, code and data will be released soon.
+- **Jun 26, 2024**：One paper accepted by ICCV 2025. <font color="#990000">DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography</font>. Visit our [**project page**](https://dmdiff.github.io/) for more details, code and data will be released soon. Congratulations to Jiayi Zhu and Feiyu Ji.
 - **Dec 7, 2024**：We publish <font color="#990000">GBR (Generative Bundle Refinement)</font>, a method for high-fidelity Gaussian splatting and meshing using only 4–6 input views. Visit our [**project page**](https://gbrnvs.github.io/) and [**paper**](https://arxiv.org/abs/2412.05908) for more details.
 - **Nov 11, 2024**：I joined [Artificial Intelligence Institute, Shanghai Jiao Tong Univeristy](https://ai.sjtu.edu.cn/) as an associate professor.
 - **Mar 9, 2024**：Paper "[SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction](https://openaccess.thecvf.com/content/CVPR2024/html/Yao_SPECAT_SPatial-spEctral_Cumulative-Attention_Transformer_for_High-Resolution_Hyperspectral_Image_Reconstruction_CVPR_2024_paper.html)" accepted by **CVPR 2024**.
