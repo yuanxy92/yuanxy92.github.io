@@ -6,6 +6,11 @@ title: intern_Chinese
 
 ## 我们招人啦！！！(本科生，GAP中的学生)
 
+---
+
+2026年6月更新：我们的工作 DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography 被 ICCV 2025 接收，并获得了审稿人的满分评价。祝贺本科生朱嘉熠，他在项目中深度参与、表现出色，为这项工作做出了非常重要的贡献！欢迎对相关方向感兴趣的同学加入我们，一起做点有意思的研究。
+
+---
 <br> ***<font color="#000099">研究方向</font>***：计算成像与视觉智能，人工智能交叉研究（AI+Optics, AI for Science等）。
 
 <br> ***<font color="#000099">自我介绍</font>***：袁肖赟，上海交通大学人工智能研究院副教授。2014年毕业于中国科学技术大学，获得学士学位，2020年于香港科技大学获得博士学位。2020年至2024年在清华大学成像与智能技术实验室担任博士后研究员（合作导师方璐）。目前以第一作者或共同第一作者身份在Nature Biomedical Engineering、Nature Communications、Light: Science & Applications等Nature系列子刊发表文章4篇，并在IEEE TPAMI、Engineering、CVPR等国际顶级期刊和会议上发表多篇学术论文。已授权国内外发明专利18项（其中美国3项）。研究成果应用于北京冬奥等重大活动，获2021年度北京市科学技术奖励技术发明一等奖（第五完成人）。率先实现了成年人脑功能信号的动态光声成像，获SPIE Photonics West 2021最佳论文奖。<br>
