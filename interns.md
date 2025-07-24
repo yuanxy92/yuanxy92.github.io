@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /research/intern_Chinese/index.html
-title: intern_Chinese
+permalink: /interns/index.html
+title: Interns
 ---
 
 ## 我们招实习生啦！！！(2025年7月更新)
