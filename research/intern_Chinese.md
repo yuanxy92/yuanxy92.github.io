@@ -8,8 +8,9 @@ title: intern_Chinese
 
 ---
 <br> ***<font color="#000099">组内实习生研究成果</font>***
+<br>1. (2025年7月) DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography 被 ICCV 2025 Highlight 接收，并获得了审稿人的满分评价。上海交大大三本科生Jiayi Zhu，他在项目中深度参与、表现出色，为这项工作做出了重要的贡献！后续工作正在开展中!
 
-<br>1. DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography 被 ICCV 2025 Highlight 接收，并获得了审稿人的满分评价。大三本科生Jiayi Zhu，他在项目中深度参与、表现出色，为这项工作做出了重要的贡献！后续工作正在开展中!
+---
 
 <br> ***<font color="#000099">目前可参与研究项目（Updated July, 2025）：</font>***
 <br>1. 仿生智能成像：相机分辨率越来越高，功耗和算力需求也水涨船高；而人眼以极低能耗实时提取关键信息，我们能否构建同样高效的智能人工视觉系统？
