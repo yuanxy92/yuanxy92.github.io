@@ -28,7 +28,7 @@ title: Publications
         <a href="">
         Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography</a><br>
         Jianing Zhang, Jiayi Zhu, Feiyu Ji, Xiaokang Yang, <b>Xiaoyun Yuan</b><br>
-        <b><em><font color="#990000">ICCV 2025</font></em></b><br>
+        <b><em><font color="#990000">ICCV 2025 Highlight (Score: 6, 6, 6)</font></em></b><br>
         <!-- <a href=""><b><em><font color="#990000">arXiv:2412.05908</font></em></b><br></a> -->
         <b><a href="https://dmdiff.github.io/">
         <font color="#000099">Project page</font></a></b>
