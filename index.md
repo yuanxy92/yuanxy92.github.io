@@ -44,7 +44,7 @@ We also run an official WeChat public account (OpticAI lab 光影所) where we r
 ---
 
 ## News and Updates
-- **Jul. 31, 2024** GBR accepted by IEEE Trans. on CSVT. <font color="#990000">GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting with Enhanced Mesh Reconstruction</font>. Visit our [**project page**](https://gbrnvs.github.io/) for more details, code and data will be released soon. 
+- **Jul. 31, 2024**：GBR accepted by IEEE Trans. on CSVT. <font color="#990000">GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting with Enhanced Mesh Reconstruction</font>. Visit our [**project page**](https://gbrnvs.github.io/) for more details, code and data will be released soon. 
 - **Jun. 26, 2024**：One paper accepted by ICCV 2025. <font color="#990000">DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography</font>. Visit our [**project page**](https://dmdiff.github.io/) for more details, code and data will be released soon. Congratulations to Jiayi Zhu and Feiyu Ji. 特别祝贺大三本科生朱嘉熠与博士生季飞宇，他们在项目中深度参与、表现出色，为这项工作做出了非常重要的贡献！欢迎对相关方向感兴趣的同学加入我们，一起做点有意思的研究。
 - **Dec. 7, 2024**：We publish <font color="#990000">GBR (Generative Bundle Refinement)</font>, a method for high-fidelity Gaussian splatting and meshing using only 4–6 input views. Visit our [**project page**](https://gbrnvs.github.io/) and [**paper**](https://arxiv.org/abs/2412.05908) for more details.
 - **Nov. 11, 2024**：I joined [Artificial Intelligence Institute, Shanghai Jiao Tong Univeristy](https://ai.sjtu.edu.cn/) as an associate professor.
