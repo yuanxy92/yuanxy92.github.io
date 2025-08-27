@@ -160,7 +160,7 @@ title: Publications
     </div>
     <div style="text-align: left">
         <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_PANDA_A_Gigapixel-Level_Human-Centric_Video_Dataset_CVPR_2020_paper.html">
-        Multiscale-vr: Multiscale gigapixel 3d panoramic videography for virtual reality</a><br>
+        Panda: A gigapixel-level human-centric video dataset</a><br>
         Xueyang Wang†, Xiya Zhang†, Yinheng Zhu†, Yuchen Guo†, <b>Xiaoyun Yuan</b>, Liuyu Xiang, Zerun Wang, Guiguang Ding, David Brady, Qionghai Dai, Lu Fang~<br>
         <b><em><font color="#990000">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020</font></em></b><br>
         <b><a href="https://gigavision.cn/data/news?nav=DataSet%20Panda&type=nav&t=1731982080864">
