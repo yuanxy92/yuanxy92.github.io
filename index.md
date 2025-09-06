@@ -32,6 +32,8 @@ We also run an official WeChat public account (OpticAI lab 光影所) where we r
 
 **<font color="#990000">We are actively looking for self-driven students!</font>**
 
+**<font color="#990000">招收2026年直博生一名，有意者邮件联系（yuanxiaoyun@sjtu.edu.cn）！</font>**
+
 **<font color="#990000">诚挚欢迎充满激情和自我驱动力的学生加入我们的团队！如果你对计算成像、视觉智能、AI+光学等前沿领域充满兴趣，并渴望在创新研究中挑战自我、拓展边界，这里就是你的舞台！加入我们，把你的简历砸过来, 一起探索未知、创造未来！</font>**
 
 [**<font color="#990000">想加入我们, Join us, Click here!!! (2025年7月更新)</font>**](/interns/)
