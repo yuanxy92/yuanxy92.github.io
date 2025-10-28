@@ -20,6 +20,19 @@ title: Publications
 
 
 ## Recent Publications
+
+<div class="pub_wrapper">
+    <div style="text-align: right">
+        <img src="/mypaper/paper_icon/nature_2025.jpg" alt="Xiaoyun Yuan">
+    </div>
+    <div style="text-align: left">
+        <a href="https://www.nature.com/articles/s41586-025-09591-x">
+        Integrated lithium niobate photonics for sub-ångström snapshot spectroscopy</a><br>
+        Zhiyang Yao†, Shuyang Liu†, Yingce Wang†, <b>Xiaoyun Yuan</b>, Lu Fang~<br>
+        <b><em><font color="#990000">Nature 2025</font></em></b><br>
+    </div>
+</div>
+
 <div class="pub_wrapper">
     <div style="text-align: right">
         <img src="/mypaper/paper_icon/iccv_2025.jpg" alt="Xiaoyun Yuan">
