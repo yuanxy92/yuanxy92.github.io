@@ -23,6 +23,20 @@ title: Publications
 
 <div class="pub_wrapper">
     <div style="text-align: right">
+        <img src="/mypaper/paper_icon/3mti.jpg" alt="Xiaoyun Yuan">
+    </div>
+    <div style="text-align: left">
+        <a href="https://github.com/work-submit/3MTI">
+        3M-TI: High-Quality Mobile Thermal Imaging via Calibration-free Multi-Camera Cross-Modal Diffusion</a><br>
+        Minchong Chen, <b>XiaoYun Yuan~</b>, Junzhe Wan, Jianing Zhang, Jun Zhang<br>
+        <b><em><font color="#990000">Unpublished</font></em></b><br>
+        <b><a href="https://github.com/work-submit/3MTI">
+        <font color="#000099">Code</font></a></b>
+    </div>
+</div>
+
+<div class="pub_wrapper">
+    <div style="text-align: right">
         <img src="/mypaper/paper_icon/nature_2025.jpg" alt="Xiaoyun Yuan">
     </div>
     <div style="text-align: left">
