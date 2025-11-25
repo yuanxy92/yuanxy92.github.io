@@ -31,7 +31,7 @@ title: Publications
         Minchong Chen†, <b>Xiaoyun Yuan†~</b>, Junzhe Wan, Jianing Zhang, Jun Zhang<br>
         <b><em><font color="#990000">Arxiv</font></em></b><br>
         <b><a href="https://arxiv.org/abs/2511.19117">
-        <font color="#000099">Paper</font></a></b>&nbsp&nbsp&nbsp&nbsp
+        <font color="#000099">Paper</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
         <b><a href="https://github.com/work-submit/3MTI">
         <font color="#000099">Code</font></a></b>
     </div>
