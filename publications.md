@@ -34,7 +34,7 @@ title: Publications
         <font color="#000099">Paper</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
         <b><a href="https://github.com/work-submit/3MTI">
         <font color="#000099">Code</font></a></b>
-        <b><a href="http://lab.xiaoyunyuan.net/index.html?project=3m-ti">
+        <b><a href="https://lab.xiaoyunyuan.net/index.html?project=3m-ti">
         <font color="#000099">Project page</font></a></b>
     </div>
 </div>
