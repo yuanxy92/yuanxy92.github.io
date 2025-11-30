@@ -4,6 +4,8 @@ permalink: /research/index.html
 title: Research 
 ---
 
+> For detailed information about our projects, please visit our [lab page](https://lab.xiaoyunyuan.net)
+
 ## [1. Computational imaging with camera arrays](/research/gigapixel/)
 Camera array-based imaging uses a large number of inexpensive cameras to create virtual cameras that outperform real ones. 
 They can function in many ways by changing the arrangement and aiming of the cameras. We developed an unstructured gigapixel array camera (UnstructuredCam), 
