@@ -15,15 +15,11 @@ title: Publications
 }
 </style>
 
-
-> (†: equal contribution, ~: corresponding author) 
-
 > For my complete publication list, please visit the [Google scholar page](https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en)
-
 > For detailed information about our projects, please visit our [lab page](https://lab.xiaoyunyuan.net)
 
 ## Recent Publications
-
+> (†: equal contribution, ~: corresponding author) 
 <div class="pub_wrapper">
     <div style="text-align: right">
         <img src="/mypaper/paper_icon/3mti.jpg" alt="Xiaoyun Yuan">
