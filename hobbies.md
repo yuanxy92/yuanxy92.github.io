@@ -9,12 +9,11 @@ title: Hobbies
 
 <div class="two">
 <img width="18%" src="/images/imgs/fitness_running/2025_winter_1129_1.jpg">
-<img width="36%" src="/images/imgs/fitness_running/2025_winter_1129_2.jpg">
-<img width="36%" src="/images/imgs/fitness_running/2025_winter_1129_3.jpg">
+<img width="38%" src="/images/imgs/fitness_running/2025_winter_1129_2.jpg">
+<img width="38%" src="/images/imgs/fitness_running/2025_winter_1129_3.jpg">
 </div>
 <br> 
-2025年11月29日，今年没好好训练。开局又被4分的大佬带了1公里给带崩了。下周129吸取教训。
-<br>
+2025年11月29日，今年没好好训练。开局又被4分配速的大佬带了1公里给带崩了。下周129吸取教训。
 <br>
 
 <div class="two">
