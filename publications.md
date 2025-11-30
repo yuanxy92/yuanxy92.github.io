@@ -16,8 +16,9 @@ title: Publications
 </style>
 
 
-> (†: equal contribution, ~: corresponding author) For my complete publication list, please visit the [Google scholar page](https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en)
-
+> (†: equal contribution, ~: corresponding author) 
+> For my complete publication list, please visit the [Google scholar page](https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en)
+> For detailed information about our projects, please visit our [lab page](https://lab.xiaoyunyuan.net)
 
 ## Recent Publications
 
