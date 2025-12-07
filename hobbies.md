@@ -8,6 +8,16 @@ title: Hobbies
 ## Running
 
 <div class="two">
+<img width="20%" src="/images/imgs/fitness_running/2025_winter_1206_1.jpg">
+<img width="20%" src="/images/imgs/fitness_running/2025_winter_1206_3.jpg">
+<img width="20%" src="/images/imgs/fitness_running/2025_winter_1206_2.jpg">
+<img width="35%" src="/images/imgs/fitness_running/2025_winter_1206_4.jpg">
+</div>
+<br> 
+PB! PB! 今年没好好训练，但是居然PB了，进了一小时（PS，去年虽然官方成绩也进了1小时，但是赛道短了200多米）。果然DDL是第一生产力。明年争取再进步几分钟。
+<br>
+
+<div class="two">
 <img width="38%" src="/images/imgs/fitness_running/2025_winter_1129_2.jpg">
 <img width="38%" src="/images/imgs/fitness_running/2025_winter_1129_3.jpg">
 <img width="18%" src="/images/imgs/fitness_running/2025_winter_1129_1.jpg">
