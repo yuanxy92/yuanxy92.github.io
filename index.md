@@ -31,6 +31,7 @@ We also run an official WeChat public account (OpticAI lab 光影所) where we r
 <div class="four">
 <img width="20%"  src="./images/imgs/wechat_opticAI.jpg">
 <img width="20%"  src="./images/imgs/opticAI光影所.png">
+<img width="20%"  src="./images/imgs/xiaohongshu.png">
 </div>
 <br>
 
