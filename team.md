@@ -31,7 +31,7 @@ title: Team
 <div class="team_wrapper">
     <div style="text-align: center">
         <a href="">
-        <img src="/images/imgs/team/feiyu_ji.jpg" alt="I want you">
+        <!-- <img src="/images/imgs/team/feiyu_ji.jpg" alt="I want you"> -->
         </a><br>
         <a href="">
         <strong>Feiyu Ji</strong></a><br>
@@ -52,7 +52,7 @@ title: Team
 <div class="team_wrapper">
     <div style="text-align: center">
         <a href="">
-        <img src="/images/imgs/team/I_want_you.jpg" alt="I want you">
+        <!-- <img src="/images/imgs/team/I_want_you.jpg" alt="I want you"> -->
         </a><br>
         <a href="">
         <strong>Rising star</strong></a><br>
@@ -87,7 +87,7 @@ title: Team
     </div>
     <div style="text-align: center">
         <a href="">
-        <strong>Zhengyu Li</strong></a><br>
+        <strong>Minchong Chen</strong></a><br>
         <br>
     </div>
     <div style="text-align: center">
@@ -108,6 +108,11 @@ title: Team
     <div style="text-align: center">
         <a href="">
         <strong>Jiarui Ge</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Xiang Li</strong></a><br>
         <br>
     </div>
 </div>
