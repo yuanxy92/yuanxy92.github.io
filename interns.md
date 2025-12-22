@@ -6,14 +6,13 @@ title: Interns
 
 ## 我们招实习生啦！！！(2025年12月更新)
 
-***<font color="#000099">支持优秀成果投稿至 CVPR、ICCV、ECCV、ACM MM 等顶级会议，以及IEEE TPAMI，TIP，TCSVT，TMM，以及Nature/Science系列顶级期刊</font>***
+***<font color="#990000">支持优秀成果投稿至 CVPR、ICCV、ECCV、ACM MM 等顶级会议，以及IEEE TPAMI，TIP，TCSVT，TMM，ACM TOG，以及Nature/Science系列顶级期刊</font>***
 
 <br> ***<font color="#000099">组内实习生研究成果</font>***
 <br>1. (2025年7月) DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography 被 ICCV 2025 Highlight 接收，并获得了审稿人的满分评价。上海交大大三本科生Jiayi Zhu，他在项目中深度参与、表现出色，为这项工作做出了重要的贡献！后续工作正在开展中!
 
 ---
-
-<br> ***<font color="#000099">目前可参与研究项目（Updated December, 2025）：</font>***
+<br> ***<font color="#000099">可参与研究项目（Updated December, 2025）：</font>***
 <br>1. 仿生视觉：随着相机分辨率不断提升，成像系统的功耗与算力需求急剧增长；而人眼能够在极低能耗下高效提取关键信息。本方向探索仿生视觉机制，构建高效、低功耗的智能人工视觉系统。
 <br>2. （第49期PRP项目）面向复杂极端环境的生成式通用图像复原方法研究：聚焦复杂与极端环境下的图像退化问题，探索基于生成式模型的通用图像复原方法。你将系统学习并实践 Stable Diffusion 等扩散模型的原理与训练方法，参与去噪、去模糊、低照度等图像复原任务中的模型设计、实现与实验分析。
 <br>3. 生成式计算成像：面对低分辨、强噪声、欠采样等成像条件，传统方法往往难以恢复高质量图像。本方向引入生成式模型，从不完整观测中生成高保真图像，推动成像系统从“还原”走向“生成”。
