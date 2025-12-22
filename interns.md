@@ -7,7 +7,7 @@ title: Interns
 ## 我们招实习生啦！！！(2025年12月更新)
 
 <br>
-***<font color="#990000">支持优秀成果投稿至 CVPR、ICCV、ECCV、ACM MM 等顶级会议，以及IEEE TPAMI，TIP，TCSVT，TMM，ACM TOG，以及Nature/Science系列顶级期刊</font>***
+***<font color="#990000">支持优秀成果投稿至 CVPR、ICCV、ECCV、ACM MM 等顶级会议，以及IEEE TPAMI，TIP，TCSVT，TMM，ACM TOG，和Nature/Science系列顶级期刊</font>***
 ---
 
 <br> ***<font color="#000099">组内实习生研究成果</font>***
@@ -34,4 +34,5 @@ title: Interns
 简历发送至：yuanxiaoyun@sjtu.edu.cn。邮件标题请注明“实习申请+姓名”。
 
 <br>欢迎对相关方向感兴趣的同学加入我们，一起做点有意思的研究。
+
 ---
