@@ -7,7 +7,7 @@ title: Interns
 ## 我们招实习生啦！！！(2025年12月更新)
 
 <br>
-***<font color="#990000">支持优秀成果投稿至 CVPR、ICCV、ECCV、ACM MM 等顶级会议，以及IEEE TPAMI，TIP，TCSVT，TMM，ACM TOG，和Nature/Science系列顶级期刊</font>***
+***<font color="#990000">支持优秀成果投稿至 CVPR、ICCV、ECCV、ACM MM 等顶级会议，以及IEEE TPAMI，TIP，TCSVT，TMM，ACM TOG，和Nature/Science系列顶级期刊！</font>***
 ---
 
 <br> ***<font color="#000099">组内实习生研究成果</font>***
