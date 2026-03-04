@@ -31,7 +31,7 @@ title: Team
 <div class="team_wrapper">
     <div style="text-align: center">
         <a href="">
-        <!-- <img src="/images/imgs/team/feiyu_ji.jpg" alt="I want you"> -->
+        <img src="/images/imgs/team/feiyu_ji.jpg" alt="Feiyu Ji">
         </a><br>
         <a href="">
         <strong>Feiyu Ji</strong></a><br>
@@ -40,7 +40,7 @@ title: Team
     </div>
     <div style="text-align: center">
         <a href="">
-        <img src="/images/imgs/team/default.jpg" alt="I want you">
+        <img src="/images/imgs/team/default.jpg" alt="default">
         </a><br>
         <a href="">
         <strong>Minchong Chen</strong></a><br>
@@ -48,7 +48,7 @@ title: Team
     </div>
     <div style="text-align: center">
         <a href="">
-        <img src="/images/imgs/team/yucheng_zhang.jpg" alt="I want you">
+        <img src="/images/imgs/team/yuchen_zhang.jpg" alt="Yuchen Zhang">
         </a><br>
         <a href="">
         <strong>Yuchen Zhang</strong></a><br>
