@@ -27,7 +27,7 @@ title: Publications
         <img src="/mypaper/paper_icon/Arxiv_carla.jpg" alt="Xiaoyun Yuan">
     </div>
     <div style="text-align: left">
-        ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling</a><br>
+        ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling<br>
         Jiayi Zhu, Jianing Zhang, Yiying Yang, Wei Cheng, <b>Xiaoyun Yuan~</b><br>
         <b><em><font color="#990000">arXiv:2603.02697</font></em></b><br>
         <b><a href="https://arxiv.org/abs/2603.02697">
