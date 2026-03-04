@@ -38,35 +38,43 @@ title: Team
         Co-supervised with Prof. Xiaokang Yang<br>
         <br>
     </div>
-    <!-- <div style="text-align: center">
+    <div style="text-align: center">
         <a href="">
-        <img src="/images/imgs/team/I_want_you.jpg" alt="I want you">
+        <img src="/images/imgs/team/default.jpg" alt="I want you">
         </a><br>
         <a href="">
-        <strong>Rising star</strong></a><br>
+        <strong>Minchong Chen</strong></a><br>
         <br>
-    </div> -->
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <img src="/images/imgs/team/yucheng_zhang.jpg" alt="I want you">
+        </a><br>
+        <a href="">
+        <strong>Yuchen Zhang</strong></a><br>
+        <br>
+    </div>
 </div>
 
-## Master Students
+<!-- ## Master Students
 <div class="team_wrapper">
     <div style="text-align: center">
         <a href="">
-        <!-- <img src="/images/imgs/team/I_want_you.jpg" alt="I want you"> -->
+        <img src="/images/imgs/team/I_want_you.jpg" alt="I want you"> 
         </a><br>
         <a href="">
         <strong>Rising star</strong></a><br>
         <br>
     </div>
-    <!-- <div style="text-align: center">
+    <div style="text-align: center">
         <a href="">
         <img src="/images/imgs/team/I_want_you.jpg" alt="I want you">
         </a><br>
         <a href="">
         <strong>Rising star</strong></a><br>
         <br>
-    </div> -->
-</div> 
+    </div>
+</div>  -->
 
 ## Undergraduate Students
 <div class="team_wrapper">
@@ -87,7 +95,7 @@ title: Team
     </div>
     <div style="text-align: center">
         <a href="">
-        <strong>Minchong Chen</strong></a><br>
+        <strong>Tianxiang Huang</strong></a><br>
         <br>
     </div>
     <div style="text-align: center">
@@ -113,6 +121,26 @@ title: Team
     <div style="text-align: center">
         <a href="">
         <strong>Xiang Li</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Qiyu Yang</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Fayang Liu</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Weiqi Gao</strong></a><br>
+        <br>
+    </div>
+    <div style="text-align: center">
+        <a href="">
+        <strong>Minyu Cao</strong></a><br>
         <br>
     </div>
 </div>
