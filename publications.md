@@ -21,6 +21,21 @@ title: Publications
 
 ## Recent Publications
 > (†: equal contribution, ~: corresponding author) 
+
+<div class="pub_wrapper">
+    <div style="text-align: right">
+        <img src="/mypaper/paper_icon/3mti.jpg" alt="Xiaoyun Yuan">
+    </div>
+    <div style="text-align: left">
+        <a href="https://github.com/work-submit/3MTI">
+        ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling</a><br>
+        Jiayi Zhu, Jianing Zhang, Yiying Yang, Wei Cheng, <b>Xiaoyun Yuan~</b><br>
+        <b><em><font color="#990000">arXiv:2603.02697</font></em></b><br>
+        <b><a href="https://arxiv.org/abs/2603.02697">
+        <font color="#000099">Paper</font></a></b>
+    </div>
+</div>
+
 <div class="pub_wrapper">
     <div style="text-align: right">
         <img src="/mypaper/paper_icon/3mti.jpg" alt="Xiaoyun Yuan">
