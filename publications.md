@@ -76,6 +76,12 @@ title: Publications
         Jianing Zhang, Jiayi Zhu, Feiyu Ji, Xiaokang Yang, <b>Xiaoyun Yuan~</b><br>
         <b><em><font color="#990000">ICCV 2025 Highlight (Score: 6, 6, 6)</font></em></b><br>
         <!-- <a href=""><b><em><font color="#990000">arXiv:2412.05908</font></em></b><br></a> -->
+        <b><a href="https://arxiv.org/abs/2506.22753">
+        <font color="#000099">Paper</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+        <b><a href="https://github.com/yuanxy92/DMDiff_ICCV2025">
+        <font color="#000099">Code</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+        <b><a href="https://pan.sjtu.edu.cn/web/share/ebafd0ff28a601db09b58744a5b914d1">
+        <font color="#000099">Data</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
         <b><a href="https://dmdiff.github.io/">
         <font color="#000099">Project page</font></a></b>
     </div>
