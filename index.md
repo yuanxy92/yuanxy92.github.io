@@ -50,6 +50,7 @@ We also run an official WeChat public account (OpticAI lab 光影所) where we r
 
 ## News and Updates
 <!-- - **Nov. 11 2025**：招收2026年入学普博一名，有意者邮件联系！更多信息见：<a href='https://www.cs.sjtu.edu.cn/bsyjs_zsgz/1101.html'>https://www.cs.sjtu.edu.cn/bsyjs_zsgz/1101.html</a> -->
+- **Mar. 31, 2026** One paper accepted by **Siggraph 2026** ! 恭喜Tingyu Yang（大三本科生）！
 - **Feb. 21, 2026**：Our paper <font color="#990000">3M-TI: High-Quality Mobile Thermal Imaging via Calibration-free Multi-Camera Cross-Modal Diffusion</font> accepted by **CVPR 2026** ! Visit our [**project page**](https://lab.xiaoyunyuan.net/index.html?project=3m-ti) for paper, code and data. 
 - **Sep. 4, 2025**：Our paper <font color="#990000">Integrated lithium niobate photonics for sub-angstrom snapshot spectroscopy</font> accepted by **Nature** !
 - **Jul. 31, 2025**：GBR accepted by IEEE Trans. on CSVT. <font color="#990000">GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting with Enhanced Mesh Reconstruction</font>. Visit our [**project page**](https://gbrnvs.github.io/) for more details, code and data will be released soon. 
