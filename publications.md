@@ -24,6 +24,22 @@ title: Publications
 
 <div class="pub_wrapper">
     <div style="text-align: right">
+        <img src="https://lab.xiaoyunyuan.net/projects/LUCID_fig/LUCID_logo.png" alt="Xiaoyun Yuan">
+    </div>
+    <div style="text-align: left">
+        <a href="https://lab.xiaoyunyuan.net/index.html?project=lucid">
+        LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography</a><br>
+        Tingyu Yang, Yuan Cheng, <b>Xiaoyun Yuan†~</b><br>
+        <b><em><font color="#990000">Siggraph 2026 Accept</font></em></b><br>
+        <!-- <b><a href="https://arxiv.org/abs/2511.19117">
+        <font color="#000099">Paper</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <b><a href="https://lab.xiaoyunyuan.net/index.html?project=lucid">
+        <font color="#000099">Project page</font></a></b>
+    </div>
+</div>
+
+<div class="pub_wrapper">
+    <div style="text-align: right">
         <img src="/mypaper/paper_icon/Arxiv_carla.jpg" alt="Xiaoyun Yuan">
     </div>
     <div style="text-align: left">
