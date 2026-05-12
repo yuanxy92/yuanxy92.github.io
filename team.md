@@ -16,10 +16,10 @@ title: Team
 ## Faculty
 <div class="team_wrapper">
     <div style="text-align: center">
-        <a href="https://xiaoyunyuan.net">
+        <a href="https://pi.xiaoyunyuan.net">
         <img src="/images/imgs/xiaoyun_yuan.png" alt="Xiaoyun Yuan">
         </a><br>
-        <a href="https://xiaoyunyuan.net">
+        <a href="https://pi.xiaoyunyuan.net">
         <strong>Xiaoyun Yuan</strong></a><br>
         Associate Professor<br>
         Team leader<br>
