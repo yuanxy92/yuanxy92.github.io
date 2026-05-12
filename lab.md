@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /lab/index.html
-title: Lab
+title: Lab Page
 ---
 <!-- 立即跳转 -->
 <script>
