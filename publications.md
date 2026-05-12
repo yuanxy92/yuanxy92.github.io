@@ -17,23 +17,23 @@ title: Publications
 
 > For my complete publication list, please visit the [Google scholar page](https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en)
 >
-> For detailed information about our projects, please visit our [lab page](https://lab.xiaoyunyuan.net)
+> For detailed information about our projects, please visit our [lab page](https://xiaoyunyuan.net)
 
 ## Recent Publications
 > (†: equal contribution, ~: corresponding author) 
 
 <div class="pub_wrapper">
     <div style="text-align: right">
-        <img src="https://lab.xiaoyunyuan.net/projects/LUCID_fig/LUCID_logo.png" alt="Xiaoyun Yuan">
+        <img src="https://work-submit.github.io/projects/LUCID_fig/LUCID_logo.png" alt="Xiaoyun Yuan">
     </div>
     <div style="text-align: left">
-        <a href="https://lab.xiaoyunyuan.net/index.html?project=lucid">
+        <a href="https://work-submit.github.io/index.html?project=lucid">
         LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography</a><br>
         Tingyu Yang, Yuan Cheng, <b>Xiaoyun Yuan†~</b><br>
         <b><em><font color="#990000">Siggraph 2026 Accept</font></em></b><br>
         <!-- <b><a href="https://arxiv.org/abs/2511.19117">
         <font color="#000099">Paper</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp; -->
-        <b><a href="https://lab.xiaoyunyuan.net/index.html?project=lucid">
+        <b><a href="https://work-submit.github.io/index.html?project=lucid">
         <font color="#000099">Project page</font></a></b>
     </div>
 </div>
@@ -65,7 +65,7 @@ title: Publications
         <font color="#000099">Paper</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
         <b><a href="https://github.com/work-submit/3MTI">
         <font color="#000099">Code</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
-        <b><a href="https://lab.xiaoyunyuan.net/index.html?project=3m-ti">
+        <b><a href="https://xiaoyunyuan.net/index.html?project=3m-ti">
         <font color="#000099">Project page</font></a></b>
     </div>
 </div>
