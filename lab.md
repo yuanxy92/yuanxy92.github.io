@@ -5,6 +5,6 @@ title: Lab Page
 ---
 <!-- 立即跳转 -->
 <script>
-  window.location.href = "https://lab.xiaoyunyuan.net";
+  window.location.href = "https://xiaoyunyuan.net";
 </script>
 
