@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /opensource/index.html
-title: Open Source
+permalink: /lab/index.html
+title: Lab
 ---
 <!-- 立即跳转 -->
 <script>
