@@ -29,7 +29,7 @@ title: Publications
     <div style="text-align: left">
         <a href="https://work-submit.github.io/index.html?project=lucid">
         LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography</a><br>
-        Tingyu Yang, Yuan Cheng, <b>Xiaoyun Yuan†~</b><br>
+        Tingyu Yang, Yuan Cheng, <b>Xiaoyun Yuan~</b><br>
         <b><em><font color="#990000">Siggraph 2026 Accept</font></em></b><br>
         <!-- <b><a href="https://arxiv.org/abs/2511.19117">
         <font color="#000099">Paper</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp; -->
