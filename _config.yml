@@ -44,8 +44,8 @@ links:
     url: /publications/
   - title: Lab Page
     url: /lab/
-  - title: Team
-    url: /team/
+  # - title: Team
+  #   url: /team/
   - title: Research 
     url: /research/
   - title: Hobbies
