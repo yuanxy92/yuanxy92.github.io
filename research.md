@@ -10,9 +10,11 @@ title: Research
 
   <div class="unified-heading-block">Research</div>
 
-  <p style="margin-bottom: 20px; color: #546e7a;">
-    For recent information about our projects, please visit our <a href="https://xiaoyunyuan.net">lab page</a>
+  <div class="hero-banner">
+  <p>
+    For recent information about our projects, please visit our <a href="https://xiaoyunyuan.net" class="pub-link-btn">Lab Page</a>
   </p>
+  </div>
 
   <!-- 卡片1：相机阵列计算成像 -->
   <div class="achievement-card compact">

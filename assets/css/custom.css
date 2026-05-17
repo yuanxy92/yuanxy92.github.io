@@ -400,3 +400,214 @@
     justify-content: center !important;
   }
 }
+
+/* ========== About 页面专用样式（两列并排版） ========== */
+.about-top-row {
+  display: grid !important;
+  grid-template-columns: 1fr 1.25fr !important;  /* 个人卡片:Short Bio = 1:1.5 比例 */
+  gap: 25px !important;
+  margin-bottom: 30px !important;
+}
+
+.about-profile-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 15px !important;
+  padding: 25px !important;
+}
+
+.about-photo {
+  width: 220px !important;
+  flex-shrink: 0 !important;
+}
+
+.about-photo img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.about-photo img:hover {
+  transform: translateY(-3px) scale(1.01) !important;
+}
+
+.about-info {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.about-name {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: var(--text-main) !important;
+  margin: 0 !important;
+}
+
+.about-title {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--accent-color) !important;
+  margin: 0 !important;
+}
+
+.about-contact {
+  font-size: 0.9rem !important;
+  color: var(--text-muted) !important;
+  line-height: 1.5 !important;
+}
+
+.about-contact a {
+  color: var(--accent-color) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+.about-contact a:hover {
+  text-decoration: underline !important;
+}
+
+.about-links {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-top: 5px !important;
+}
+
+.about-qrcodes {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 40px !important;
+  flex-wrap: wrap !important;
+  margin-top: 20px !important;
+}
+
+.qrcode-item {
+  text-align: center !important;
+}
+
+.qrcode-item img {
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 6px !important;
+  margin-bottom: 8px !important;
+}
+
+.qrcode-item p {
+  margin: 0 !important;
+  font-size: 0.9rem !important;
+  color: var(--text-muted) !important;
+}
+
+.news-item {
+  margin-bottom: 15px !important;
+  padding-bottom: 15px !important;
+  border-bottom: 1px solid var(--timeline-line) !important;
+}
+
+.news-item:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
+.news-date {
+  font-weight: 700 !important;
+  color: var(--accent-color) !important;
+  display: inline-block !important;
+  margin-right: 8px !important;
+}
+
+/* 新闻New标签 */
+.news-badge {
+  display: inline-block !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  color: white !important;
+  background-color: var(--highlight-red) !important;
+  padding: 1px 6px !important;
+  border-radius: 4px !important;
+  margin-right: 8px !important;
+  vertical-align: middle !important;
+}
+
+/* 新闻按钮样式（与pub-link-btn完全统一） */
+.news-btn {
+  display: inline-block !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  color: var(--accent-color) !important;
+  text-decoration: none !important;
+  padding: 2px 8px !important;
+  border: 1px solid var(--badge-border) !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+  margin-left: 8px !important;
+  vertical-align: middle !important;
+  background-color: transparent !important;
+}
+
+.news-btn:hover {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border-color: var(--accent-color) !important;
+  text-decoration: none !important;
+}
+
+/* 响应式断点：屏幕宽度小于1200px时切换为单列 */
+@media (max-width: 1200px) {
+  .about-top-row {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .about-profile-card {
+    flex-direction: row !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+    gap: 25px !important;
+  }
+  
+  .about-photo {
+    width: 200px !important;
+  }
+  
+  .about-links {
+    justify-content: flex-start !important;
+  }
+}
+
+/* 手机端响应式 */
+@media (max-width: 768px) {
+  .about-profile-card {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .about-photo {
+    width: 180px !important;
+  }
+  
+  .about-photo img:hover {
+    transform: none !important;
+  }
+  
+  .about-links {
+    justify-content: center !important;
+  }
+  
+  .about-qrcodes {
+    gap: 20px !important;
+  }
+  
+  .qrcode-item img {
+    width: 110px !important;
+    height: 110px !important;
+  }
+}
