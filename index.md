@@ -3,6 +3,8 @@ layout: page
 ---
 <!-- 引入你的公共样式 -->
 <link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom_main.css">
+
 
 <div class="custom-research-wrapper">
   <!-- 顶部两列：个人信息 + Short Bio -->
@@ -45,74 +47,80 @@ layout: page
     </div>
   </div>
 
-    <!-- 最新动态（全屏宽度，所有链接统一为btn样式） -->
-    <div class="section-spacing">
-    <h2 class="unified-heading-block">News & Updates</h2>
-    
-    <div class="achievement-card">
-        <div class="news-item">
-        <span class="news-date">May 1, 2026</span>
-        <span class="news-badge">New</span>
-        One paper has been accepted in principle by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received.
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Mar. 31, 2026</span>
-        <span class="news-badge">New</span>
-        Our paper <strong>"LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography"</strong> has been accepted by <strong>SIGGRAPH 2026</strong>. Congratulations to first author Tingyu Yang (杨庭语，SJTU 大三).
-        <a href="https://xiaoyunyuan.net/index.html?project=lucid" class="news-btn">Project Page</a>
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Feb. 21, 2026</span>
-        <span class="news-badge">New</span>
-        Our paper <strong>"3M-TI: High-Quality Mobile Thermal Imaging via Calibration-free Multi-Camera Cross-Modal Diffusion"</strong> has been accepted by <strong>CVPR 2026</strong>. Special congratulations to undergraduate Junzhe Wan (万骏哲, SJTU 大四) and Ph.D. candidate Minchong Chen.
-        <a href="https://xiaoyunyuan.net/index.html?project=3m-ti" class="news-btn">Code & Data</a>
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Sep. 4, 2025</span>
-        Our paper <strong>"Integrated lithium niobate photonics for sub-angstrom snapshot spectroscopy"</strong> has been accepted by <strong>Nature 2025</strong>. 
-        <a href="https://www.nature.com/articles/s41586-025-09591-x" class="news-btn">Paper</a>
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Jul. 31, 2025</span>
-        Our paper <strong>"GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting with Enhanced Mesh Reconstruction"</strong> has been accepted by <strong>IEEE Trans. on CSVT 2025</strong>.
-        <a href="https://gbrnvs.github.io/" class="news-btn">Project Page</a>
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Jun. 26, 2025</span>
-        Our paper <strong>"DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography"</strong> has been accepted by <strong>ICCV 2025</strong>. Special congratulations to undergraduate Jiayi Zhu (朱嘉熠, SJTU 大三) and Ph.D. candidate Feiyu Ji.
-        <a href="https://dmdiff.github.io/" class="news-btn">Project Page</a>
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Nov. 11, 2024</span>
-        I joined the Artificial Intelligence Institute, Shanghai Jiao Tong University as an associate professor.
-        <a href="https://ai.sjtu.edu.cn/" class="news-btn">Visit Institute</a>
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Mar. 9, 2024</span>
-        Our paper <strong>"SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction"</strong> has been accepted by <strong>CVPR 2024</strong>.
-        <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Yao_SPECAT_SPatial-spEctral_Cumulative-Attention_Transformer_for_High-Resolution_Hyperspectral_Image_Reconstruction_CVPR_2024_paper.html" class="news-btn">Paper</a>
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Jan. 24, 2024</span>
-        Our paper <strong>"Photonic neuromorphic architecture for tens-of-task lifelong learning"</strong> has been accepted by <strong>Light: Science & Applications</strong>.
-        <a href="https://www.nature.com/articles/s41377-024-01395-4" class="news-btn">Paper</a>
-        </div>
-        
-        <div class="news-item">
-        <span class="news-date">Oct. 25, 2023</span>
-        Our paper <strong>"Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning"</strong> has been accepted by <strong>Nature Communications</strong>.
-        <a href="https://www.nature.com/articles/s41467-023-42984-y" class="news-btn">Paper</a>
-        </div>
+<div class="section-spacing">
+  <h2 class="unified-heading-block">News & Updates</h2>
+
+  <div class="achievement-card">
+    <!-- 最新 5 条（默认显示，带完整按钮） -->
+    <div class="news-item">
+      <span class="news-date">May 1, 2026</span>
+      <span class="news-badge">New</span>
+      One paper has been accepted in principle by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received.
     </div>
+
+    <div class="news-item">
+      <span class="news-date">Mar. 31, 2026</span>
+      <span class="news-badge">New</span>
+      Our paper <strong>"LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography"</strong> has been accepted by <strong>SIGGRAPH 2026</strong>. Congratulations to first author Tingyu Yang (杨庭语，SJTU 大三).
+      <a href="https://xiaoyunyuan.net/index.html?project=lucid" class="news-btn">Project Page</a>
     </div>
+
+    <div class="news-item">
+      <span class="news-date">Feb. 21, 2026</span>
+      <span class="news-badge">New</span>
+      Our paper <strong>"3M-TI: High-Quality Mobile Thermal Imaging via Calibration-free Multi-Camera Cross-Modal Diffusion"</strong> has been accepted by <strong>CVPR 2026</strong>. Special congratulations to undergraduate Junzhe Wan (万骏哲, SJTU 大四) and Ph.D. candidate Minchong Chen.
+      <a href="https://xiaoyunyuan.net/index.html?project=3m-ti" class="news-btn">Code & Data</a>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">Sep. 4, 2025</span>
+      Our paper <strong>"Integrated lithium niobate photonics for sub-angstrom snapshot spectroscopy"</strong> has been accepted by <strong>Nature 2025</strong>.
+      <a href="https://www.nature.com/articles/s41586-025-09591-x" class="news-btn">Paper</a>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">Jul. 31, 2025</span>
+      Our paper <strong>"GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting with Enhanced Mesh Reconstruction"</strong> has been accepted by <strong>IEEE Trans. on CSVT 2025</strong>.
+      <a href="https://gbrnvs.github.io/" class="news-btn">Project Page</a>
+    </div>
+
+    <!-- More News 折叠（左对齐、高级样式，旧新闻带完整按钮） -->
+    <details class="news-fold-container">
+      <summary class="news-fold-summary">More News</summary>
+      <div class="old-news-group">
+        <div class="news-item">
+          <span class="news-date">Jun. 26, 2025</span>
+          Our paper <strong>"DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography"</strong> has been accepted by <strong>ICCV 2025</strong>. Special congratulations to undergraduate Jiayi Zhu (朱嘉熠, SJTU 大三) and Ph.D. candidate Feiyu Ji.
+          <a href="https://dmdiff.github.io/" class="news-btn">Project Page</a>
+        </div>
+
+        <div class="news-item">
+          <span class="news-date">Nov. 11, 2024</span>
+          I joined the Artificial Intelligence Institute, Shanghai Jiao Tong University as an associate professor.
+          <a href="https://ai.sjtu.edu.cn/" class="news-btn">Visit Institute</a>
+        </div>
+
+        <div class="news-item">
+          <span class="news-date">Mar. 9, 2024</span>
+          Our paper <strong>"SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction"</strong> has been accepted by <strong>CVPR 2024</strong>.
+          <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Yao_SPECAT_SPatial-spEctral_Cumulative-Attention_Transformer_for_High-Resolution_Hyperspectral_Image_Reconstruction_CVPR_2024_paper.html" class="news-btn">Paper</a>
+        </div>
+
+        <div class="news-item">
+          <span class="news-date">Jan. 24, 2024</span>
+          Our paper <strong>"Photonic neuromorphic architecture for tens-of-task lifelong learning"</strong> has been accepted by <strong>Light: Science & Applications</strong>.
+          <a href="https://www.nature.com/articles/s41377-024-01395-4" class="news-btn">Paper</a>
+        </div>
+
+        <div class="news-item">
+          <span class="news-date">Oct. 25, 2023</span>
+          Our paper <strong>"Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning"</strong> has been accepted by <strong>Nature Communications</strong>.
+          <a href="https://www.nature.com/articles/s41467-023-42984-y" class="news-btn">Paper</a>
+        </div>
+      </div>
+    </details>
+  </div>
+</div>
 
   <!-- 社交媒体二维码（全屏宽度） -->
   <div class="section-spacing">
