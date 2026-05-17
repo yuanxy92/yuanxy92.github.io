@@ -1,0 +1,219 @@
+/* /assets/css/custom-interns.css */
+.custom-research-wrapper {
+  /* 核心配色继承 */
+  --accent-color: rgb(67, 137, 147);
+  --accent-glow: rgba(67, 137, 147, 0.4);
+  --badge-bg: rgba(67, 137, 147, 0.08); 
+  --badge-border: rgba(67, 137, 147, 0.25); 
+  --text-main: #2c3e50;
+  --text-muted: #546e7a;
+  --timeline-line: #cfd8dc;
+  --bg-light: #f8fafc;
+  --highlight-red: #c62828;
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  line-height: 1.6 !important;
+  color: var(--text-main) !important;
+  
+  display: block !important;
+  max-width: 1000px !important; 
+  width: 92% !important; 
+  margin: 0 auto !important; 
+  padding: 20px 20px 40px 20px !important; 
+  box-sizing: border-box !important;
+  clear: both !important;
+}
+
+/* 统一的标题样式 */
+.unified-heading-block {
+  display: block !important;
+  width: 100% !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: var(--accent-color) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  border-bottom: 2px solid var(--timeline-line) !important;
+  padding-bottom: 8px !important;
+  margin-top: 40px !important;
+  margin-bottom: 25px !important;
+  float: none !important;
+}
+
+/* 顶部横幅 */
+.hero-banner {
+  background: linear-gradient(135deg, var(--badge-bg), transparent) !important;
+  border: 1px solid var(--badge-border) !important;
+  border-left: 4px solid var(--accent-color) !important;
+  padding: 20px 25px !important;
+  border-radius: 8px !important;
+  margin-bottom: 30px !important;
+}
+.hero-banner h3 {
+  margin: 0 0 10px 0 !important;
+  color: var(--text-main) !important;
+  font-size: 1.3rem !important;
+}
+.hero-banner p {
+  margin: 0 !important;
+  font-size: 1rem !important;
+  color: var(--text-main) !important;
+  font-weight: 500 !important;
+}
+.target-venues {
+  color: var(--highlight-red) !important;
+  font-weight: 700 !important;
+}
+
+/* 成就卡片 */
+.achievement-card {
+  background-color: white !important;
+  border: 1px solid var(--timeline-line) !important;
+  border-radius: 8px !important;
+  padding: 18px 20px !important;
+  margin-bottom: 15px !important;
+  transition: all 0.2s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+.achievement-card:hover {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+  transform: translateY(-2px) !important;
+}
+.achievement-card::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 4px !important;
+  background-color: var(--accent-color) !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s !important;
+}
+.achievement-card:hover::before {
+  opacity: 1 !important;
+}
+.achieve-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 8px !important;
+}
+.achieve-badge {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+}
+.achieve-title {
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  color: var(--text-main) !important;
+}
+.achieve-desc {
+  font-size: 0.95rem !important;
+  color: var(--text-muted) !important;
+  margin: 0 !important;
+}
+.achieve-author {
+  font-weight: 600 !important;
+  color: var(--accent-color) !important;
+}
+
+/* 列表内容样式 (项目、获得什么、要求等) */
+.content-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.content-list li {
+  list-style: none !important;      /* 新增：彻底清除自带列表符 */
+  list-style-type: none !important; /* 新增：双重保险 */
+  position: relative !important;
+  padding-left: 24px !important;
+  margin-bottom: 16px !important;
+  font-size: 1rem !important;
+  color: var(--text-main) !important;
+}
+.content-list li::before {
+  content: '✦' !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  color: var(--accent-color) !important;
+  font-size: 1.1rem !important;
+}
+.content-list strong {
+  color: var(--accent-color) !important;
+}
+
+/* 强调文字区 */
+.promise-box {
+  background-color: var(--bg-light) !important;
+  border: 1px dashed var(--accent-color) !important;
+  padding: 15px 20px !important;
+  border-radius: 6px !important;
+  text-align: center !important;
+  font-weight: 500 !important;
+  color: var(--text-main) !important;
+  margin: 30px 0 !important;
+}
+
+.contact-info {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+.contact-email {
+  color: var(--highlight-red) !important;
+  text-decoration: none !important;
+}
+
+
+.two {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.four {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.two img, .four img {
+  height: auto !important;
+}
+
+/* ========== 图片网格最终修复版：永远不换行、等分、自适应 ========== */
+/* 自然流式图片网格：保留原图比例、不强制等分 */
+/* 只负责排版，不干涉尺寸，不使用!important */
+.image-grid {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 12px 0;
+}
+.image-grid img {
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 手机端自动换行 */
+@media (max-width: 768px) {
+  .image-grid {
+    flex-wrap: wrap;
+  }
+  .image-grid img {
+    max-height: unset;
+    width: 100%;
+  }
+}

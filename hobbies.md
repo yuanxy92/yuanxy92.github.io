@@ -4,87 +4,70 @@ permalink: /hobbies/index.html
 title: Hobbies
 ---
 
+<!-- 引入你的公共样式 -->
+<link rel="stylesheet" href="/assets/css/custom.css">
 
-## Running
+<div class="custom-research-wrapper">
 
-<div class="two">
-<img width="20%" src="/images/imgs/fitness_running/2025_winter_1206_1.jpg">
-<img width="20%" src="/images/imgs/fitness_running/2025_winter_1206_3.jpg">
-<img width="20%" src="/images/imgs/fitness_running/2025_winter_1206_2.jpg">
-<img width="35%" src="/images/imgs/fitness_running/2025_winter_1206_4.jpg">
+  <div class="unified-heading-block">Running</div>
+
+  <!-- 4张图 手动高度 130px -->
+  <div class="achievement-card">
+    <div class="achieve-header">
+      <span class="achieve-badge">2025.12.06</span>
+      <span class="achieve-title">PB! 10km 跑进 1 小时！</span>
+    </div>
+    <div class="image-grid">
+      <img src="/images/imgs/fitness_running/2025_winter_1206_1.jpg" style="height:170px;">
+      <img src="/images/imgs/fitness_running/2025_winter_1206_3.jpg" style="height:170px;">
+      <img src="/images/imgs/fitness_running/2025_winter_1206_2.jpg" style="height:170px;">
+      <img src="/images/imgs/fitness_running/2025_winter_1206_4.jpg" style="height:170px;">
+    </div>
+    <p class="achieve-desc">今年没好好训练，但是居然PB了...</p>
+  </div>
+
+  <!-- 3张图 手动高度 140px -->
+  <div class="achievement-card">
+    <div class="achieve-header">
+      <span class="achieve-badge">2025.11.29</span>
+      <span class="achieve-title">被4分配速大佬带崩</span>
+    </div>
+    <div class="image-grid">
+      <img src="/images/imgs/fitness_running/2025_winter_1129_2.jpg" style="height:170px;">
+      <img src="/images/imgs/fitness_running/2025_winter_1129_3.jpg" style="height:170px;">
+      <img src="/images/imgs/fitness_running/2025_winter_1129_1.jpg" style="height:170px;">
+    </div>
+    <p class="achieve-desc">今年没好好训练...</p>
+  </div>
+
+  <!-- 2张图 手动高度 150px -->
+  <div class="achievement-card">
+    <div class="achieve-header">
+      <span class="achieve-badge">2024.12.08</span>
+      <span class="achieve-title">教工10km PR</span>
+    </div>
+    <div class="image-grid">
+      <img src="/images/imgs/fitness_running/2024_winter_1208_1.jpg" style="height:300px;">
+      <img src="/images/imgs/fitness_running/2024_winter_1208_2.jpg" style="height:300px;">
+    </div>
+    <p class="achieve-desc">经过几个月三天打鱼...</p>
+  </div>
+
+  <div class="unified-heading-block">Fitness</div>
+
+  <!-- 4张图 手动高度 160px -->
+  <div class="achievement-card">
+    <div class="achieve-header">
+      <span class="achieve-badge">Training</span>
+      <span class="achieve-title">Pushing Limits</span>
+    </div>
+    <div class="image-grid">
+      <img src="/images/gifs/fitness1.gif" style="height:260px;">
+      <img src="/images/gifs/fitness2.gif" style="height:260px;">
+      <img src="/images/gifs/fitness3.gif" style="height:260px;">
+      <img src="/images/imgs/xiaoyun_ziqi_ba.jpg" style="height:260px;">
+    </div>
+    <p class="achieve-desc">Exercise helps me clear my mind...</p>
+  </div>
+
 </div>
-<br> 
-2025年12月6日，PB! PB! 今年没好好训练，但是居然PB了，进了一小时（PS，去年虽然官方成绩也进了1小时，但是赛道短了200多米）。果然DDL是第一生产力。明年争取再进步几分钟。
-<br>
-
-<div class="two">
-<img width="38%" src="/images/imgs/fitness_running/2025_winter_1129_2.jpg">
-<img width="38%" src="/images/imgs/fitness_running/2025_winter_1129_3.jpg">
-<img width="18%" src="/images/imgs/fitness_running/2025_winter_1129_1.jpg">
-</div>
-<br> 
-2025年11月29日，今年没好好训练。开局又被4分配速的大佬带了1公里给带崩了。下周129吸取教训。
-<br>
-
-<div class="two">
-<img width="61%" src="/images/imgs/fitness_running/2024_winter_1208_1.jpg">
-<img width="32%" src="/images/imgs/fitness_running/2024_winter_1208_2.jpg">
-</div>
-<br> 
-2024年12月8日，经过几个月三天打鱼，两天晒网的训练，怒拿男子教工10 km组最后一名。
-大家水平都太高了，10公里保持4分多的配速。我已经尽力跑了个人PR了，第二圈5 km开足马力，配速比第一圈都快了。
-后面继续努力，争取下一届有进步。
-<br>
-
-
-## Fitness 
-
-<div class="four">
-<img width="24%" src="/images/gifs/fitness1.gif">
-<img width="24%" src="/images/gifs/fitness2.gif">
-<img width="24%" src="/images/gifs/fitness3.gif">
-<img width="24%" src="/images/imgs/xiaoyun_ziqi_ba.jpg">
-</div>
-<br> 
-Exercise helps me clear my mind, refresh my body, and build the courage to tackle any challenges. 
-I truly enjoy the sense of pushing my limits and surpassing them. 
-I used to work out at the BA(Break-all) CrossFit gym at Tsinghua University in Beijing, which had a great vibe. 
-The environment was very welcoming, with friendly people, and the overall energy during workouts was really motivating.
-<br>
-
-
-<!-- ## Workshop
-
-<div class="third">
-<img src="/images/prelection1.JPG">
-<img src="/images/speech1.JPG">
-<img src="/images/speech3.JPG">
-</div>
-<br>There must be something truly magical about standing on stage to give a fantastic speech, which considerably lifts my spirits and energizes my entire body. If you desire to master a specific knowledge in depth, just give a prelection. If you can explain to others for complete understanding, you are already an expert. I really enjoy the accomplishment of imparting my knowledge to others, so what I strive for is to be **a student's favorite professor** at the [best universities in my hometown].
-
-[best universities in my hometown]:https://www.fzu.edu.cn/ -->
-
-
-<!-- ## Past Hobbies
-
-I previously enjoyed long-distance running, [vlog making](https://space.bilibili.com/594030035), and computer game developing/playing. However, I have no time to do any of these things recently.
-
-## My Cat
-
-She is my love. Her name is Qbao (Q宝).
-
-<div>
-<img src="/images/cat.JPG">
-</div>
-<br> -->
-
-<!-- ## Chat with me
-
-**Jan 2023:** I have set up the [online-coffee-time](https://calendly.com/lancecai/meet-with-lance) (Inspired by [Shangzhe Wu](https://elliottwu.com/)). Welcome to chat with me! -->
-
-<!-- Calendly inline widget begin -->
-
-<!-- <div class="calendly-inline-widget" data-url="https://calendly.com/lancecai/meet-with-lance" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
-<!-- Calendly inline widget end -->
-
