@@ -3,6 +3,9 @@ layout: page
 permalink: /research/gigapixel/index.html
 title: Computational Imaging with Camera Arrays
 ---
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom_main.css">
+
 
 ## Computational Imaging with Camera Arrays
 Camera array-based imaging uses a large number of inexpensive cameras to create virtual cameras that outperform real ones. 

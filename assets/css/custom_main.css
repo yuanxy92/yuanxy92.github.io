@@ -1,21 +1,26 @@
 /* ==========================================================================
-   自定义主页样式升级 v6 (增加导航栏底色与主页渐变背景)
+   自定义主页样式升级 v7 (优化：浅绿到浅蓝绿科技渐变底色)
    ========================================================================== */
 
-/* 1. 主页面渐变底色：极其微弱的白到浅灰蓝过渡，保持极简和科技感 */
+/* 1. 主页面渐变底色：从浅薄荷绿 (#ebf5f2) 平滑过渡到现有的极浅灰蓝 (#f0f4f5) */
+/* 1. 主页面渐变底色：从上往下，顶部一点点绿，快速过渡回纯白底色 */
 body {
-    /* 135度角渐变，从左上角的纯白，过渡到右下角的极浅灰蓝色 */
-    background: linear-gradient(135deg, #ffffff 0%, #f0f4f5 100%) !important;
-    background-attachment: fixed !important; /* 保证渐变填满整个屏幕，滚动下拉时不会出现断层 */
+    min-height: 100vh;
+    margin: 0;
+    /* to bottom: 从上往下直下 */
+    /* 0% 处是极浅的薄荷绿，在往下 300px 的位置（大概就在你头像和简介图片的上方）就彻底变为纯白 */
+    background: linear-gradient(to bottom, #F3F7FA 0%, #ffffff 300px) !important;
+    background-repeat: no-repeat; /* 防止背景重复 */
+    background-attachment: fixed !important; 
 }
 
 /* 2. 导航栏容器：加上干净的纯白底色，使其与渐变背景分层 */
 .navigation-wrapper {
-    background-color: #ffffff !important; /* 导航栏纯白底色 */
-    padding: 1.2em 0 0em 0 !important; /* 保留你调整的轻薄内边距 */
-    border-bottom: 1px solid #eaeaea; 
-    /* 核心精髓：加一点点极其微弱的阴影，让导航栏有立体感，"浮"在背景上 */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03); 
+    background-color: #ffffff !important; /* 导航栏纯白底色，在渐变背景上像一张悬浮的卡片 */
+    padding: 1.2em 0 0em 0 !important; /* 保留你微调的轻薄内边距 */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* 极弱的底部分割线 */
+    /* 悬浮微阴影，现代极简 UI 的精髓 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02); 
 }
 
 /* 关键修复：清除浮动。这能完美解决底线穿透文字的问题，同时绝不破坏原版的左右对齐 */

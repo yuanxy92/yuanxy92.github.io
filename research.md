@@ -5,6 +5,7 @@ title: Research
 ---
 
 <link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom_main.css">
 
 <div class="custom-research-wrapper">
 

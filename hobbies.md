@@ -6,6 +6,7 @@ title: Hobbies
 
 <!-- 引入你的公共样式 -->
 <link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom_main.css">
 
 <div class="custom-research-wrapper">
 

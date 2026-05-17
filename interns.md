@@ -5,6 +5,8 @@ title: Interns
 ---
 <!-- 就加这一行！放在最前面，所有内容之上 -->
 <link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom_main.css">
+
 <div class="custom-research-wrapper">
   <!-- Hero Banner -->
   <div class="hero-banner">

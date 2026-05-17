@@ -4,6 +4,9 @@ permalink: /research/PACT/index.html
 title: Photoacoustic tomography for human brain
 ---
 
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom_main.css">
+
 ## Photoacoustic Tomography for Human Brain
 Blood-oxygen-level-dependent (BOLD) functional magnetic resonance imaging of the human brain requires bulky equipment for the generation of magnetic fields. Photoacoustic computed tomography obviates the need for magnetic fields by using light and sound to measure deoxyhaemoglobin and oxyhaemoglobin concentrations to then quantify oxygen saturation and blood volumes. Here, we show that massively parallel ultrasonic transducers arranged hemispherically around the human head can produce tomographic images of the brain with a 10-cm-diameter FOV and spatial and temporal resolutions of 350 µm and 2 s, respectively. A comparison of functional photoacoustic computed tomography and 7 T BOLD functional magnetic resonance imaging showed a strong spatial correspondence in the same FOV and a high temporal correlation between BOLD signals and photoacoustic signals, with the latter enabling faster detection of functional activation. Our findings establish the use of photoacoustic computed tomography for human brain imaging.
 <center>
