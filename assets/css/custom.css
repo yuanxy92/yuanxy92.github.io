@@ -16,10 +16,10 @@
   color: var(--text-main) !important;
   
   display: block !important;
-  max-width: 1000px !important; 
-  width: 92% !important; 
+  max-width: 1200px !important; 
+  width: 100% !important; 
   margin: 0 auto !important; 
-  padding: 20px 20px 40px 20px !important; 
+  padding: 0px 0px 0px 0px !important; 
   box-sizing: border-box !important;
   clear: both !important;
 }
@@ -34,9 +34,9 @@
   text-transform: uppercase !important;
   letter-spacing: 0.08em !important;
   border-bottom: 2px solid var(--timeline-line) !important;
-  padding-bottom: 8px !important;
-  margin-top: 40px !important;
-  margin-bottom: 25px !important;
+  padding-bottom: 2px !important;
+  margin-top: 0px !important;
+  margin-bottom: 15px !important;
   float: none !important;
 }
 
@@ -194,26 +194,26 @@
 /* ========== 图片网格最终修复版：永远不换行、等分、自适应 ========== */
 /* 自然流式图片网格：保留原图比例、不强制等分 */
 /* 只负责排版，不干涉尺寸，不使用!important */
+/* ========== 终极自适应图片网格 ========== */
 .image-grid {
   display: flex;
   gap: 10px;
-  align-items: center;
-  flex-wrap: nowrap;
   margin: 12px 0;
+  width: 100%;         /* 永远占满一行 */
+  align-items: center;
 }
+
 .image-grid img {
-  object-fit: contain;
+  flex: 1;             /* 自动拉伸填满剩余空间 */
+  min-width: 0;        /* 防止溢出 */
+  object-fit: contain; /* 不裁剪，保持比例 */
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* 手机端自动换行 */
+/* 手机端自动单列 */
 @media (max-width: 768px) {
   .image-grid {
-    flex-wrap: wrap;
-  }
-  .image-grid img {
-    max-height: unset;
-    width: 100%;
+    flex-direction: column;
   }
 }
