@@ -48,3 +48,44 @@ body {
     color: #439399 !important; 
     border-bottom: none !important; /* 确保原先老气的顶部线条不再出现 */
 }
+
+
+/* ==========================================================================
+   自定义主页样式升级：左侧个人信息栏 (极简安全版，不破坏原布局)
+   ========================================================================== */
+
+/* 1. 统一更换现代字体，并去除所有老旧的斜体 */
+.article-author-top h4, 
+.article-author-top p,
+.article-author-top a {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif !important;
+    font-style: normal !important; /* 彻底干掉以前的 italic 斜体 */
+}
+
+/* 2. 姓名 (h4) 样式优化 */
+.article-author-top h4 {
+    font-size: 1.15rem !important; /* 名字稍微放大加粗，更有重点 */
+    font-weight: 600 !important;
+    color: #202124 !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.3em !important;
+}
+
+/* 3. 头衔与联系方式 (原版主页里它们都受 p 标签控制，被强制压缩成了 80% 大小) */
+.article-author-top p {
+    font-size: 0.95rem !important; /* 放大字号，恢复正常大小 */
+    color: #5f6368 !important; /* 更有科技感的深灰色 */
+    line-height: 1.8 !important; /* 拉大行距，让上下行的图标和文字不那么拥挤 */
+}
+
+/* 4. 链接文字专属交互 */
+.article-author-top a {
+    color: #5f6368 !important; 
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+/* 鼠标放上去显示你喜欢的蓝绿色 */
+.article-author-top a:hover {
+    color: #439399 !important; 
+}
