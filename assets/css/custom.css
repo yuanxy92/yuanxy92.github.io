@@ -16,7 +16,7 @@
   color: var(--text-main) !important;
   
   display: block !important;
-  max-width: 1200px !important; 
+  max-width: 1800px !important; 
   width: 100% !important; 
   margin: 0 auto !important; 
   padding: 0px 0px 0px 0px !important; 
@@ -131,8 +131,8 @@
   margin: 0 !important;
 }
 .content-list li {
-  list-style: none !important;      /* 新增：彻底清除自带列表符 */
-  list-style-type: none !important; /* 新增：双重保险 */
+  list-style: none !important;      /* 彻底清除自带列表符 */
+  list-style-type: none !important; /* 双重保险 */
   position: relative !important;
   padding-left: 24px !important;
   margin-bottom: 16px !important;
@@ -172,7 +172,7 @@
   text-decoration: none !important;
 }
 
-
+/* 图片行布局 */
 .two {
   display: flex;
   gap: 10px;
@@ -191,9 +191,6 @@
   height: auto !important;
 }
 
-/* ========== 图片网格最终修复版：永远不换行、等分、自适应 ========== */
-/* 自然流式图片网格：保留原图比例、不强制等分 */
-/* 只负责排版，不干涉尺寸，不使用!important */
 /* ========== 终极自适应图片网格 ========== */
 .image-grid {
   display: flex;
@@ -224,4 +221,182 @@
   margin: 12px auto 0;
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* ========== 新增：通用间距和排版辅助类 ========== */
+.section-spacing {
+  margin-bottom: 30px !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* ========== 新增：响应式优化 ========== */
+@media (max-width: 768px) {
+  .custom-research-wrapper {
+    padding: 0 15px !important;
+  }
+  
+  .hero-banner {
+    padding: 15px 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .achievement-card {
+    padding: 15px 18px !important;
+  }
+  
+  .achieve-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .two, .four {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .two img, .four img {
+    width: 100% !important;
+  }
+}
+
+/* ========== Publications 专用样式 ========== */
+.pub-card {
+  display: flex !important;
+  gap: 20px !important;
+  align-items: flex-start !important;
+  padding: 20px !important;
+}
+
+.pub-thumbnail {
+  flex-shrink: 0 !important;
+  width: 180px !important;
+  text-align: center !important;
+}
+
+.pub-thumbnail img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  margin: 0 !important;
+}
+
+.pub-content {
+  flex-grow: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.pub-title {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: var(--text-main) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+  line-height: 1.4 !important;
+}
+
+.pub-title:hover {
+  color: var(--accent-color) !important;
+}
+
+.pub-authors {
+  font-size: 0.95rem !important;
+  color: var(--text-muted) !important;
+  line-height: 1.5 !important;
+}
+
+.pub-highlight {
+  font-weight: 700 !important;
+  color: var(--accent-color) !important;
+}
+
+.pub-venue {
+  display: inline-block !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: var(--text-main) !important;
+  background-color: var(--badge-bg) !important;
+  border: 1px solid var(--badge-border) !important;
+  padding: 3px 10px !important;
+  border-radius: 4px !important;
+  margin-right: 8px !important;
+  /* 加上这一行，强制覆盖所有意外的上下边距 */
+  margin: 0 8px 0 0 !important;
+}
+
+.pub-venue.highlight {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border-color: var(--accent-color) !important;
+}
+
+.pub-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 5px !important;
+}
+
+.pub-link-btn {
+  display: inline-block !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: var(--accent-color) !important;
+  text-decoration: none !important;
+  padding: 2px 8px !important;
+  border: 1px solid var(--badge-border) !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+}
+
+.pub-link-btn:hover {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border-color: var(--accent-color) !important;
+}
+
+.pub-note {
+  font-size: 0.85rem !important;
+  color: var(--text-muted) !important;
+  font-style: italic !important;
+}
+
+/* 期刊行专用：彻底解决 inline-block 幽灵间隙和对齐问题 */
+.pub-venue-row {
+  display: flex;
+  align-items: center; /* 所有元素完美垂直居中 */
+  gap: 12px; /* 统一控制标签和文字之间的间距 */
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .pub-card {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+  }
+  
+  .pub-thumbnail {
+    width: 100% !important;
+    max-width: 250px !important;
+  }
+  
+  .pub-content {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  .pub-links {
+    justify-content: center !important;
+  }
 }
