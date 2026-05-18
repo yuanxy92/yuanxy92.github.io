@@ -11,14 +11,8 @@ title: Publications
 <div class="custom-research-wrapper">
   <!-- 顶部横幅 -->
   <div class="hero-banner">
-    <h3>Publications</h3>
     <p>
-      For my complete publication list, please visit the <a href="https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en" class="pub-link-btn">Google Scholar</a>
-      <br>
-      For detailed information about our projects, please visit our <a href="https://xiaoyunyuan.net" class="pub-link-btn">Lab Page</a>
-    </p>
-    <p class="pub-note" style="margin-top: 10px;">
-      (†: equal contribution, ~: corresponding author)
+      View full publications on <a href="https://scholar.google.com/citations?user=MrEV0uwAAAAJ&hl=en" class="pub-link-btn">Google Scholar</a>, and project details on our <a href="https://xiaoyunyuan.net" class="pub-link-btn">Lab Page</a>. (*: equal contribution, ✉: corresponding author)
     </p>
   </div>
 
@@ -36,10 +30,13 @@ title: Publications
           A skin-conformal rigid-in-soft array-based imaging system
         </a>
         <div class="pub-authors">
-          <span class="pub-highlight">Xiaoyun Yuan*</span>, Jianing Zhang*, Youhai Liu, Yichen Wang, Lu Fang~
+          <span class="pub-highlight">Xiaoyun Yuan*</span>, Jianing Zhang*, Youhai Liu, Yichen Wang, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">Nature Communications 2026 (Accept in principle)</span>
+        </div>
+        <div class="pub-links">
+          <a href="" class="pub-link-btn">Comming Soon</a>
         </div>
       </div>
     </div>
@@ -54,7 +51,7 @@ title: Publications
           LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography
         </a>
         <div class="pub-authors">
-          Tingyu Yang, Yuan Cheng, <span class="pub-highlight">Xiaoyun Yuan~</span>
+          Tingyu Yang, Yuan Cheng, <span class="pub-highlight">Xiaoyun Yuan✉</span>
         </div>
         <div>
           <span class="pub-venue highlight">Siggraph 2026 Accept</span>
@@ -75,7 +72,7 @@ title: Publications
           ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling
         </a>
         <div class="pub-authors">
-          Jiayi Zhu, Jianing Zhang, Yiying Yang, Wei Cheng, <span class="pub-highlight">Xiaoyun Yuan~</span>
+          Jiayi Zhu, Jianing Zhang, Yiying Yang, Wei Cheng, <span class="pub-highlight">Xiaoyun Yuan✉</span>
         </div>
         <div>
           <span class="pub-venue">arXiv:2603.02697</span>
@@ -96,7 +93,7 @@ title: Publications
           3M-TI: High-Quality Mobile Thermal Imaging via Calibration-free Multi-Camera Cross-Modal Diffusion
         </a>
         <div class="pub-authors">
-          Minchong Chen†, <span class="pub-highlight">Xiaoyun Yuan†~</span>, Junzhe Wan, Jianing Zhang, Jun Zhang
+          Minchong Chen*, <span class="pub-highlight">Xiaoyun Yuan*✉</span>, Junzhe Wan, Jianing Zhang, Jun Zhang
         </div>
         <div>
           <span class="pub-venue highlight">CVPR 2026 Accept</span>
@@ -120,10 +117,13 @@ title: Publications
           Integrated lithium niobate photonics for sub-ångström snapshot spectroscopy
         </a>
         <div class="pub-authors">
-          Zhiyang Yao†, Shuyang Liu†, Yingce Wang†, <span class="pub-highlight">Xiaoyun Yuan</span>, Lu Fang~
+          Zhiyang Yao*, Shuyang Liu*, Yingce Wang*, <span class="pub-highlight">Xiaoyun Yuan</span>, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">Nature 2025</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.nature.com/articles/s41586-025-09591-x" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -138,7 +138,7 @@ title: Publications
           Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography
         </a>
         <div class="pub-authors">
-          Jianing Zhang, Jiayi Zhu, Feiyu Ji, Xiaokang Yang, <span class="pub-highlight">Xiaoyun Yuan~</span>
+          Jianing Zhang, Jiayi Zhu, Feiyu Ji, Xiaokang Yang, <span class="pub-highlight">Xiaoyun Yuan✉</span>
         </div>
         <div>
           <span class="pub-venue highlight">ICCV 2025 Highlight</span>
@@ -160,16 +160,17 @@ title: Publications
       </div>
       <div class="pub-content">
         <a href="https://gbrnvs.github.io/" class="pub-title">
-          GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting and Meshing
+          GBR: Generative Bundle Refinement for High-fidelity Gaussian Splatting with Enhanced Mesh Reconstruction
         </a>
         <div class="pub-authors">
-          Jianing Zhang, Yuchao Zheng, Ziwei Li, Qionghai Dai, <span class="pub-highlight">Xiaoyun Yuan~</span>
+          Jianing Zhang, Yuchao Zheng, Ziwei Li, Qionghai Dai, <span class="pub-highlight">Xiaoyun Yuan✉</span>
         </div>
         <div>
-          <span class="pub-venue highlight">IEEE Transactions on Circuits and Systems for Video Technology</span>
-          <span class="pub-note">(arXiv:2412.05908)</span>
+          <span class="pub-venue highlight">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) 2025</span>
+          <span class="pub-venue">(arXiv:2412.05908)</span>
         </div>
         <div class="pub-links">
+          <a href="https://arxiv.org/abs/2412.05908" class="pub-link-btn">Paper</a>
           <a href="https://gbrnvs.github.io/" class="pub-link-btn">Project Page</a>
         </div>
       </div>
@@ -190,11 +191,14 @@ title: Publications
           Training large-scale optoelectronic neural networks with dual-neuron optical-artificial learning
         </a>
         <div class="pub-authors">
-          <span class="pub-highlight">Xiaoyun Yuan</span>, Yong Wang, Zhihao Xu, Tiankuang Zhou, Lu Fang~
+          <span class="pub-highlight">Xiaoyun Yuan</span>, Yong Wang, Zhihao Xu, Tiankuang Zhou, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">Nature Communications 2023</span>
           <span class="pub-note">Editors' Highlight</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.nature.com/articles/s41467-023-42984-y" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -209,10 +213,13 @@ title: Publications
           Massively parallel functional photoacoustic computed tomography of the human brain
         </a>
         <div class="pub-authors">
-          Shuai Na†, Jonathan J. Russin†, Li Lin†, <span class="pub-highlight">Xiaoyun Yuan†</span>, Peng Hu, Kay B. Jann, Lirong Yan, Konstantin Maslov, Junhui Shi, Danny J. Wang, Charles Y. Liu~, Lihong V. Wang~
+          Shuai Na*, Jonathan J. Russin*, Li Lin*, <span class="pub-highlight">Xiaoyun Yuan*</span>, Peng Hu, Kay B. Jann, Lirong Yan, Konstantin Maslov, Junhui Shi, Danny J. Wang, Charles Y. Liu✉, Lihong V. Wang✉
         </div>
         <div>
           <span class="pub-venue highlight">Nature Biomedical Engineering 2022</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.nature.com/articles/s41551-021-00735-8" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -227,11 +234,14 @@ title: Publications
           A modular hierarchical array camera
         </a>
         <div class="pub-authors">
-          <span class="pub-highlight">Xiaoyun Yuan†</span>, Mengqi Ji†, Jiamin Wu, David J. Brady, Qionghai Dai, Lu Fang~
+          <span class="pub-highlight">Xiaoyun Yuan*</span>, Mengqi Ji*, Jiamin Wu, David J. Brady, Qionghai Dai, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">Light: Science & Applications 2021</span>
           <span class="pub-note">Cover Article</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.nature.com/articles/s41377-021-00485-x" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -246,11 +256,14 @@ title: Publications
           A multichannel optical computing architecture for advanced machine vision
         </a>
         <div class="pub-authors">
-          Zhihao Xu†, <span class="pub-highlight">Xiaoyun Yuan†</span>, Tiankuang Zhou, Lu Fang~
+          Zhihao Xu*, <span class="pub-highlight">Xiaoyun Yuan*</span>, Tiankuang Zhou, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">Light: Science & Applications 2022</span>
           <span class="pub-note">Editors' Highlight</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.nature.com/articles/s41377-022-00945-y" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -265,10 +278,13 @@ title: Publications
           Photonic neuromorphic architecture for tens-of-task lifelong learning
         </a>
         <div class="pub-authors">
-          Yuan Cheng†, Jianing Zhang†, Tiankuang Zhou, Yuyan Wang, Zhihao Xu, <span class="pub-highlight">Xiaoyun Yuan</span>, Lu Fang~
+          Yuan Cheng*, Jianing Zhang*, Tiankuang Zhou, Yuyan Wang, Zhihao Xu, <span class="pub-highlight">Xiaoyun Yuan</span>, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">Light: Science & Applications 2024</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.nature.com/articles/s41377-024-01395-4" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -283,10 +299,13 @@ title: Publications
           High-speed three-dimensional photoacoustic computed tomography for preclinical research and clinical translation
         </a>
         <div class="pub-authors">
-          Li Lin†, Peng Hu†, Xin Tong†, Shuai Na†, Rui Cao, <span class="pub-highlight">Xiaoyun Yuan</span>, David C Garrett, Junhui Shi, Konstantin Maslov, Lihong V Wang~
+          Li Lin*, Peng Hu*, Xin Tong*, Shuai Na*, Rui Cao, <span class="pub-highlight">Xiaoyun Yuan</span>, David C Garrett, Junhui Shi, Konstantin Maslov, Lihong V Wang✉
         </div>
         <div>
           <span class="pub-venue highlight">Nature Communications 2021</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.nature.com/articles/s41467-021-21232-1" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -301,12 +320,13 @@ title: Publications
           GigaMVS: a benchmark for ultra-large-scale gigapixel-level 3D reconstruction
         </a>
         <div class="pub-authors">
-          Jianing Zhang†, Jinzhi Zhang†, Shi Mao†, Mengqi Ji, Guangyu Wang, Zequn Chen, Tian Zhang, <span class="pub-highlight">Xiaoyun Yuan</span>, Qionghai Dai, Lu Fang~
+          Jianing Zhang*, Jinzhi Zhang*, Shi Mao*, Mengqi Ji, Guangyu Wang, Zequn Chen, Tian Zhang, <span class="pub-highlight">Xiaoyun Yuan</span>, Qionghai Dai, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI) 2021</span>
         </div>
         <div class="pub-links">
+          <a href="https://ieeexplore.ieee.org/abstract/document/9547729" class="pub-link-btn">Paper</a>
           <a href="https://gigavision.cn/data/news?nav=GigaMVS%20RAWDATA&type=nav&t=1731982252980" class="pub-link-btn">Dataset Page</a>
         </div>
       </div>
@@ -322,10 +342,13 @@ title: Publications
           Magic glasses: from 2D to 3D
         </a>
         <div class="pub-authors">
-          <span class="pub-highlight">Xiaoyun Yuan†</span>, Difei Tang†, Yebin Liu, Qing Ling, Lu Fang~
+          <span class="pub-highlight">Xiaoyun Yuan*</span>, Difei Tang*, Yebin Liu, Qing Ling, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">IEEE Transactions on Circuits and Systems for Video Technology (CSVT) 2017</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://ieeexplore.ieee.org/abstract/document/9547729" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -345,12 +368,13 @@ title: Publications
           Panda: A gigapixel-level human-centric video dataset
         </a>
         <div class="pub-authors">
-          Xueyang Wang†, Xiya Zhang†, Yinheng Zhu†, Yuchen Guo†, <span class="pub-highlight">Xiaoyun Yuan</span>, Liuyu Xiang, Zerun Wang, Guiguang Ding, David Brady, Qionghai Dai, Lu Fang~
+          Xueyang Wang*, Xiya Zhang*, Yinheng Zhu*, Yuchen Guo*, <span class="pub-highlight">Xiaoyun Yuan</span>, Liuyu Xiang, Zerun Wang, Guiguang Ding, David Brady, Qionghai Dai, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020</span>
         </div>
         <div class="pub-links">
+          <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_PANDA_A_Gigapixel-Level_Human-Centric_Video_Dataset_CVPR_2020_paper.html" class="pub-link-btn">Paper</a>
           <a href="https://gigavision.cn/data/news?nav=DataSet%20Panda&type=nav&t=1731982080864" class="pub-link-btn">Dataset Page</a>
         </div>
       </div>
@@ -366,10 +390,13 @@ title: Publications
           Multiscale-vr: Multiscale gigapixel 3d panoramic videography for virtual reality
         </a>
         <div class="pub-authors">
-          Jianing Zhang†, Tianyi Zhu†, Anke Zhang†, <span class="pub-highlight">Xiaoyun Yuan†</span>, Zihan Wang, Sebastian Beetschen, Lan Xu, Xing Lin, Qionghai Dai, Lu Fang~
+          Jianing Zhang*, Tianyi Zhu*, Anke Zhang*, <span class="pub-highlight">Xiaoyun Yuan*</span>, Zihan Wang, Sebastian Beetschen, Lan Xu, Xing Lin, Qionghai Dai, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">IEEE International Conference on Computational Photography (ICCP) 2020</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://ieeexplore.ieee.org/abstract/document/9105244" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -384,10 +411,13 @@ title: Publications
           Multiscale gigapixel video: A cross resolution image matching and warping approach
         </a>
         <div class="pub-authors">
-          <span class="pub-highlight">Xiaoyun Yuan</span>, Lu Fang~, Qionghai Dai, David J Brady, Yebin Liu~
+          <span class="pub-highlight">Xiaoyun Yuan</span>, Lu Fang✉, Qionghai Dai, David J Brady, Yebin Liu✉
         </div>
         <div>
           <span class="pub-venue highlight">IEEE International Conference on Computational Photography (ICCP) 2017</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://ieeexplore.ieee.org/abstract/document/7951481" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
@@ -402,10 +432,13 @@ title: Publications
           SPECAT: SPatial-spEctral Cumulative-Attention Transformer for High-Resolution Hyperspectral Image Reconstruction
         </a>
         <div class="pub-authors">
-          Zhiyang Yao, Shuyang Liu, <span class="pub-highlight">Xiaoyun Yuan</span>, Lu Fang~
+          Zhiyang Yao, Shuyang Liu, <span class="pub-highlight">Xiaoyun Yuan</span>, Lu Fang✉
         </div>
         <div>
           <span class="pub-venue highlight">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Yao_SPECAT_SPatial-spEctral_Cumulative-Attention_Transformer_for_High-Resolution_Hyperspectral_Image_Reconstruction_CVPR_2024_paper.html" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
