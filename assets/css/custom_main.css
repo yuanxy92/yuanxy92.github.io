@@ -14,18 +14,28 @@ body {
     background-attachment: fixed !important; 
 }
 
-/* 2. 导航栏容器：加上干净的纯白底色，使其与渐变背景分层 */
+/* 1. 导航栏容器：强制固定在顶部，并添加高级半透明模糊效果 */
 .navigation-wrapper {
-    background-color: #ffffff !important; /* 导航栏纯白底色，在渐变背景上像一张悬浮的卡片 */
-    padding: 1.2em 0 0em 0 !important; /* 保留你微调的轻薄内边距 */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* 极弱的底部分割线 */
-    /* 悬浮微阴影，现代极简 UI 的精髓 */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02); 
+    position: fixed !important; /* 放弃 sticky，换用绝对固定定位 */
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important; /* 保证宽度占满全屏 */
+    z-index: 9999 !important; /* 保证永远在最上层 */
+    
+    /* 核心魔法：半透明底色 + 背景模糊（毛玻璃效果） */
+    background-color: rgba(255, 255, 255, 0.8) !important; /* 80% 不透明度的纯白 */
+    backdrop-filter: blur(12px) !important; /* 让透过去的内容产生模糊效果 */
+    -webkit-backdrop-filter: blur(16px) !important; /* 兼容 Safari 浏览器 */
+    
+    /* 保留之前的边距和底线阴影 */
+    padding: 1.2em 0 0em 0 !important; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
 
-    /* [新增] 让导航栏吸附在顶部 */
-    position: sticky !important; 
-    top: 0 !important; /* 紧贴浏览器最上沿 */
-    z-index: 9999 !important; /* 确保层级最高，向下滚动时不会被照片或文字盖住 */
+/* 2. 防止 Fixed 定位导致下方内容“跳”上去被遮挡，给主区域加一点顶部内边距 */
+#main {
+    padding-top: 80px !important; /* 如果你发现最上面的内容依然被导航栏遮住了一点，可以把 80px 调大 */
 }
 
 /* 关键修复：清除浮动。这能完美解决底线穿透文字的问题，同时绝不破坏原版的左右对齐 */
