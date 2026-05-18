@@ -26,6 +26,24 @@ title: Publications
   <div class="section-spacing">
     <h2 class="unified-heading-block">Recent Publications</h2>
 
+    <!-- SkinSight -->
+    <div class="achievement-card pub-card">
+      <div class="pub-thumbnail">
+        <img src="https://work-submit.github.io/projects/SkinSight_fig/teaser.jpg" alt="LUCID">
+      </div>
+      <div class="pub-content">
+        <a href="" class="pub-title">
+          A skin-conformal rigid-in-soft array-based imaging system
+        </a>
+        <div class="pub-authors">
+          <span class="pub-highlight">Xiaoyun Yuan*</span>, Jianing Zhang*, Youhai Liu, Yichen Wang, Lu Fang~
+        </div>
+        <div>
+          <span class="pub-venue highlight">Nature Communications 2026 (Accept in principle)</span>
+        </div>
+      </div>
+    </div>
+
     <!-- LUCID -->
     <div class="achievement-card pub-card">
       <div class="pub-thumbnail">
