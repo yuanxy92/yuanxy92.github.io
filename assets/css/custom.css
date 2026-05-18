@@ -16,7 +16,7 @@
   color: var(--text-main) !important;
   
   display: block !important;
-  max-width: 1800px !important; 
+  max-width: 2000px !important; 
   width: 100% !important; 
   margin: 0 auto !important; 
   padding: 0px 0px 0px 0px !important; 
@@ -404,7 +404,7 @@
 /* ========== About 页面专用样式（两列并排版） ========== */
 .about-top-row {
   display: grid !important;
-  grid-template-columns: 1fr 1.25fr !important;  /* 个人卡片:Short Bio = 1:1.5 比例 */
+  grid-template-columns: 1fr 1.35fr !important;  /* 个人卡片:Short Bio = 1:1.5 比例 */
   gap: 25px !important;
   margin-bottom: 30px !important;
 }

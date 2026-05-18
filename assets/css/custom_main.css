@@ -89,3 +89,42 @@ body {
 .article-author-top a:hover {
     color: #439399 !important; 
 }
+
+/* ==========================================================================
+   自定义主页样式升级：响应式对齐与防挤压 (极简终极版)
+   ========================================================================== */
+
+/* 1. 针对大屏幕 (4K/外接显示器)：严格上下对齐，消除大白边 */
+@media only screen and (min-width: 86.375em) {
+    .site-name, 
+    .article-author-top {
+        width: 10% !important; 
+        margin-right: 20px !important; 
+        padding-right: 0 !important;
+    }
+
+    .top-navigation, 
+    #main article {
+        width: 65% !important; 
+        margin-left: 0 !important; 
+    }
+
+    /* [修改] 完美对齐版：仅在大屏幕下生效，整体向内收缩 8% */
+    .about-top-row .achievement-card:nth-child(2) {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+    
+    .about-top-row .achievement-card:nth-child(2) p {
+        line-height: 1.8 !important; 
+    }
+
+}
+
+/* 2. 针对普通/小屏幕 (拉窄窗口时)：强行加宽内容区，防止文字被挤换行 */
+@media only screen and (max-width: 86.375em) {
+    .top-navigation, 
+    #main article {
+        width: 75% !important; /* 屏幕不够大时，让右边内容区占多一点，防止挤压 */
+    }
+}
