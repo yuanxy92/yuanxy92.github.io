@@ -9,7 +9,7 @@ body {
     margin: 0;
     /* to bottom: 从上往下直下 */
     /* 0% 处是极浅的薄荷绿，在往下 300px 的位置（大概就在你头像和简介图片的上方）就彻底变为纯白 */
-    background: linear-gradient(to bottom, #d1f9f9 0%, #ffffff 300px) !important;
+    background: linear-gradient(to bottom, #e7f1f5 0%, #ffffff 300px) !important;
     background-repeat: no-repeat; /* 防止背景重复 */
     background-attachment: fixed !important; 
 }
@@ -31,6 +31,9 @@ body {
     padding: 1.2em 0 0em 0 !important; 
     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+
+    /* 画出截图里那种干净、锐利的浅灰蓝细线 */
+    border-bottom: 1px solid #e2e8f0 !important;
 }
 
 /* 2. 防止 Fixed 定位导致下方内容“跳”上去被遮挡，给主区域加一点顶部内边距 */

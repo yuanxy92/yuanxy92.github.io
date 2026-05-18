@@ -42,7 +42,7 @@ layout: page
       <p>Xiaoyun Yuan is an Associate Professor at the Artificial Intelligence Institute, School of Computer Science, Shanghai Jiao Tong University. He was previously a postdoctoral researcher in the <a href="https://www.luvision.net/" target="_blank">Sigma lab</a>, Department of Electronic Engineering, Tsinghua University.He received his B.S. from the University of Science and Technology of China in 2014 and his Ph.D. from the Hong Kong University of Science and Technology in 2020. Dr. Yuan has published approximately 20 academic papers in leading journals and conferences, including <em>Nature Biomedical Engineering</em>, <em>Nature Communications</em>, <em>Light: Science & Applications</em>, IEEE TPAMI, and CVPR. His research interests lie in computer vision, computational imaging, photoacoustic tomography, and optical computing. Notably, his work on human brain functional photoacoustic tomography earned the Best Paper Award at SPIE Photonics West 2021.</p>
       
       <p style="margin-top: 20px; font-weight: 600; color: var(--highlight-red);">
-        <a href="/interns/">👉 长期招收本科实习生！欢迎对计算成像、AI+光学感兴趣的同学联系我</a>
+        <a href="/interns/">👉 长期招收本科实习生！欢迎对计算机视觉、计算成像、AI+光学、人工智能感兴趣的同学联系我</a>
       </p>
     </div>
   </div>
