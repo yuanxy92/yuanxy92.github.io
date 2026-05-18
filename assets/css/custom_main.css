@@ -9,7 +9,7 @@ body {
     margin: 0;
     /* to bottom: 从上往下直下 */
     /* 0% 处是极浅的薄荷绿，在往下 300px 的位置（大概就在你头像和简介图片的上方）就彻底变为纯白 */
-    background: linear-gradient(to bottom, #F3F7FA 0%, #ffffff 300px) !important;
+    background: linear-gradient(to bottom, #f0f7fa 0%, #ffffff 300px) !important;
     background-repeat: no-repeat; /* 防止背景重复 */
     background-attachment: fixed !important; 
 }
