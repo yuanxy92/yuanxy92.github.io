@@ -84,16 +84,17 @@ layout: page
       <a href="https://gbrnvs.github.io/" class="news-btn">Project Page</a>
     </div>
 
+    <div class="news-item">
+      <span class="news-date">Jun. 26, 2025</span>
+      Our paper <strong>"DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography"</strong> has been accepted by <strong>ICCV 2025</strong>. Special congratulations to undergraduate Jiayi Zhu (朱嘉熠, SJTU 大三) and Ph.D. candidate Feiyu Ji.
+      <a href="https://dmdiff.github.io/" class="news-btn">Project Page</a>
+    </div>
+
     <!-- More News 折叠（左对齐、高级样式，旧新闻带完整按钮） -->
     <details class="news-fold-container">
       <summary class="news-fold-summary">More News</summary>
       <div class="old-news-group">
-        <div class="news-item">
-          <span class="news-date">Jun. 26, 2025</span>
-          Our paper <strong>"DMDiff: Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography"</strong> has been accepted by <strong>ICCV 2025</strong>. Special congratulations to undergraduate Jiayi Zhu (朱嘉熠, SJTU 大三) and Ph.D. candidate Feiyu Ji.
-          <a href="https://dmdiff.github.io/" class="news-btn">Project Page</a>
-        </div>
-
+        
         <div class="news-item">
           <span class="news-date">Nov. 11, 2024</span>
           I joined the Artificial Intelligence Institute, Shanghai Jiao Tong University as an associate professor.
