@@ -9,7 +9,7 @@ body {
     margin: 0;
     /* to bottom: 从上往下直下 */
     /* 0% 处是极浅的薄荷绿，在往下 300px 的位置（大概就在你头像和简介图片的上方）就彻底变为纯白 */
-    background: linear-gradient(to bottom, #f0f7fa 0%, #ffffff 300px) !important;
+    background: linear-gradient(to bottom, #d1f9f9 0%, #ffffff 300px) !important;
     background-repeat: no-repeat; /* 防止背景重复 */
     background-attachment: fixed !important; 
 }
@@ -21,6 +21,11 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* 极弱的底部分割线 */
     /* 悬浮微阴影，现代极简 UI 的精髓 */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02); 
+
+    /* [新增] 让导航栏吸附在顶部 */
+    position: sticky !important; 
+    top: 0 !important; /* 紧贴浏览器最上沿 */
+    z-index: 9999 !important; /* 确保层级最高，向下滚动时不会被照片或文字盖住 */
 }
 
 /* 关键修复：清除浮动。这能完美解决底线穿透文字的问题，同时绝不破坏原版的左右对齐 */
