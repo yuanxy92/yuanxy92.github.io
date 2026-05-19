@@ -27,7 +27,6 @@ layout: page
         </div>
         
         <div class="about-links">
-          <a href="mailto:yuanxiaoyun@sjtu.edu.cn" class="pub-link-btn">Email</a>
           <a href="https://github.com/yuanxy92" target="_blank" class="pub-link-btn">GitHub</a>
           <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" class="pub-link-btn">Google Scholar</a>
           <a href="https://xiaoyunyuan.net" target="_blank" class="pub-link-btn">Lab page</a>
