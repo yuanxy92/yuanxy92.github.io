@@ -108,6 +108,10 @@
   font-size: 0.8rem !important;
   padding: 2px 8px !important;
   border-radius: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
 }
 .achieve-title {
   font-weight: 700 !important;
