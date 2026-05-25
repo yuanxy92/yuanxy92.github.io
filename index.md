@@ -50,7 +50,16 @@ layout: page
   <h2 class="unified-heading-block">News & Updates</h2>
 
   <div class="achievement-card">
-    <!-- 最新 5 条（默认显示，带完整按钮） -->
+    <!-- 最新 X 条（默认显示，带完整按钮） -->
+    <div class="news-item">
+      <span class="news-date">May 25, 2026</span>
+      <span class="news-badge">New</span>
+      We just launched <strong>RL Flappy Bird</strong>, an interactive open-source web lab for visualizing Q-learning (and a great study aid for our AI1201 students!). 
+      <a href="https://rlbird.xiaoyunyuan.net/" target="_blank" style="color: #4a8684; text-decoration: none; font-weight: bold;">Play here</a> | 
+      <a href="https://github.com/yuanxy92/rl-flappybird" target="_blank" style="color: #4a8684; text-decoration: none;">Our GitHub</a> | 
+      Forked from the <a href="https://github.com/nileshsah/reinforcement-learning-flappybird" target="_blank" style="color: #4a8684; text-decoration: none;">original project</a>.
+    </div>
+
     <div class="news-item">
       <span class="news-date">May 1, 2026</span>
       <span class="news-badge">New</span>
