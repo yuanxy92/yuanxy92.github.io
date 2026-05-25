@@ -35,3 +35,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "addressable", "= 2.9.0"
 
 gem "rexml", "= 3.4.2"
+
+gem "webrick", "~> 1.9"
+gem "csv", "~> 3.3"
