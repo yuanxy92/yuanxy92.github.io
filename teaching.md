@@ -43,7 +43,7 @@ title: Teaching
           <span class="pub-highlight"><strong>Course Resources:</strong></span>
         </div>
         <div class="class-box">
-          <a href="http://rlbird.xiaoyunyuan.net/" class="pub-link-btn" target="_blank" rel="noopener noreferrer">Play RL Bird</a>
+          <a href="https://rlbird.xiaoyunyuan.net/" class="pub-link-btn" target="_blank" rel="noopener noreferrer">Play RL Bird</a>
           <span>A mini game for understanding core RL ideas.</span>
         </div>
       </div>
