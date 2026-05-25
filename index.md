@@ -56,8 +56,7 @@ layout: page
       <span class="news-badge">New</span>
       We just launched <strong>RL Flappy Bird</strong>, an interactive open-source web lab for visualizing Reinforcement Learning (a study aid for our AI1201 students!). 
       <a href="https://rlbird.xiaoyunyuan.net/" target="_blank" style="color: #4a8684; text-decoration: none; font-weight: bold;">Play here</a> | 
-      <a href="https://github.com/yuanxy92/rl-flappybird" target="_blank" style="color: #4a8684; text-decoration: none;">Our GitHub</a> | 
-      Forked from the <a href="https://github.com/nileshsah/reinforcement-learning-flappybird" target="_blank" style="color: #4a8684; text-decoration: none;">original project</a>.
+      <a href="https://github.com/yuanxy92/rl-flappybird" target="_blank" style="color: #4a8684; text-decoration: none;">Our GitHub</a> 
     </div>
 
     <div class="news-item">
