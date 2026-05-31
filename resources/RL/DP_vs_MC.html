@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态规划 vs Monte Carlo Interactive Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .grid-cell {
+            transition: background-color 180ms ease, color 180ms ease, transform 120ms ease, box-shadow 120ms ease;
+            will-change: transform;
+        }
+
+        .grid-cell.agent-focus {
+            transform: scale(1.08);
+            box-shadow: 0 10px 22px rgba(15, 23, 42, 0.18);
+            z-index: 5;
+        }
+
+        .grid-cell.trail-cell {
+            box-shadow: inset 0 0 0 2px rgba(71, 85, 105, 0.28);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">动态规划 vs 蒙特卡洛 交互式对比演示</h1>
+        
+        <!-- 全局环境参数调节区 -->
+        <div class="bg-white rounded-lg shadow-lg p-5 mb-6">
+            <h3 class="text-lg font-bold mb-3 text-gray-800">全局环境参数</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex items-center gap-2">
+                    <label for="successProb" class="text-gray-700">移动成功概率:</label>
+                    <input type="range" id="successProb" min="0" max="100" value="80" class="w-32">
+                    <span id="successProbValue" class="text-gray-700 font-bold">80%</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <label for="moveReward" class="text-gray-700">每步移动奖励:</label>
+                    <input type="range" id="moveReward" min="-50" max="0" value="-10" class="w-32">
+                    <span id="moveRewardValue" class="text-gray-700 font-bold">-1.0</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <label for="obstacleCount" class="text-gray-700">障碍数量:</label>
+                    <input type="range" id="obstacleCount" min="0" max="10" value="3" class="w-32">
+                    <span id="obstacleCountValue" class="text-gray-700 font-bold">3</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button id="randomObstacles" class="bg-slate-700 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded">
+                        随机障碍物
+                    </button>
+                    <span class="text-sm text-gray-500">不会覆盖起点和终点</span>
+                </div>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">移动成功概率剩余部分平均分配到4个随机方向；到达终点固定奖励+10</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            <!-- DP 部分 -->
+            <div class="bg-white rounded-lg shadow-lg p-5">
+                <h2 class="text-xl font-bold mb-3 text-blue-600">动态规划 (DP)</h2>
+                <p class="mb-3 text-gray-600 text-sm">✅ 策略评估：计算固定策略下的状态价值</p>
+                <div class="flex items-center gap-3 mb-3 flex-wrap">
+                    <button id="runDP" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        运行 DP 动画
+                    </button>
+                    <button id="stopDP" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded" disabled>
+                        停止
+                    </button>
+                    <div class="flex items-center gap-2">
+                        <label for="dpSpeed" class="text-gray-700 text-sm">DP速度:</label>
+                        <input type="range" id="dpSpeed" min="1" max="2000" value="500" step="1" class="w-20">
+                        <span id="dpSpeedValue" class="text-gray-700 text-sm">500ms</span>
+                    </div>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-3">
+                    <div id="dpProgressBar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                </div>
+                <p id="dpStatus" class="text-sm text-gray-600 mb-3">准备就绪</p>
+                
+                <!-- 只带状态的贝尔曼方程展示区 -->
+                <div id="bellmanFormula" class="bg-gray-50 border border-gray-200 rounded p-3 mb-3 text-sm font-mono">
+                    <p class="font-bold text-blue-600 mb-2">贝尔曼方程（策略评估）：</p>
+                    <p>V(s) = Σ<sub>s'</sub> P(s'|s,a) · [r(s,a,s') + γV(s')]</p>
+                </div>
+                
+                <div id="dpGrid" class="grid grid-cols-5 gap-1 mb-3 w-fit mx-auto"></div>
+                <p class="text-xs text-gray-500">特点：直接计算固定策略的精确价值，不需要动作选择</p>
+            </div>
+            
+            <!-- 蒙特卡洛 部分 -->
+            <div class="bg-white rounded-lg shadow-lg p-5">
+                <h2 class="text-xl font-bold mb-3 text-orange-600">蒙特卡洛 (MC)</h2>
+                <p class="mb-3 text-gray-600 text-sm">❌ 不知道环境模型，通过采样估计同一策略的价值</p>
+                <div class="flex items-center gap-3 mb-3 flex-wrap">
+                    <button id="runMC" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+                        运行 MC 动画
+                    </button>
+                    <button id="stopMC" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded" disabled>
+                        停止
+                    </button>
+                    <div class="flex items-center gap-2">
+                        <label for="mcEpisodes" class="text-gray-700 text-sm">采样次数:</label>
+                        <input type="range" id="mcEpisodes" min="10" max="50000" value="500" class="w-24">
+                        <span id="episodeCount" class="text-gray-700 text-sm">500</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <label for="mcSpeed" class="text-gray-700 text-sm">动画速度:</label>
+                        <input type="range" id="mcSpeed" min="0" max="100" value="78" class="w-24">
+                        <span id="mcSpeedValue" class="text-gray-700 text-sm">快</span>
+                    </div>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-3">
+                    <div id="mcProgressBar" class="bg-orange-600 h-2.5 rounded-full" style="width: 0%"></div>
+                </div>
+                <p id="mcStatus" class="text-sm text-gray-600 mb-3">准备就绪</p>
+                <div id="mcGrid" class="grid grid-cols-5 gap-1 mb-3 w-fit mx-auto"></div>
+                <p class="text-xs text-gray-500">特点：通过多次采样取平均，逐步逼近真实价值</p>
+            </div>
+        </div>
+        
+        <!-- 说明部分 -->
+        <div class="bg-white rounded-lg shadow-lg p-5">
+            <h3 class="text-lg font-bold mb-3 text-gray-800">问题说明</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 text-sm">
+                <ul class="list-disc list-inside space-y-1">
+                    <li>5x5 正方形网格世界，左上角是起点，右下角是终点</li>
+                    <li>起点、终点和障碍物都在格子里直接标注出来</li>
+                    <li>障碍物可以随机生成，并保证起点到终点始终有路可走</li>
+                    <li>到达终点固定 +10 奖励，每步移动奖励可调节</li>
+                </ul>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>DP：知道环境规则，直接做策略评估，得到稳定的价值函数</li>
+                    <li>MC：不知道环境模型，靠采样估计同一策略的价值</li>
+                    <li>MC 采样次数最高可到 50000，最快档只刷新 V 值，不显示红色 agent</li>
+                    <li>DP 和 MC 都支持速度调节，可以同时运行对比收敛过程</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 环境参数（全部可动态调整）
+        const GRID_SIZE = 5;
+        const START = {x: 0, y: 0};
+        const GOAL = {x: 4, y: 4};
+        let OBSTACLES = [{x: 1, y: 1}, {x: 2, y: 2}, {x: 3, y: 1}];
+        const GAMMA = 0.9;
+        const THRESHOLD = 1e-4; // 更适合课堂演示的收敛阈值
+        const MIN_ITERATIONS = 12; // 先让价值传播一会儿，避免过早停
+        const MAX_ITERATIONS = 500; // 给足上限，避免偶发“跑不完”
+        const GOAL_REWARD = 10; // 终点奖励固定为10
+        let SUCCESS_PROB = 0.8; // 移动成功概率
+        let MOVE_REWARD = -1.0; // 每步移动奖励
+        
+        // 动作：上下左右
+        const ACTIONS = [
+            {dx: 0, dy: -1, name: '上'}, // 0
+            {dx: 0, dy: 1, name: '下'},  // 1
+            {dx: -1, dy: 0, name: '左'}, // 2
+            {dx: 1, dy: 0, name: '右'}   // 3
+        ];
+        
+        let dpRunning = false;
+        let dpStopRequested = false;
+        let mcRunning = false;
+        let mcStopRequested = false;
+        
+        // 检查是否是障碍
+        function isObstacle(x, y) {
+            return OBSTACLES.some(obs => obs.x === x && obs.y === y);
+        }
+
+        function getObstacleCount() {
+            return OBSTACLES.length;
+        }
+
+        function updateObstacleCountUI() {
+            const count = getObstacleCount();
+            const slider = document.getElementById('obstacleCount');
+            const value = document.getElementById('obstacleCountValue');
+            if (slider) slider.value = String(count);
+            if (value) value.textContent = String(count);
+        }
+
+        function makeRandomObstacles(count) {
+            const candidates = [];
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    if (isGoal(x, y) || (x === START.x && y === START.y)) continue;
+                    candidates.push({x, y});
+                }
+            }
+
+            for (let i = candidates.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+            }
+
+            const maxAllowed = candidates.length;
+            const desiredCount = Math.max(0, Math.min(maxAllowed, count));
+
+            function hasPathWith(obstacles) {
+                const blocked = new Set(obstacles.map(obs => `${obs.x},${obs.y}`));
+                const queue = [{x: START.x, y: START.y}];
+                const visited = new Set([`${START.x},${START.y}`]);
+                const dirs = [
+                    {dx: 0, dy: -1},
+                    {dx: 0, dy: 1},
+                    {dx: -1, dy: 0},
+                    {dx: 1, dy: 0},
+                ];
+
+                while (queue.length > 0) {
+                    const current = queue.shift();
+                    if (current.x === GOAL.x && current.y === GOAL.y) return true;
+
+                    for (const dir of dirs) {
+                        const nx = current.x + dir.dx;
+                        const ny = current.y + dir.dy;
+                        if (nx < 0 || nx >= GRID_SIZE || ny < 0 || ny >= GRID_SIZE) continue;
+                        const key = `${nx},${ny}`;
+                        if (blocked.has(key) || visited.has(key)) continue;
+                        visited.add(key);
+                        queue.push({x: nx, y: ny});
+                    }
+                }
+
+                return false;
+            }
+
+            for (let targetCount = desiredCount; targetCount >= 0; targetCount--) {
+                for (let attempt = 0; attempt < 200; attempt++) {
+                    const trial = candidates.slice();
+                    for (let i = trial.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [trial[i], trial[j]] = [trial[j], trial[i]];
+                    }
+                    const proposed = trial.slice(0, targetCount);
+                    if (hasPathWith(proposed)) {
+                        OBSTACLES = proposed;
+                        updateObstacleCountUI();
+                        return;
+                    }
+                }
+            }
+
+            OBSTACLES = [];
+            updateObstacleCountUI();
+        }
+
+        function randomizeObstaclesFromUI() {
+            dpStopRequested = true;
+            mcStopRequested = true;
+            const count = parseInt(document.getElementById('obstacleCount').value, 10);
+            makeRandomObstacles(count);
+            resetGrids();
+        }
+
+        function isGoal(x, y) {
+            return x === GOAL.x && y === GOAL.y;
+        }
+
+        function transitionReward(nx, ny) {
+            return MOVE_REWARD + (isGoal(nx, ny) ? GOAL_REWARD : 0);
+        }
+
+        function valueToColor(value, minValue, maxValue) {
+            if (!Number.isFinite(value)) return '#e5e7eb';
+            if (!Number.isFinite(minValue) || !Number.isFinite(maxValue) || Math.abs(maxValue - minValue) < 1e-9) {
+                return '#d1fae5';
+            }
+
+            const palette = ['#fff7ed', '#fde68a', '#a7f3d0', '#2dd4bf', '#0f766e'];
+            const t = Math.max(0, Math.min(1, (value - minValue) / (maxValue - minValue)));
+            const scaled = t * (palette.length - 1);
+            const left = Math.floor(scaled);
+            const right = Math.min(palette.length - 1, left + 1);
+            const localT = scaled - left;
+
+            const lerpHex = (a, b, t) => {
+                const ah = a.replace('#', '');
+                const bh = b.replace('#', '');
+                const ar = parseInt(ah.slice(0, 2), 16);
+                const ag = parseInt(ah.slice(2, 4), 16);
+                const ab = parseInt(ah.slice(4, 6), 16);
+                const br = parseInt(bh.slice(0, 2), 16);
+                const bg = parseInt(bh.slice(2, 4), 16);
+                const bb = parseInt(bh.slice(4, 6), 16);
+                const rr = Math.round(ar + (br - ar) * t);
+                const rg = Math.round(ag + (bg - ag) * t);
+                const rb = Math.round(ab + (bb - ab) * t);
+                return `rgb(${rr}, ${rg}, ${rb})`;
+            };
+
+            return lerpHex(palette[left], palette[right], localT);
+        }
+
+        function getMcSpeedProfile(speedValue, episodes) {
+            const band = Math.max(0, Math.min(4, Math.floor((speedValue / 100) * 5)));
+            const configs = [
+                {label: '最慢', stepDelay: 420, goalPause: 900, visualize: true},
+                {label: '慢', stepDelay: 220, goalPause: 600, visualize: true},
+                {label: '中', stepDelay: 90, goalPause: 320, visualize: true},
+                {label: '快', stepDelay: 28, goalPause: 160, visualize: true},
+                {label: '最快（只看V）', stepDelay: 0, goalPause: 0, visualize: false},
+            ];
+            const {label, stepDelay, goalPause, visualize} = configs[band];
+            const showValueEvery = visualize ? 1 : Math.max(1, Math.ceil(episodes / 50));
+
+            return {
+                label,
+                stepDelay,
+                goalPause,
+                visualize,
+                showValueEvery,
+            };
+        }
+
+        function getValueRange(values) {
+            let minValue = Infinity;
+            let maxValue = -Infinity;
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    if (isObstacle(x, y)) continue;
+                    if (isGoal(x, y)) continue;
+                    const value = values[y][x];
+                    if (!Number.isFinite(value)) continue;
+                    minValue = Math.min(minValue, value);
+                    maxValue = Math.max(maxValue, value);
+                }
+            }
+            return {minValue, maxValue};
+        }
+        
+        // 固定策略：和MC用的完全一样，大部分时间往终点走
+        function getPolicyAction(x, y) {
+            const dx = GOAL.x - x;
+            const dy = GOAL.y - y;
+            if (Math.abs(dx) > Math.abs(dy)) {
+                return dx > 0 ? ACTIONS[3] : ACTIONS[2]; // 右或左
+            } else {
+                return dy > 0 ? ACTIONS[1] : ACTIONS[0]; // 下或上
+            }
+        }
+        
+        // 初始化网格（强制正方形）
+        function initGrid(gridId) {
+            const grid = document.getElementById(gridId);
+            grid.innerHTML = '';
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    const cell = document.createElement('div');
+                    cell.style.width = '60px';
+                    cell.style.height = '60px';
+                    cell.className = 'grid-cell flex items-center justify-center border border-gray-300 text-xs font-medium';
+                    cell.id = `${gridId}-${x}-${y}`;
+                    
+                    if (x === GOAL.x && y === GOAL.y) {
+                        cell.classList.add('bg-green-200', 'text-green-800');
+                        cell.textContent = '终点';
+                    } else if (x === START.x && y === START.y) {
+                        cell.classList.add('bg-blue-200', 'text-blue-800');
+                        cell.textContent = '起点';
+                    } else if (isObstacle(x, y)) {
+                        cell.classList.add('bg-gray-400', 'text-gray-600');
+                        cell.textContent = '障碍';
+                    } else {
+                        cell.classList.add('bg-gray-50');
+                        cell.textContent = '0.00';
+                    }
+                    grid.appendChild(cell);
+                }
+            }
+        }
+        
+        // 更新网格显示
+        function updateGrid(gridId, values, highlightPos = null, trail = []) {
+            const {minValue, maxValue} = getValueRange(values);
+            const trailKeys = new Set(trail.map(pos => `${pos.x},${pos.y}`));
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    if (isGoal(x, y) || isObstacle(x, y)) continue;
+                    
+                    const cell = document.getElementById(`${gridId}-${x}-${y}`);
+                    cell.classList.remove('trail-cell');
+                    const existingDot = cell.querySelector('.agent-dot');
+                    if (existingDot) existingDot.remove();
+
+                    const value = values[y][x];
+                    cell.textContent = value.toFixed(2);
+                    
+                    // 使用更柔和、适合教学展示的顺序色板
+                    cell.style.backgroundColor = valueToColor(value, minValue, maxValue);
+                    
+                    if (trailKeys.has(`${x},${y}`)) {
+                        cell.classList.add('trail-cell');
+                    }
+
+                    // 高亮当前计算的格子（DP用）或智能体位置（MC用）
+                    if (highlightPos && highlightPos.x === x && highlightPos.y === y) {
+                        if (gridId === 'mcGrid') {
+                            cell.classList.add('ring-2', 'ring-slate-400', 'agent-focus');
+                            const dot = document.createElement('div');
+                            dot.className = 'agent-dot absolute inset-0 m-auto w-4 h-4 rounded-full bg-rose-500 border-2 border-white shadow-lg';
+                            cell.classList.add('relative');
+                            cell.appendChild(dot);
+                        } else {
+                            cell.classList.add('ring-4', 'ring-slate-900', 'agent-focus', 'font-bold');
+                        }
+                    } else {
+                        cell.classList.remove('ring-4', 'ring-slate-900', 'agent-focus', 'font-bold', 'ring-2', 'ring-slate-400');
+                    }
+                }
+            }
+        }
+        
+        // 终点闪烁动画（时间随速度自动调整）
+        async function flashGoal(gridId, delay, times = 3) {
+            const goalCell = document.getElementById(`${gridId}-${GOAL.x}-${GOAL.y}`);
+            const flashDelay = Math.max(45, Math.min(120, Math.round(delay * 1.2)));
+            
+            for (let i = 0; i < times; i++) {
+                goalCell.classList.remove('bg-green-200');
+                goalCell.classList.add('bg-yellow-300');
+                await new Promise(resolve => setTimeout(resolve, flashDelay));
+                goalCell.classList.remove('bg-yellow-300');
+                goalCell.classList.add('bg-green-200');
+                await new Promise(resolve => setTimeout(resolve, flashDelay));
+            }
+        }
+        
+        // 计算单个状态的价值（只带状态的贝尔曼方程）
+        function calculateStateValue(V, x, y) {
+            // 1. 获取当前状态下策略选择的动作
+            const action = getPolicyAction(x, y);
+            
+            // 2. 计算这个动作下的期望价值
+            let value = 0;
+            const randomProb = (1 - SUCCESS_PROB) / 4;
+            
+            // 成功执行策略动作的概率
+            let nx = x + action.dx;
+            let ny = y + action.dy;
+            if (nx < 0 || nx >= GRID_SIZE || ny < 0 || ny >= GRID_SIZE || isObstacle(nx, ny)) {
+                nx = x; ny = y;
+            }
+            const reward = transitionReward(nx, ny);
+            value += SUCCESS_PROB * (reward + GAMMA * (isGoal(nx, ny) ? 0 : V[ny][nx]));
+            
+            // 随机移动的概率（4个方向）
+            for (const randAction of ACTIONS) {
+                let rx = x + randAction.dx;
+                let ry = y + randAction.dy;
+                if (rx < 0 || rx >= GRID_SIZE || ry < 0 || ry >= GRID_SIZE || isObstacle(rx, ry)) {
+                    rx = x; ry = y;
+                }
+                const rReward = transitionReward(rx, ry);
+                value += randomProb * (rReward + GAMMA * (isGoal(rx, ry) ? 0 : V[ry][rx]));
+            }
+            
+            return {value, action};
+        }
+        
+        // DP动画：策略评估，只带状态的贝尔曼方程（修复终止条件）
+        async function dpAnimated(delay) {
+            let V = Array(GRID_SIZE).fill().map(() => Array(GRID_SIZE).fill(0));
+            V[GOAL.y][GOAL.x] = 0;
+            OBSTACLES.forEach(obs => V[obs.y][obs.x] = -10);
+            
+            document.getElementById('runDP').disabled = true;
+            document.getElementById('stopDP').disabled = false;
+            dpRunning = true;
+            dpStopRequested = false;
+            
+            let iteration = 0;
+            updateGrid('dpGrid', V);
+            
+            while (true) {
+                if (dpStopRequested) break;
+                
+                const newV = JSON.parse(JSON.stringify(V));
+                let maxDelta = 0;
+                
+                iteration++;
+                document.getElementById('dpStatus').textContent = `迭代第 ${iteration} 次`;
+                document.getElementById('dpProgressBar').style.width = `${Math.min(100, (iteration / MAX_ITERATIONS) * 100)}%`;
+                
+                // 逐状态计算，展示只带状态的贝尔曼方程
+                for (let y = 0; y < GRID_SIZE; y++) {
+                    for (let x = 0; x < GRID_SIZE; x++) {
+                        if (dpStopRequested) break;
+                        if (isGoal(x, y) || isObstacle(x, y)) continue;
+                        
+                        // 高亮当前计算的格子
+                        updateGrid('dpGrid', V, {x, y});
+                        
+                        // 计算当前状态的价值（不需要max，直接用策略给出的动作）
+                        const {value, action} = calculateStateValue(V, x, y);
+                        
+                        // 更新贝尔曼方程展示（只带状态）
+                        const formulaDiv = document.getElementById('bellmanFormula');
+                        formulaDiv.innerHTML = `
+                            <p class="font-bold text-blue-600 mb-2">计算状态 V(${x},${y})</p>
+                            <p>V(s) = r(s,a,s') + γ · V(s')</p>
+                            <p class="mt-1">策略选择动作: ${action.name}</p>
+                            <p class="mt-1 font-bold text-green-600">状态价值 = ${value.toFixed(2)}</p>
+                        `;
+                        
+                        // 更新价值和delta
+                        const delta = Math.abs(value - V[y][x]);
+                        if (delta > maxDelta) maxDelta = delta;
+                        newV[y][x] = value;
+                        
+                        await new Promise(resolve => setTimeout(resolve, delay / 25)); // 每个格子的延迟
+                    }
+                }
+                
+                if (dpStopRequested) break;
+                
+                // 更新整个网格
+                updateGrid('dpGrid', newV);
+                
+                // 显示本次迭代的最大delta
+                document.getElementById('dpStatus').textContent = 
+                    `迭代第 ${iteration} 次，最大变化 delta = ${maxDelta.toFixed(6)}`;
+                
+                await new Promise(resolve => setTimeout(resolve, delay));
+                
+                // 双重终止条件：迭代次数超过最小值 且 delta 小于阈值
+                if (iteration >= MIN_ITERATIONS && maxDelta < THRESHOLD) {
+                    document.getElementById('dpStatus').textContent = 
+                        `✅ 收敛！共迭代 ${iteration} 次，最终 delta = ${maxDelta.toFixed(6)}`;
+                    document.getElementById('bellmanFormula').innerHTML = `
+                        <p class="font-bold text-blue-600 mb-2">贝尔曼方程（策略评估）：</p>
+                        <p>V(s) = Σ<sub>s'</sub> P(s'|s,a) · [r(s,a,s') + γV(s')]</p>
+                        <p class="mt-2 text-green-600 font-bold">✅ 计算完成，已收敛到策略的精确价值</p>
+                    `;
+                    break;
+                }
+                
+                // 达到最大迭代次数也停止
+                if (iteration >= MAX_ITERATIONS) {
+                    document.getElementById('dpStatus').textContent = 
+                        `⚠️ 达到最大迭代次数 ${MAX_ITERATIONS}，停止计算`;
+                    break;
+                }
+                
+                V = newV;
+            }
+            
+            document.getElementById('runDP').disabled = false;
+            document.getElementById('stopDP').disabled = true;
+            dpRunning = false;
+            
+            return V;
+        }
+        
+        // 蒙特卡洛：完全修复动画问题
+        async function monteCarloAnimated(episodes, delay) {
+            const V = Array(GRID_SIZE).fill().map(() => Array(GRID_SIZE).fill(0));
+            const N = Array(GRID_SIZE).fill().map(() => Array(GRID_SIZE).fill(0));
+            V[GOAL.y][GOAL.x] = 0;
+            OBSTACLES.forEach(obs => V[obs.y][obs.x] = -10);
+            
+            document.getElementById('runMC').disabled = true;
+            document.getElementById('stopMC').disabled = false;
+            mcRunning = true;
+            mcStopRequested = false;
+            
+            let animatedEpisodesSeen = 0;
+            
+            for (let i = 0; i < episodes; i++) {
+                if (mcStopRequested) break;
+                
+                const speed = getMcSpeedProfile(parseInt(document.getElementById('mcSpeed').value, 10), episodes);
+                let showAnimation = speed.visualize;
+                const showValues = true;
+                const progress = episodes <= 1 ? 1 : i / (episodes - 1);
+
+                document.getElementById('mcStatus').textContent = 
+                    `正在采样第 ${i + 1}/${episodes} 条轨迹${showAnimation ? '（展示中）' : '（只刷新V）'}`;
+                document.getElementById('mcProgressBar').style.width = `${((i + 1) / episodes) * 100}%`;
+
+                // 生成一条轨迹（使用和DP完全相同的策略）
+                const trajectory = [];
+                let x = START.x, y = START.y;
+                let stepCount = 0;
+                const maxSteps = GRID_SIZE * GRID_SIZE * 6;
+                const pathTrail = [];
+
+                while (!isGoal(x, y) && stepCount < maxSteps) {
+                    const liveSpeed = getMcSpeedProfile(parseInt(document.getElementById('mcSpeed').value, 10), episodes);
+                    showAnimation = liveSpeed.visualize;
+                    const liveStepDelay = liveSpeed.visualize ? Math.max(8, Math.round(liveSpeed.stepDelay * (1 - 0.25 * progress))) : 0;
+                    // 和 DP 保持完全一致：使用同一条固定策略
+                    const action = getPolicyAction(x, y);
+
+                    // 执行动作（使用动态成功概率）
+                    let nx, ny;
+                    const prevX = x;
+                    const prevY = y;
+                    if (Math.random() < SUCCESS_PROB) {
+                        nx = x + action.dx;
+                        ny = y + action.dy;
+                    } else {
+                        const randAction = ACTIONS[Math.floor(Math.random() * ACTIONS.length)];
+                        nx = x + randAction.dx;
+                        ny = y + randAction.dy;
+                    }
+
+                    if (nx < 0 || nx >= GRID_SIZE || ny < 0 || ny >= GRID_SIZE || isObstacle(nx, ny)) {
+                        nx = x; ny = y;
+                    }
+                    const blockedMove = nx === prevX && ny === prevY && (nx !== GOAL.x || ny !== GOAL.y);
+
+                    if (showAnimation) {
+                        pathTrail.push({x, y});
+                        if (pathTrail.length > 6) pathTrail.shift();
+                        updateGrid('mcGrid', V, {x, y}, pathTrail);
+                        if (!blockedMove && liveStepDelay > 0) {
+                            await new Promise(resolve => setTimeout(resolve, liveStepDelay));
+                        }
+                    }
+
+                    const reward = transitionReward(nx, ny);
+                    trajectory.push({x, y, reward});
+                    x = nx;
+                    y = ny;
+                    stepCount++;
+                }
+
+                // 展示终点，给一个短暂停顿强调“到达了”
+                if (showAnimation) {
+                    updateGrid('mcGrid', V, {x: GOAL.x, y: GOAL.y}, pathTrail);
+                    const liveSpeed = getMcSpeedProfile(parseInt(document.getElementById('mcSpeed').value, 10), episodes);
+                    const liveGoalPause = liveSpeed.visualize ? Math.max(90, Math.round(liveSpeed.goalPause * (1 - 0.2 * progress))) : 0;
+                    if (liveGoalPause > 0) {
+                        await flashGoal('mcGrid', liveGoalPause, 2);
+                    }
+                }
+
+                // 反向计算回报并更新价值
+                let G = 0;
+                const visited = new Set();
+
+                for (let t = trajectory.length - 1; t >= 0; t--) {
+                    const {x, y, reward} = trajectory[t];
+                    G = reward + GAMMA * G;
+
+                    const key = `${x},${y}`;
+                    if (!visited.has(key) && !isObstacle(x, y) && !isGoal(x, y)) {
+                        visited.add(key);
+                        N[y][x]++;
+                        V[y][x] = V[y][x] + (G - V[y][x]) / N[y][x];
+                    }
+                }
+
+                const liveSpeedAfter = getMcSpeedProfile(parseInt(document.getElementById('mcSpeed').value, 10), episodes);
+                const shouldRefreshValues = showValues && (showAnimation || i % liveSpeedAfter.showValueEvery === 0 || i === episodes - 1);
+
+                if (shouldRefreshValues) {
+                    updateGrid('mcGrid', V);
+                    if (showAnimation) {
+                        animatedEpisodesSeen++;
+                    }
+                    await new Promise(resolve => requestAnimationFrame(() => resolve()));
+                }
+            }
+            
+            document.getElementById('mcStatus').textContent = mcStopRequested
+                ? '已停止'
+                : `✅ 采样完成！共展示 ${animatedEpisodesSeen} 条轨迹，采样 ${episodes} 次`;
+            document.getElementById('runMC').disabled = false;
+            document.getElementById('stopMC').disabled = true;
+            mcRunning = false;
+            
+            return V;
+        }
+        
+        // 重置两个网格的显示
+        function resetGrids() {
+            initGrid('dpGrid');
+            initGrid('mcGrid');
+            document.getElementById('dpStatus').textContent = '准备就绪';
+            document.getElementById('mcStatus').textContent = '准备就绪';
+            document.getElementById('dpProgressBar').style.width = '0%';
+            document.getElementById('mcProgressBar').style.width = '0%';
+            document.getElementById('stopDP').disabled = true;
+            document.getElementById('stopMC').disabled = true;
+        }
+        
+        // 事件监听
+        document.addEventListener('DOMContentLoaded', () => {
+            initGrid('dpGrid');
+            initGrid('mcGrid');
+            updateObstacleCountUI();
+            
+            // 成功概率滑块事件
+            const successProbSlider = document.getElementById('successProb');
+            const successProbValue = document.getElementById('successProbValue');
+            
+            successProbSlider.addEventListener('input', () => {
+                SUCCESS_PROB = parseInt(successProbSlider.value) / 100;
+                successProbValue.textContent = `${successProbSlider.value}%`;
+                resetGrids();
+            });
+            
+            // 移动奖励滑块事件
+            const moveRewardSlider = document.getElementById('moveReward');
+            const moveRewardValue = document.getElementById('moveRewardValue');
+            
+            moveRewardSlider.addEventListener('input', () => {
+                MOVE_REWARD = parseInt(moveRewardSlider.value) / 10;
+                moveRewardValue.textContent = `${MOVE_REWARD.toFixed(1)}`;
+                resetGrids();
+            });
+
+            const obstacleCountSlider = document.getElementById('obstacleCount');
+            const obstacleCountValue = document.getElementById('obstacleCountValue');
+            obstacleCountSlider.addEventListener('input', () => {
+                obstacleCountValue.textContent = obstacleCountSlider.value;
+            });
+
+            document.getElementById('randomObstacles').addEventListener('click', () => {
+                randomizeObstaclesFromUI();
+            });
+            
+            // DP事件
+            document.getElementById('runDP').addEventListener('click', () => {
+                const delay = parseInt(document.getElementById('dpSpeed').value);
+                dpAnimated(delay);
+            });
+            
+            document.getElementById('stopDP').addEventListener('click', () => {
+                dpStopRequested = true;
+            });
+            
+            const dpSpeedSlider = document.getElementById('dpSpeed');
+            const dpSpeedValue = document.getElementById('dpSpeedValue');
+            dpSpeedSlider.addEventListener('input', () => {
+                dpSpeedValue.textContent = `${dpSpeedSlider.value}ms`;
+            });
+            
+            // MC事件
+            document.getElementById('runMC').addEventListener('click', () => {
+                const episodes = parseInt(document.getElementById('mcEpisodes').value);
+                const delay = parseInt(document.getElementById('mcSpeed').value);
+                monteCarloAnimated(episodes, delay);
+            });
+            
+            document.getElementById('stopMC').addEventListener('click', () => {
+                mcStopRequested = true;
+            });
+            
+            const episodeSlider = document.getElementById('mcEpisodes');
+            const episodeCount = document.getElementById('episodeCount');
+            episodeSlider.addEventListener('input', () => {
+                episodeCount.textContent = episodeSlider.value;
+            });
+            
+            const mcSpeedSlider = document.getElementById('mcSpeed');
+            const mcSpeedValue = document.getElementById('mcSpeedValue');
+            mcSpeedSlider.addEventListener('input', () => {
+                const value = parseInt(mcSpeedSlider.value);
+                mcSpeedValue.textContent = getMcSpeedProfile(value, 500).label;
+            });
+        });
+    </script>
+</body>
+</html>
