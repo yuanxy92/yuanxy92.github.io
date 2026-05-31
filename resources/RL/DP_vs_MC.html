@@ -744,6 +744,7 @@
             
             // MC事件
             document.getElementById('runMC').addEventListener('click', () => {
+                resetGrids();
                 const episodes = parseInt(document.getElementById('mcEpisodes').value);
                 const delay = parseInt(document.getElementById('mcSpeed').value);
                 monteCarloAnimated(episodes, delay);
