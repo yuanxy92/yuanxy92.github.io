@@ -46,6 +46,10 @@ title: Teaching
           <a href="https://rlbird.xiaoyunyuan.net/" class="pub-link-btn" target="_blank" rel="noopener noreferrer">Flappy Bird + Reinforcement Learning</a>
           <span>A mini game for understanding core RL ideas.</span>
         </div>
+        <div class="class-box">
+          <a href="https://pi.xiaoyunyuan.net/resources/RL/DP_vs_MC.html" class="pub-link-btn" target="_blank" rel="noopener noreferrer">Dynamic Programming vs. Monte Carlo Methods in Reinforcement Learning</a>
+          <span>An interactive demo that compares dynamic programming and Monte Carlo methods.</span>
+        </div>
       </div>
     </div>
   </div>
