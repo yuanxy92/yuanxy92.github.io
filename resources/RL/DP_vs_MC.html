@@ -31,7 +31,7 @@
             <h3 class="text-lg font-bold mb-3 text-gray-800">全局环境参数</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="flex items-center gap-2">
-                    <label for="successProb" class="text-gray-700">移动成功概率:</label>
+                    <label for="successProb" class="text-gray-700">动作随机度（100：完全不随机）:</label>
                     <input type="range" id="successProb" min="0" max="100" value="80" class="w-32">
                     <span id="successProbValue" class="text-gray-700 font-bold">80%</span>
                 </div>
@@ -132,7 +132,6 @@
                 <ul class="list-disc list-inside space-y-1">
                     <li>DP：知道环境规则，直接做策略评估，得到稳定的价值函数</li>
                     <li>MC：不知道环境模型，靠采样估计同一策略的价值</li>
-                    <li>MC 采样次数最高可到 50000，最快档只刷新 V 值，不显示红色 agent</li>
                     <li>DP 和 MC 都支持速度调节，可以同时运行对比收敛过程</li>
                 </ul>
             </div>
@@ -744,7 +743,6 @@
             
             // MC事件
             document.getElementById('runMC').addEventListener('click', () => {
-                resetGrids();
                 const episodes = parseInt(document.getElementById('mcEpisodes').value);
                 const delay = parseInt(document.getElementById('mcSpeed').value);
                 monteCarloAnimated(episodes, delay);
