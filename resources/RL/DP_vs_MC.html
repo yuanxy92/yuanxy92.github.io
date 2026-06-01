@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="any" href="https://work-submit.github.io/static/images/OpticAI.png">
     <link rel="shortcut icon" href="https://work-submit.github.io/static/images/OpticAI.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://work-submit.github.io/static/images/OpticAI.png">
+    <script defer src="https://events.vercount.one/js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .grid-cell {
@@ -61,6 +62,7 @@
                 <p>2. 每步移动奖励：这是每移动一步都会获得的即时奖励。它的目的，是鼓励智能体尽量用更少的步数到达终点，避免原地绕圈。</p>
                 <p>3. 障碍数量：控制随机生成的障碍格子数。障碍越多，路径越曲折，问题也越难。</p>
                 <p>4. 随机障碍物：点击后会重新生成一组新的障碍布局，并且保证起点到终点仍然有通路。</p>
+                <p class="mt-2">补充：当动作随机度是 0% 时，MC 会退化成完全确定性的轨迹采样。如果首选动作一直把智能体带向墙或障碍，就容易出现原地反复，所以我们现在会自动改选一个合法动作来避免卡住。</p>
             </div>
         </div>
         
@@ -127,7 +129,7 @@
                 <p class="text-xs text-gray-500">特点：通过多次采样取平均，逐步逼近真实价值</p>
             </div>
         </div>
-        
+
         <!-- 说明部分 -->
         <div class="bg-white rounded-lg shadow-lg p-5">
             <h3 class="text-lg font-bold mb-3 text-gray-800">问题说明</h3>
@@ -143,6 +145,24 @@
                     <li>MC：不知道环境模型，靠采样估计同一策略的价值</li>
                     <li>DP 和 MC 都支持速度调节，可以同时运行对比收敛过程</li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-5 mt-6">
+            <h3 class="text-lg font-bold mb-3 text-gray-800">访问统计与联系方式</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                <div class="text-sm leading-relaxed">
+                    <p class="font-semibold text-gray-800 mb-2">Page PV</p>
+                    <p>
+                        Total Page View
+                        <span id="vercount_value_page_pv" class="font-bold text-blue-600">Loading</span>
+                    </p>
+                </div>
+                <div class="text-sm leading-relaxed">
+                    <p class="font-semibold text-gray-800 mb-2">联系方式</p>
+                    <p>Email: <a class="text-blue-600 hover:underline" href="mailto:yuanxiaoyun@sjtu.edu.cn">yuanxiaoyun@sjtu.edu.cn</a></p>
+                    <p>主页: <a class="text-blue-600 hover:underline" href="https://xiaoyunyuan.net" target="_blank" rel="noopener noreferrer">xiaoyunyuan.net</a></p>
+                </div>
             </div>
         </div>
     </div>
