@@ -54,7 +54,8 @@ layout: page
     <div class="news-item">
       <span class="news-date">Jun 1, 2026</span>
       <span class="news-badge">New</span>
-      Our paper <strong>"A skin-conformal rigid-in-soft array-based imaging system"</strong> has been accepted by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received.
+      <!-- Our paper <strong>"A skin-conformal rigid-in-soft array-based imaging system"</strong> has been accepted by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received. -->
+      One paper has been accepted by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received.
     </div>
 
     <div class="news-item">
