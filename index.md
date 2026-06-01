@@ -52,17 +52,17 @@ layout: page
   <div class="achievement-card">
     <!-- 最新 X 条（默认显示，带完整按钮） -->
     <div class="news-item">
+      <span class="news-date">Jun 1, 2026</span>
+      <span class="news-badge">New</span>
+      Our paper <strong>"A skin-conformal rigid-in-soft array-based imaging system"</strong> has been accepted by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received.
+    </div>
+
+    <div class="news-item">
       <span class="news-date">May 25, 2026</span>
       <span class="news-badge">New</span>
       We just launched <strong>RL Flappy Bird</strong>, an interactive open-source web lab for visualizing Reinforcement Learning (a study aid for our AI1201 students!). 
       <a href="https://rlbird.xiaoyunyuan.net/" class="news-btn">Play here</a> 
       <a href="https://github.com/yuanxy92/rl-flappybird" class="news-btn">Our GitHub</a> 
-    </div>
-
-    <div class="news-item">
-      <span class="news-date">May 1, 2026</span>
-      <span class="news-badge">New</span>
-      One paper has been accepted in principle by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received.
     </div>
 
     <div class="news-item">
