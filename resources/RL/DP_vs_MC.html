@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>动态规划 vs Monte Carlo Interactive Demo</title>
+    <link rel="icon" type="image/png" sizes="any" href="https://work-submit.github.io/static/images/OpticAI.png">
+    <link rel="shortcut icon" href="https://work-submit.github.io/static/images/OpticAI.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://work-submit.github.io/static/images/OpticAI.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .grid-cell {
@@ -31,9 +34,9 @@
             <h3 class="text-lg font-bold mb-3 text-gray-800">全局环境参数</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="flex items-center gap-2">
-                    <label for="successProb" class="text-gray-700">动作随机度（100：完全不随机）:</label>
-                    <input type="range" id="successProb" min="0" max="100" value="80" class="w-32">
-                    <span id="successProbValue" class="text-gray-700 font-bold">80%</span>
+                    <label for="successProb" class="text-gray-700">动作随机度:</label>
+                    <input type="range" id="successProb" min="0" max="100" value="20" class="w-32">
+                    <span id="successProbValue" class="text-gray-700 font-bold">20%</span>
                 </div>
                 <div class="flex items-center gap-2">
                     <label for="moveReward" class="text-gray-700">每步移动奖励:</label>
@@ -52,7 +55,13 @@
                     <span class="text-sm text-gray-500">不会覆盖起点和终点</span>
                 </div>
             </div>
-            <p class="text-sm text-gray-500 mt-2">移动成功概率剩余部分平均分配到4个随机方向；到达终点固定奖励+10</p>
+            <div class="mt-3 text-sm text-gray-600 leading-relaxed">
+                <p class="font-semibold text-gray-700 mb-1">参数说明</p>
+                <p>1. 动作随机度：决定每一步有多大概率偏离当前策略动作。数值越大，环境越随机；数值越小，环境越稳定。</p>
+                <p>2. 每步移动奖励：这是每移动一步都会获得的即时奖励。它的目的，是鼓励智能体尽量用更少的步数到达终点，避免原地绕圈。</p>
+                <p>3. 障碍数量：控制随机生成的障碍格子数。障碍越多，路径越曲折，问题也越难。</p>
+                <p>4. 随机障碍物：点击后会重新生成一组新的障碍布局，并且保证起点到终点仍然有通路。</p>
+            </div>
         </div>
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
@@ -149,7 +158,7 @@
         const MIN_ITERATIONS = 12; // 先让价值传播一会儿，避免过早停
         const MAX_ITERATIONS = 500; // 给足上限，避免偶发“跑不完”
         const GOAL_REWARD = 10; // 终点奖励固定为10
-        let SUCCESS_PROB = 0.8; // 移动成功概率
+        let SUCCESS_PROB = 0.8; // 默认 20% 动作随机度对应的按策略动作执行概率
         let MOVE_REWARD = -1.0; // 每步移动奖励
         
         // 动作：上下左右
@@ -332,15 +341,31 @@
             return {minValue, maxValue};
         }
         
-        // 固定策略：和MC用的完全一样，大部分时间往终点走
+        // 固定策略：和MC用的完全一样，优先选择“最接近终点且不撞墙”的动作
         function getPolicyAction(x, y) {
             const dx = GOAL.x - x;
             const dy = GOAL.y - y;
-            if (Math.abs(dx) > Math.abs(dy)) {
-                return dx > 0 ? ACTIONS[3] : ACTIONS[2]; // 右或左
-            } else {
-                return dy > 0 ? ACTIONS[1] : ACTIONS[0]; // 下或上
+            const preferredActions = Math.abs(dx) > Math.abs(dy)
+                ? [
+                    dx > 0 ? ACTIONS[3] : ACTIONS[2],
+                    dy > 0 ? ACTIONS[1] : ACTIONS[0],
+                ]
+                : [
+                    dy > 0 ? ACTIONS[1] : ACTIONS[0],
+                    dx > 0 ? ACTIONS[3] : ACTIONS[2],
+                ];
+
+            const candidates = [...preferredActions, ...ACTIONS.filter(action => !preferredActions.includes(action))];
+            for (const action of candidates) {
+                const nx = x + action.dx;
+                const ny = y + action.dy;
+                if (nx < 0 || nx >= GRID_SIZE || ny < 0 || ny >= GRID_SIZE || isObstacle(nx, ny)) {
+                    continue;
+                }
+                return action;
             }
+
+            return preferredActions[0];
         }
         
         // 初始化网格（强制正方形）
@@ -477,6 +502,7 @@
             
             while (true) {
                 if (dpStopRequested) break;
+                const liveDelay = parseInt(document.getElementById('dpSpeed').value, 10);
                 
                 const newV = JSON.parse(JSON.stringify(V));
                 let maxDelta = 0;
@@ -511,7 +537,8 @@
                         if (delta > maxDelta) maxDelta = delta;
                         newV[y][x] = value;
                         
-                        await new Promise(resolve => setTimeout(resolve, delay / 25)); // 每个格子的延迟
+                        const cellDelay = Math.max(1, Math.round(liveDelay / 25));
+                        await new Promise(resolve => setTimeout(resolve, cellDelay)); // 每个格子的延迟
                     }
                 }
                 
@@ -524,7 +551,7 @@
                 document.getElementById('dpStatus').textContent = 
                     `迭代第 ${iteration} 次，最大变化 delta = ${maxDelta.toFixed(6)}`;
                 
-                await new Promise(resolve => setTimeout(resolve, delay));
+                await new Promise(resolve => setTimeout(resolve, Math.max(1, parseInt(document.getElementById('dpSpeed').value, 10))));
                 
                 // 双重终止条件：迭代次数超过最小值 且 delta 小于阈值
                 if (iteration >= MIN_ITERATIONS && maxDelta < THRESHOLD) {
@@ -595,7 +622,7 @@
                     // 和 DP 保持完全一致：使用同一条固定策略
                     const action = getPolicyAction(x, y);
 
-                    // 执行动作（使用动态成功概率）
+                    // 执行动作（由动作随机度决定是否偏离策略）
                     let nx, ny;
                     const prevX = x;
                     const prevY = y;
@@ -695,12 +722,13 @@
             initGrid('mcGrid');
             updateObstacleCountUI();
             
-            // 成功概率滑块事件
+            // 动作随机度滑块事件
             const successProbSlider = document.getElementById('successProb');
             const successProbValue = document.getElementById('successProbValue');
             
             successProbSlider.addEventListener('input', () => {
-                SUCCESS_PROB = parseInt(successProbSlider.value) / 100;
+                const randomness = parseInt(successProbSlider.value, 10) / 100;
+                SUCCESS_PROB = 1 - randomness;
                 successProbValue.textContent = `${successProbSlider.value}%`;
                 resetGrids();
             });
@@ -727,8 +755,7 @@
             
             // DP事件
             document.getElementById('runDP').addEventListener('click', () => {
-                const delay = parseInt(document.getElementById('dpSpeed').value);
-                dpAnimated(delay);
+                dpAnimated(parseInt(document.getElementById('dpSpeed').value, 10));
             });
             
             document.getElementById('stopDP').addEventListener('click', () => {
