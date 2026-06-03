@@ -63,7 +63,7 @@ title: Publications
     </div>
 
     <!-- ShareVerse -->
-    <div class="achievement-card pub-card">
+    <!-- <div class="achievement-card pub-card">
       <div class="pub-thumbnail">
         <img src="/mypaper/paper_icon/Arxiv_carla.jpg" alt="ShareVerse">
       </div>
@@ -81,7 +81,7 @@ title: Publications
           <a href="https://arxiv.org/abs/2603.02697" class="pub-link-btn">Paper</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- 3M-TI -->
     <div class="achievement-card pub-card">
