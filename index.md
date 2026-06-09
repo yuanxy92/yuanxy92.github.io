@@ -52,6 +52,14 @@ layout: page
   <div class="achievement-card">
     <!-- 最新 X 条（默认显示，带完整按钮） -->
     <div class="news-item">
+      <span class="news-date">Jun. 9, 2026</span>
+      <span class="news-badge">New</span>
+      We have just open-sourced the code for <strong>LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography</strong> on GitHub. You can also access the project page for more details.
+      <a href="https://xiaoyunyuan.net/index.html?project=lucid" class="news-btn">Project Page</a>
+      <a href="https://github.com/yuanxy92" class="news-btn">GitHub</a>
+    </div>
+
+    <div class="news-item">
       <span class="news-date">Jun 1, 2026</span>
       <span class="news-badge">New</span>
       <!-- Our paper <strong>"A skin-conformal rigid-in-soft array-based imaging system"</strong> has been accepted by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received. -->

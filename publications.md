@@ -57,7 +57,9 @@ title: Publications
           <span class="pub-venue highlight">Siggraph 2026 Accept</span>
         </div>
         <div class="pub-links">
+          <a href="https://arxiv.org/abs/2606.06901" class="pub-link-btn">arXiv</a>
           <a href="https://work-submit.github.io/index.html?project=lucid" class="pub-link-btn">Project Page</a>
+          <a href="https://github.com/frakenation/LUCID" class="pub-link-btn">GitHub</a>
         </div>
       </div>
     </div>
@@ -444,4 +446,3 @@ title: Publications
     </div>
   </div>
 </div>
-
