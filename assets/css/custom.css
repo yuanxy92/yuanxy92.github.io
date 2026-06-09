@@ -566,6 +566,26 @@
   margin-right: 8px !important;
 }
 
+.news-badge {
+  display: inline-block !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  color: white !important;
+  background-color: var(--accent-color) !important;
+  border: 1px solid var(--accent-color) !important;
+  border-radius: 999px !important;
+  padding: 2px 8px !important;
+  margin-right: 10px !important;
+  vertical-align: middle !important;
+  line-height: 1.2 !important;
+}
+
+.news-item .news-badge:last-of-type {
+  margin-right: 10px !important;
+}
+
 /* ================== More News 高级样式（左对齐+无双线修复） ================== */
 /* 折叠容器 - 彻底去掉顶部边框，解决双线问题 */
 .news-fold-container {
