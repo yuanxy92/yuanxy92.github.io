@@ -33,7 +33,7 @@ title: Publications
           <span class="pub-highlight">Xiaoyun Yuan*</span>, Jianing Zhang*, Youhai Liu, Yichen Wang, Lu Fang✉
         </div>
         <div>
-          <span class="pub-venue highlight">Nature Communications 2026 (Accept in principle)</span>
+          <span class="pub-venue highlight">Nature Communications 2026</span>
         </div>
         <div class="pub-links">
           <a href="https://www.nature.com/articles/s41467-026-74257-9" class="pub-link-btn">Paper</a>
