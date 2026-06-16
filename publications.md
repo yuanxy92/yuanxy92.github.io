@@ -26,7 +26,7 @@ title: Publications
         <img src="https://work-submit.github.io/projects/SkinSight_fig/teaser.jpg" alt="LUCID">
       </div>
       <div class="pub-content">
-        <a href="" class="pub-title">
+        <a href="https://www.nature.com/articles/s41467-026-74257-9" class="pub-title">
           A skin-conformal rigid-in-soft array-based imaging system
         </a>
         <div class="pub-authors">
@@ -36,7 +36,7 @@ title: Publications
           <span class="pub-venue highlight">Nature Communications 2026 (Accept in principle)</span>
         </div>
         <div class="pub-links">
-          <a href="" class="pub-link-btn">Comming Soon</a>
+          <a href="https://www.nature.com/articles/s41467-026-74257-9" class="pub-link-btn">Paper</a>
         </div>
       </div>
     </div>
