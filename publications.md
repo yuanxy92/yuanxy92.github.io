@@ -36,6 +36,7 @@ title: Publications
           <span class="pub-venue highlight">Nature Communications 2026</span>
         </div>
         <div class="pub-links">
+          <a href="https://work-submit.github.io/index.html?project=SkinSight" class="pub-link-btn">Project Page</a>
           <a href="https://www.nature.com/articles/s41467-026-74257-9" class="pub-link-btn">Paper</a>
         </div>
       </div>
