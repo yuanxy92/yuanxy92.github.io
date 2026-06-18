@@ -50,16 +50,16 @@ title: Teaching
           <a href="https://pi.xiaoyunyuan.net/resources/RL/DP_vs_MC.html" class="pub-link-btn" target="_blank" rel="noopener noreferrer">Dynamic Programming vs. Monte Carlo Methods in Reinforcement Learning</a>
           <span>An interactive demo that compares dynamic programming and Monte Carlo methods.</span>
         </div>
-        <div class="class-box">
-          <a href="/resources/AI1201/five-networks-comparison.pdf" class="pub-link-btn" target="_blank" rel="noopener noreferrer">五大网络对比 PDF</a>
-          <span>用于帮助大家梳理几种常见网络结构的区别与联系。</span>
-        </div>
         <div>
           <span class="pub-highlight"><strong>期末复习资料 / Final Review Materials:</strong></span>
         </div>
         <div class="class-box">
           <a href="https://github.com/yuanxy92/SJTU-AI1201-Resources" class="pub-link-btn" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
           <span>本次复习资料已开源，主页也同步了 PDF 备份，方便大家直接查看。</span>
+        </div>
+        <div class="class-box">
+          <a href="/resources/AI1201/five-networks-comparison.pdf" class="pub-link-btn" target="_blank" rel="noopener noreferrer">五大网络对比 PDF</a>
+          <span>用于帮助大家梳理几种常见网络结构的区别与联系。</span>
         </div>
         <div class="class-box">
           <a href="/resources/AI1201/final-review-short.pdf" class="pub-link-btn" target="_blank" rel="noopener noreferrer">期末复习课短版 PDF</a>
