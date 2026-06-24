@@ -62,8 +62,9 @@ layout: page
     <div class="news-item">
       <span class="news-date">Jun 1, 2026</span>
       <span class="news-badge">New</span>
-      <!-- Our paper <strong>"A skin-conformal rigid-in-soft array-based imaging system"</strong> has been accepted by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received. -->
-      One paper has been accepted by <strong>Nature Communications 2026</strong>. Details will be announced after the official acceptance notification is received.
+      Our paper <strong>"A skin-conformal rigid-in-soft array-based imaging system"</strong> is now officially published online in <strong>Nature Communications</strong>. The details are now available, and the paper can be accessed directly from the project page or the journal page.
+      <a href="https://work-submit.github.io/index.html?project=SkinSight" class="news-btn">Project Page</a>
+      <a href="https://www.nature.com/articles/s41467-026-74257-9" class="news-btn">Paper</a>
     </div>
 
     <div class="news-item">
