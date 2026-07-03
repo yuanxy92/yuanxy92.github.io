@@ -66,12 +66,12 @@ title: Publications
     </div>
 
     <!-- ShareVerse -->
-    <!-- <div class="achievement-card pub-card">
+    <div class="achievement-card pub-card">
       <div class="pub-thumbnail">
         <img src="/mypaper/paper_icon/Arxiv_carla.jpg" alt="ShareVerse">
       </div>
       <div class="pub-content">
-        <a href="https://arxiv.org/abs/2603.02697" class="pub-title">
+        <a href="https://xiaoyunyuan.net/index.html?project=shareverse" class="pub-title">
           ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling
         </a>
         <div class="pub-authors">
@@ -81,10 +81,11 @@ title: Publications
           <span class="pub-venue">arXiv:2603.02697</span>
         </div>
         <div class="pub-links">
+          <a href="https://xiaoyunyuan.net/index.html?project=shareverse" class="pub-link-btn">Project Page</a>
           <a href="https://arxiv.org/abs/2603.02697" class="pub-link-btn">Paper</a>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- 3M-TI -->
     <div class="achievement-card pub-card">

@@ -52,6 +52,13 @@ layout: page
   <div class="achievement-card">
     <!-- 最新 X 条（默认显示，带完整按钮） -->
     <div class="news-item">
+      <span class="news-date">Jul. 3, 2026</span>
+      <span class="news-badge">New</span>
+      We have released the code and project page for <strong>ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling</strong>. The full project resources are now available online.
+      <a href="https://xiaoyunyuan.net/index.html?project=shareverse" class="news-btn">Project Page</a>
+    </div>
+
+    <div class="news-item">
       <span class="news-date">Jun. 24, 2026</span>
       <span class="news-badge">New</span>
       Our paper <strong>"A skin-conformal rigid-in-soft array-based imaging system"</strong> is now officially published online in <strong>Nature Communications</strong>. The details are now available, and the paper can be accessed directly from the project page or the journal page.
