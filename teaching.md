@@ -24,6 +24,9 @@ title: Teaching
         <div style="margin-top: 4px;">
           <span class="pub-venue">Course Code: CS0502</span>
         </div>
+        <div style="margin-top: 10px;">
+          <a href="https://xiaoyunyuan.net/index.html?project=cs0502" class="pub-link-btn" target="_blank" rel="noopener noreferrer">Vibe Coding Course Homepage</a>
+        </div>
       </div>
     </div>
 
