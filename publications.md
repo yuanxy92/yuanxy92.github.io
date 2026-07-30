@@ -20,6 +20,30 @@ title: Publications
   <div class="section-spacing">
     <h2 class="unified-heading-block">Recent Publications</h2>
 
+    <!-- BeyondFusion -->
+    <div class="achievement-card pub-card">
+      <div class="pub-thumbnail">
+        <img src="/mypaper/paper_icon/beyondfusion.png" alt="BeyondFusion framework overview">
+      </div>
+      <div class="pub-content">
+        <a href="https://arxiv.org/abs/2607.24110" class="pub-title">
+          BeyondFusion: Self-Aligned Latent Diffusion for Calibration-Free Infrared Super-Resolution and Infrared-Visible Fusion
+        </a>
+        <div class="pub-authors">
+          Minchong Chen*, <span class="pub-highlight">Xiaoyun Yuan*✉</span>, Minyu Cao, Jianing Zhang, Jun Zhang, Shuyang Liu✉, Xiaokang Yang
+        </div>
+        <div>
+          <span class="pub-venue">arXiv:2607.24110</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://xiaoyunyuan.net/index.html?project=beyondfusion" class="pub-link-btn">Project Page</a>
+          <a href="https://pan.sjtu.edu.cn/web/share/365c881396aeeafd63269b1ca4ca1f6f" class="pub-link-btn">Data and Model</a>
+          <a href="https://github.com/work-submit/3MTI" class="pub-link-btn">Code</a>
+          <a href="https://arxiv.org/abs/2607.24110" class="pub-link-btn">arXiv</a>
+        </div>
+      </div>
+    </div>
+
     <!-- SkinSight -->
     <div class="achievement-card pub-card">
       <div class="pub-thumbnail">
@@ -55,7 +79,7 @@ title: Publications
           Tingyu Yang, Yuan Cheng, <span class="pub-highlight">Xiaoyun Yuan✉</span>
         </div>
         <div>
-          <span class="pub-venue highlight">Siggraph 2026 Accept</span>
+          <span class="pub-venue highlight">SIGGRAPH 2026</span>
         </div>
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2606.06901" class="pub-link-btn">arXiv</a>
@@ -100,7 +124,7 @@ title: Publications
           Minchong Chen*, <span class="pub-highlight">Xiaoyun Yuan*✉</span>, Junzhe Wan, Jianing Zhang, Jun Zhang
         </div>
         <div>
-          <span class="pub-venue highlight">CVPR 2026 Accept</span>
+          <span class="pub-venue highlight">CVPR 2026</span>
           <span class="pub-venue">(arXiv:2511.19117)</span>
         </div>
         <div class="pub-links">
