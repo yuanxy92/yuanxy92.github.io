@@ -38,7 +38,7 @@ title: Publications
         <div class="pub-links">
           <a href="https://xiaoyunyuan.net/index.html?project=beyondfusion" class="pub-link-btn">Project Page</a>
           <a href="https://pan.sjtu.edu.cn/web/share/365c881396aeeafd63269b1ca4ca1f6f" class="pub-link-btn">Data and Model</a>
-          <a href="https://github.com/work-submit/3MTI" class="pub-link-btn">Code</a>
+          <a href="https://github.com/work-submit/3MTI/tree/extension" class="pub-link-btn">Code</a>
           <a href="https://arxiv.org/abs/2607.24110" class="pub-link-btn">arXiv</a>
         </div>
       </div>

@@ -52,6 +52,14 @@ layout: page
   <div class="achievement-card">
     <!-- 最新 X 条（默认显示，带完整按钮） -->
     <div class="news-item">
+      <span class="news-date">Jul. 31, 2026</span>
+      <span class="news-badge">New</span>
+      We have released the code for <strong>BeyondFusion: Self-Aligned Latent Diffusion for Calibration-Free Infrared Super-Resolution and Infrared-Visible Fusion</strong>.
+      <a href="https://xiaoyunyuan.net/index.html?project=beyondfusion" class="news-btn">Project Page</a>
+      <a href="https://github.com/work-submit/3MTI/tree/extension" class="news-btn">GitHub</a>
+    </div>
+
+    <div class="news-item">
       <span class="news-date">Jul. 3, 2026</span>
       <span class="news-badge">New</span>
       We have released the code and project page for <strong>ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling</strong>. The full project resources are now available online.
