@@ -52,6 +52,15 @@ layout: page
   <div class="achievement-card">
     <!-- 最新 X 条（默认显示，带完整按钮） -->
     <div class="news-item">
+      <span class="news-date">Aug. 15, 2026</span>
+      <span class="news-badge">New</span>
+      We have released the code and arXiv paper for <strong>Engram-E2VID: Reference-Based Event-to-Video Reconstruction via Generative Activation of Appearance Engrams</strong>.
+      <a href="https://xiaoyunyuan.net/index.html?project=engram-e2vid" class="news-btn">Project Page</a>
+      <a href="https://github.com/work-submit/Engram-E2Vid" class="news-btn">GitHub</a>
+      <a href="https://arxiv.org/abs/2608.05728" class="news-btn">arXiv</a>
+    </div>
+
+    <div class="news-item">
       <span class="news-date">Jul. 31, 2026</span>
       <span class="news-badge">New</span>
       We have released the code for <strong>BeyondFusion: Self-Aligned Latent Diffusion for Calibration-Free Infrared Super-Resolution and Infrared-Visible Fusion</strong>.
@@ -60,14 +69,17 @@ layout: page
     </div>
 
     <div class="news-item">
-      <span class="news-date">Jul. 3, 2026</span>
+      <span class="news-date">Jul. 2, 2026</span>
       <span class="news-badge">New</span>
-      We have released the code and project page for <strong>ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling</strong>. The full project resources are now available online.
+      We have released the code, model, and dataset for <strong>ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling</strong>.
       <a href="https://xiaoyunyuan.net/index.html?project=shareverse" class="news-btn">Project Page</a>
+      <a href="https://github.com/sjbixiitu/shareverse" class="news-btn">GitHub</a>
+      <a href="https://huggingface.co/sjbixiitu/shareverse_model" class="news-btn">Model</a>
+      <a href="https://huggingface.co/datasets/sjbixiitu/shareverse_data" class="news-btn">Dataset</a>
     </div>
 
     <div class="news-item">
-      <span class="news-date">Jun. 24, 2026</span>
+      <span class="news-date">Jun. 16, 2026</span>
       <span class="news-badge">New</span>
       Our paper <strong>"A skin-conformal rigid-in-soft array-based imaging system"</strong> is now officially published online in <strong>Nature Communications</strong>. The details are now available, and the paper can be accessed directly from the project page or the journal page.
       <a href="https://work-submit.github.io/index.html?project=SkinSight" class="news-btn">Project Page</a>
@@ -79,7 +91,7 @@ layout: page
       <span class="news-badge">New</span>
       We have just open-sourced the code for <strong>LUCID: Learning Unified Control for Image Deflaring and Exposure Mastery in Nighttime Photography</strong> on GitHub. You can also access the project page for more details.
       <a href="https://xiaoyunyuan.net/index.html?project=lucid" class="news-btn">Project Page</a>
-      <a href="https://github.com/yuanxy92" class="news-btn">GitHub</a>
+      <a href="https://github.com/frakenation/LUCID" class="news-btn">GitHub</a>
     </div>
 
     <div class="news-item">
