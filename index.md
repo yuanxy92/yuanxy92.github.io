@@ -52,6 +52,14 @@ layout: page
   <div class="achievement-card">
     <!-- 最新 X 条（默认显示，带完整按钮） -->
     <div class="news-item">
+      <span class="news-date">Aug. 25, 2026</span>
+      <span class="news-badge">New</span>
+      We have released the project page and code for <strong>PAGS: Autofocusing Photoacoustic Tomography via Speed-of-Sound-Adaptive Gaussian Splatting</strong>.
+      <a href="https://xiaoyunyuan.net/index.html?project=pags" class="news-btn">Project Page</a>
+      <a href="https://github.com/work-submit/PAGS" class="news-btn">GitHub</a>
+    </div>
+
+    <div class="news-item">
       <span class="news-date">Aug. 15, 2026</span>
       <span class="news-badge">New</span>
       We have released the code and arXiv paper for <strong>Engram-E2VID: Reference-Based Event-to-Video Reconstruction via Generative Activation of Appearance Engrams</strong>.

@@ -20,6 +20,28 @@ title: Publications
   <div class="section-spacing">
     <h2 class="unified-heading-block">Recent Publications</h2>
 
+    <!-- PAGS -->
+    <div class="achievement-card pub-card">
+      <div class="pub-thumbnail">
+        <img src="https://xiaoyunyuan.net/projects/PAGS_fig/teaser.webp" alt="PAGS photoacoustic tomography reconstruction overview">
+      </div>
+      <div class="pub-content">
+        <a href="https://xiaoyunyuan.net/index.html?project=pags" class="pub-title">
+          PAGS: Autofocusing Photoacoustic Tomography via Speed-of-Sound-Adaptive Gaussian Splatting
+        </a>
+        <div class="pub-authors">
+          Jiarui Ge, Jintao Ma, Bangxu Fan, Jinyan Zhang, Xiaokang Yang, Shuai Na✉, <span class="pub-highlight">Xiaoyun Yuan✉</span>
+        </div>
+        <div>
+          <span class="pub-venue">arXiv 2026</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://xiaoyunyuan.net/index.html?project=pags" class="pub-link-btn">Project Page</a>
+          <a href="https://github.com/work-submit/PAGS" class="pub-link-btn">Code</a>
+        </div>
+      </div>
+    </div>
+
     <!-- BeyondFusion -->
     <div class="achievement-card pub-card">
       <div class="pub-thumbnail">
