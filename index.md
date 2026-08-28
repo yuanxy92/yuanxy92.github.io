@@ -27,8 +27,9 @@ layout: page
         </div>
         
         <div class="about-links">
+          <a href="/CV/Xiaoyun_Yuan_IEEE_Editorial_Technical_CV.pdf" target="_blank" class="pub-link-btn">CV</a>
           <a href="https://github.com/yuanxy92" target="_blank" class="pub-link-btn">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" class="pub-link-btn">Google Scholar</a>
+          <a href="https://scholar.google.com/citations?user=MrEV0uwAAAAJ&amp;hl=en" target="_blank" class="pub-link-btn">Google Scholar</a>
           <a href="https://xiaoyunyuan.net" target="_blank" class="pub-link-btn">Lab page</a>
         </div>
       </div>
