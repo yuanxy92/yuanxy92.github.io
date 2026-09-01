@@ -42,6 +42,29 @@ title: Publications
       </div>
     </div>
 
+    <!-- Engram-E2VID -->
+    <div class="achievement-card pub-card">
+      <div class="pub-thumbnail">
+        <img src="https://xiaoyunyuan.net/projects/Engram_E2VID_fig/Figure_1.png" alt="Engram-E2VID framework overview">
+      </div>
+      <div class="pub-content">
+        <a href="https://arxiv.org/abs/2608.05728" class="pub-title">
+          Engram-E2VID: Reference-Based Event-to-Video Reconstruction via Generative Activation of Appearance Engrams
+        </a>
+        <div class="pub-authors">
+          Feiyu Ji, Xiang Li, Hao Ma, Tianxiang Huang, Qingxin Lu, Mengqi Ji, Lei Han, Xiaokang Yang, <span class="pub-highlight">Xiaoyun Yuan✉</span>
+        </div>
+        <div>
+          <span class="pub-venue">arXiv:2608.05728</span>
+        </div>
+        <div class="pub-links">
+          <a href="https://xiaoyunyuan.net/index.html?project=engram-e2vid" class="pub-link-btn">Project Page</a>
+          <a href="https://github.com/work-submit/Engram-E2Vid" class="pub-link-btn">Code</a>
+          <a href="https://arxiv.org/abs/2608.05728" class="pub-link-btn">arXiv</a>
+        </div>
+      </div>
+    </div>
+
     <!-- BeyondFusion -->
     <div class="achievement-card pub-card">
       <div class="pub-thumbnail">
