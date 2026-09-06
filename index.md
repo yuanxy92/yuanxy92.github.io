@@ -44,6 +44,10 @@ layout: page
       <p style="margin-top: 20px; font-weight: 600; color: var(--highlight-red);">
         <a href="/interns/">👉 长期招收本科实习生！欢迎对计算机视觉、计算成像、AI+光学、人工智能感兴趣的同学联系我</a>
       </p>
+
+      <p style="margin-top: 12px; font-weight: 600; color: var(--highlight-red);">
+        👉 课题组招收 2027 级专硕一名，欢迎有意者联系。
+      </p>
     </div>
   </div>
 
